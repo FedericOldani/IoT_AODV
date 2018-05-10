@@ -21,8 +21,8 @@ implementation {
 
   message_t packet;
  
-  bool locked; //ci serve?
-  uint16_t counter = 0; //da eliminare
+  bool locked;
+  uint16_t counter = 0;
   
   event void Boot.booted() {
     call AMControl.start();
@@ -30,7 +30,7 @@ implementation {
 
   event void AMControl.startDone(error_t err) {
     if (err == SUCCESS) {
-      call MilliTimer.startPeriodic(3000); //every 30 sec, a data msg is sent
+      call MilliTimer.startPeriodic(3000);
     }
     else {
       call AMControl.start();
@@ -42,13 +42,13 @@ implementation {
   }
   
   event void MilliTimer.fired() {
-    counter++;//da eliminare
-    dbg("AODVsimulator", "AODVsimulator: timer fired, send msg");
-    if (locked) { //?
+    counter++;
+    dbg("RadioCountToLedsC", "RadioCountToLedsC: timer fired, counter is %hu.\n", counter);
+    if (locked) {
       return;
     }
     else {
-      radio_data_msg_t* rdm = (radio_data_msg_t*)call Packet.getPayload(&packet, sizeof(radio_data_msg_t));
+      radio_count_msg_t* rcm = (radio_count_msg_t*)call Packet.getPayload(&packet, sizeof(radio_count_msg_t));
       if (rcm == NULL) {
 	return;
       }
