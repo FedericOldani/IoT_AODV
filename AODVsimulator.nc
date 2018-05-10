@@ -52,46 +52,36 @@ implementation {
       if (rcm == NULL) {
 	return;
       }
-
-      rcm->counter = counter;
-      if (call AMSend.send(AM_BROADCAST_ADDR, &packet, sizeof(radio_count_msg_t)) == SUCCESS) {
-	dbg("RadioCountToLedsC", "RadioCountToLedsC: packet sent.\n", counter);	
-	locked = TRUE;
+      rcm->dest= ; //inserire random destination 
+      rcm->content = ;//inserire random content
+      if (call AMSend.send(AM_BROADCAST_ADDR, &packet, sizeof(radio_data_msg_t)) == SUCCESS) {
+	dbg("AODVsimulator", "AODVsimulator: packet sent.\n");	
+	locked = TRUE;//??
       }
     }
   }
 
   event message_t* Receive.receive(message_t* bufPtr, 
 				   void* payload, uint8_t len) {
-    dbg("RadioCountToLedsC", "Received packet of length %hhu.\n", len);
-    if (len != sizeof(radio_count_msg_t)) {return bufPtr;}
-    else {
-      radio_count_msg_t* rcm = (radio_count_msg_t*)payload;
-      if (rcm->counter & 0x1) {
-	call Leds.led0On();
-      }
-      else {
-	call Leds.led0Off();
-      }
-      if (rcm->counter & 0x2) {
-	call Leds.led1On();
-      }
-      else {
-	call Leds.led1Off();
-      }
-      if (rcm->counter & 0x4) {
-	call Leds.led2On();
-      }
-      else {
-	call Leds.led2Off();
-      }
+    dbg("AODVsimulator", "Received packet of length %hhu.\n", len);
+    if (len == sizeof(radio_data_msg_t)) {
+      radio_data_msg_t* rdm = (radio_data_msg_t*)payload;
+	//1. sono io la destinazione? 
+	//	si: fine 
+	//	no: check routing table e invio al next hop (se non c'è nella routing table invia route req)
+	call Leds.led0On(); //modificare con nome led corretto
+	dbg("AODVsimulator", "AODVsimulator: data msg received.\n");
       return bufPtr;
-    }
-  }
+       }
+    else if(len == sizeof(route_req_t)){
+	route_req_t* rq = (route_req_t*)payload;
+	//TODO
+    } else return bufPtr;
+}
 
   event void AMSend.sendDone(message_t* bufPtr, error_t error) {
     if (&packet == bufPtr) {
-      locked = FALSE;
+      locked = FALSE;//??
     }
   }
 

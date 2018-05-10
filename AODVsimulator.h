@@ -15,7 +15,7 @@ typedef nx_struct radio_data_msg {
 } radio_data_msg_t;
 
 enum {
-  AM_RADIO_DATA_MSG = 6,//??
+  AM_RADIO_DATA_MSG = 6,//communication channel 
 };
 
 
@@ -24,8 +24,11 @@ enum {
 typedef nx_struct route_req {
 	nx_unit16_t id_msg;//cambiare tipo variabile
 	nx_unit16_t dest;//cambiare tipo variabile
-}rute_req_t;
-
-
+}route_req_t;
+ 
+//per i messaggi 'route request' si ha lo stesso communication channel? oppure cambia?
+enum {
+  AM_RADIO_DATA_MSG = 6,//communication channel 
+};
 
 #endif
