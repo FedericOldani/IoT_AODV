@@ -10,7 +10,7 @@
 /*--------------DATA MSG----------------*/
 
 typedef nx_struct radio_data_msg {
-  nx_unit16_t dest//cambiare tipo variabile
+  nx_unit16_t dest
   nx_uint16_t content;//random content, cambiare tipo variabile
 } radio_data_msg_t;
 
@@ -30,5 +30,7 @@ typedef nx_struct route_req {
 enum {
   AM_RADIO_DATA_MSG = 6,//communication channel 
 };
+
+/*---------------REQ REPLY--------------*/
 
 #endif
