@@ -66,12 +66,25 @@ implementation {
     dbg("AODVsimulator", "Received packet of length %hhu.\n", len);
     if (len == sizeof(radio_data_msg_t)) {
       radio_data_msg_t* rdm = (radio_data_msg_t*)payload;
-      //scrivere codice
+	//1. sono io la destinazione? 
+	//	si: fine 
+	//	no: check routing table e invio al next hop (se non c'è nella routing table invia route req)
+	call Leds.led0On(); //modificare con nome led corretto
+	dbg("AODVsimulator", "AODVsimulator: data msg received.\n");
       return bufPtr;
        }
     else if(len == sizeof(route_req_t)){
-	//scrivi codice
-    } else return bufPtr;
+	route_req_t* rq = (route_req_t*)payload;
+	//1. check route_req_id
+	//2. new ID: 
+	//	2a. sono la destinazione? no: broadcast, si: route_reply al mittente 
+	//3. otherwise discard it.
+    } 
+    else if(len == sizeof(route_reply){
+	
+
+	}
+	else return bufPtr;
 }
 
   event void AMSend.sendDone(message_t* bufPtr, error_t error) {

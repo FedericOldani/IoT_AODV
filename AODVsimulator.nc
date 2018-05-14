@@ -75,8 +75,17 @@ implementation {
        }
     else if(len == sizeof(route_req_t)){
 	route_req_t* rq = (route_req_t*)payload;
-	//TODO
-    } else return bufPtr;
+	//1. check route_req_id
+	//2. new ID: 
+	//	2a. sono la destinazione? no: broadcast, si: route_reply al mittente 
+	//3. otherwise discard it.
+    } 
+    else if(len == sizeof(route_reply){
+	//se arriva entro 1 sec dal route_req:
+	// è la route_reply con meno hop? si: mantieni, no:scarta
+	//se arriva dopo: scarta
+	}
+	else return bufPtr;
 }
 
   event void AMSend.sendDone(message_t* bufPtr, error_t error) {
