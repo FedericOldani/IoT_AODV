@@ -1,0 +1,2 @@
+COMPONENT:AODVsimulatorApp
+include $(MAKERULES)
