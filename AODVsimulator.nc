@@ -71,7 +71,7 @@ implementation {
       random_dest = call Random.rand16() % N;
       rdm->dest= random_dest; //inserire random destination 
       rdm->content = 150;//inserire random content
-      dbg("AODVsimulator", "AODVsimulator: timer fired, send msg to %hhu \n",random_dest);
+      dbg("AODVsimulator", "AODVsimulator: timer fired, send msg to %hhu at time %s \n",random_dest, sim_time_string());
       if(rdm->dest!=TOS_NODE_ID) {
           //check in the routing table
           i=0;
@@ -80,7 +80,7 @@ implementation {
           //if dest is found in the routing table, data msg will be sent to the next hop
           if(i<N && routingTable[i][0]==random_dest)
             if(call AMSend.send(routingTable[i][1], &packet, sizeof(radio_data_msg_t)) == SUCCESS) {
-        	    dbg("AODVsimulator", "AODVsimulator: packet sent to the next hop: %hhu.\n",routing_table[i][1]);	
+        	    dbg("AODVsimulator", "AODVsimulator: packet sent to the next hop: %hhu at time %s \n",routingTable[i][1], sim_time_string());	
 	    	    locked = TRUE;
 	    	}
             //otherwise send a route req in broadcast

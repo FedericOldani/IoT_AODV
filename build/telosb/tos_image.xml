@@ -1,11 +1,11 @@
 <tos_image>
   <ident>
-    <uidhash>C3694C6DL</uidhash>
+    <uidhash>4983CADAL</uidhash>
     <hostname>instant-contiki</hostname>
     <username>user</username>
     <appname>AODVsimulatorAp</appname>
     <userhash>22A1FF22L</userhash>
-    <timestamp>5AF9F5D0L</timestamp>
+    <timestamp>5AFAA0EAL</timestamp>
     <deluge_support>no</deluge_support>
     <platform>telosb</platform>
   </ident>
