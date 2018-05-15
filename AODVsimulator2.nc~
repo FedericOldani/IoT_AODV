@@ -24,14 +24,13 @@ module AODVsimulator @safe() {
 implementation {
 
   message_t packet;
-  message_t packet2;
   uint16_t N=6; //number of nodes
   uint16_t routingTable[6][2];//number of nodes
-  bool locked=FALSE;
+  bool locked;
   uint16_t dest;
   uint16_t id_msg = 0;//id reply request
   uint16_t number;
-  bool found;
+  int found;
   uint16_t random_dest;
   int i=0;
 
@@ -82,31 +81,29 @@ implementation {
       if(rdm->dest!=TOS_NODE_ID) {
           //check in the routing table
           i=0;
-          found=FALSE;
-          for(i=0;i<N && !found;i++) 
-            if(routingTable[i][0]==random_dest) found=TRUE;    
+          while(i<N && routingTable[i][0]!=random_dest){    
+              i++;
+              }
           //if dest is found in the routing table, data msg will be sent to the next hop
-          if(found){
-            if(call AMSend.send(routingTable[i-1][1], &packet, sizeof(radio_msg_t)) == SUCCESS) {
-        	    dbg("AODVsimulator", "AODVsimulator: packet sent to the next hop: %hhu at time %s \n",routingTable[i][1], 
-        	    sim_time_string());	
+          if(i<N && routingTable[i][0]==random_dest){
+            if(call AMSend.send(routingTable[i][1], &packet, sizeof(radio_msg_t)) == SUCCESS) {
+        	    dbg("AODVsimulator", "AODVsimulator: packet sent to the next hop: %hhu at time %s \n",routingTable[i][1], sim_time_string());	
 	    	    locked = TRUE;
-	    	    }
-	    	    }
+	    	}
+	    	}
             //otherwise send a route req in broadcast
           else{
-            radio_msg_t* rreq = (radio_msg_t*)call Packet.getPayload(&packet2, sizeof(radio_msg_t));
-            dbg("AODVsimulator", "qua\n");
+            radio_msg_t* rreq = (radio_msg_t*)call Packet.getPayload(&packet, sizeof(radio_msg_t));
             if (rreq == NULL) {
 	                return;
                     }
             id_msg++;
-            rreq->msg_type=RREQ;
-            rreq->msg_id=id_msg;
-            rreq->dest= random_dest;
-            rreq->content = NULL;
-            if(call AMSend.send(AM_BROADCAST_ADDR, &packet2, sizeof(radio_msg_t)) == SUCCESS) {
-        	    dbg("AODVsimulator", "AODVsimulator: route request sent in broadcast.\n\tID MSG:%hhu\n\tDEST:%hhu\n",rreq->msg_id,rreq->dest);	
+            rdm->msg_type=RREQ;
+            rdm->msg_id=id_msg;
+            rdm->dest= random_dest;
+            rdm->content = NULL;
+            if(call AMSend.send(AM_BROADCAST_ADDR, &packet, sizeof(radio_msg_t)) == SUCCESS) {
+        	    dbg("AODVsimulator", "AODVsimulator: route request sent in broadcast.\n\tID MSG:%hhu\n\tDEST:%hhu\n",id_msg,random_dest);	
     	    	locked = TRUE;    
 	    	}
       }

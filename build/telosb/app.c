@@ -16326,7 +16326,7 @@ static inline void AODVsimulator__AMControl__startDone(error_t err)
 #line 49
 {
   if (err == SUCCESS) {
-    AODVsimulator__MilliTimer__startPeriodic(3000);
+    AODVsimulator__MilliTimer__startPeriodic(30000);
     }
   else {
 #line 53

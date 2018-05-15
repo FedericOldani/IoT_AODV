@@ -36,6 +36,8 @@ out = sys.stdout;
 #Add debug channel
 print "Activate debug message on channel AODVsimulator"
 t.addChannel("AODVsimulator",out);
+print "Activate debug message on channel ActiveNode"
+t.addChannel("ActiveNode",out);
 
 print "Creating node 1...";
 node1 =t.getNode(1);
@@ -94,13 +96,13 @@ for line in lines:
             t.getNode(i).addNoiseTraceReading(val)
 print "Done!";
 
-for i in range(1, 3):
+for i in range(1, 5):
     print ">>>Creating noise model for node:",i;
     t.getNode(i).createNoiseModel()
 
 print "Start simulation with TOSSIM! \n\n\n";
 
-for i in range(0,500):
+for i in range(0,5000):
 	t.runNextEvent()
 	
 print "\n\n\nSimulation finished!";

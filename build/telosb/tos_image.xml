@@ -1,11 +1,11 @@
 <tos_image>
   <ident>
-    <uidhash>4983CADAL</uidhash>
+    <uidhash>189688DBL</uidhash>
     <hostname>instant-contiki</hostname>
     <username>user</username>
     <appname>AODVsimulatorAp</appname>
     <userhash>22A1FF22L</userhash>
-    <timestamp>5AFAA0EAL</timestamp>
+    <timestamp>5AFAA3CFL</timestamp>
     <deluge_support>no</deluge_support>
     <platform>telosb</platform>
   </ident>
@@ -478,7 +478,7 @@
 :105D10004F4BB012A248B01290484B4FB0129A4B62
 :105D20004F43B012A84B4F4BB012A2486F43B01272
 :105D30001E50B012C250824ED811824FDA11B240BA
-:105D4000B80BDC118243DE115F42E0117FF0FEFFF1
+:105D40003075DC118243DE115F42E0117FF0FEFF0F
 :105D50006FD3C24FE0117F400C00E23C4F43B012C2
 :105D60001E5030408263B0129048B012A2487F406B
 :105D70000300B01270494F933D24B01290484B4F2E
