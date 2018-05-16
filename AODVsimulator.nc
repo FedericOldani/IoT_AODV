@@ -24,12 +24,9 @@ module AODVsimulator @safe() {
 implementation {
 
   message_t packet;
-  message_t packet2;
-  uint16_t N=6; //number of nodes
   uint16_t routingTable[6][2];//number of nodes
   bool locked=FALSE;
-  uint16_t dest;
-  uint16_t id_msg = 0;//id reply request
+  uint16_t msg_dest,msg_content,msg_id=0,msg_type;
   uint16_t number;
   bool found;
   uint16_t random_dest;
@@ -63,58 +60,59 @@ implementation {
     if (locked) {
       return;
     }
-    else {
-      radio_msg_t* rdm = (radio_msg_t*)call Packet.getPayload(&packet, sizeof(radio_msg_t));
-      if (rdm == NULL) {
-	       return;
-      }
-      
+    else {      
       //PREPARE MESSAGE:
-      random_dest = call Random.rand16() % N;
-      id_msg++;
-      rdm->msg_type=DATA;
-      rdm->msg_id=id_msg;
-      rdm->dest= random_dest; //random destination 
-      rdm->content = call Random.rand16() % 150;//random content
-      dbg("AODVsimulator", "TIMER FIRED prepare msg\n\tfrom: %hhu -> %hhu at time %s CONTENT: %hhu\n",TOS_NODE_ID,random_dest, sim_time_string(),rdm->content);
+      msg_dest = (call Random.rand16() % N)+1; //random destination
+      msg_content = call Random.rand16() % 150;//random content
+      dbg("AODVsimulator", "TIMER FIRED prepare msg\n\tfrom: %hhu -> %hhu at time %s CONTENT: %hhu\n",TOS_NODE_ID,msg_dest, sim_time_string(),msg_content);
       
       //IF THE DEST IS NOT MYSELF
-      if(rdm->dest!=TOS_NODE_ID) {
-          //check in the routing table
+      if(msg_dest!=TOS_NODE_ID) {
+          
+          //check the routing table
           i=0;
           found=FALSE;
           for(i=0;i<N && !found;i++) 
-            if(routingTable[i][0]==random_dest) found=TRUE;    
+            if(routingTable[i][0]==msg_dest) found=TRUE; 
+               
           //if dest is found in the routing table, data msg will be sent to the next hop
           if(found){
-            if(call AMSend.send(routingTable[i-1][1], &packet, sizeof(radio_msg_t)) == SUCCESS) {
+              radio_msg_t* rdm = (radio_msg_t*)call Packet.getPayload(&packet, sizeof(radio_msg_t));
+              if (rdm == NULL)  return;
+              rdm->type=DATA;
+              rdm->id=msg_id++;
+              rdm->content=msg_content;
+              rdm->dest=msg_dest;
+              if(call AMSend.send(routingTable[i-1][1], &packet, sizeof(radio_msg_t)) == SUCCESS) {
         	    dbg("AODVsimulator", "AODVsimulator: packet sent to the next hop: %hhu at time %s \n",routingTable[i][1], 
         	    sim_time_string());	
 	    	    locked = TRUE;
 	    	    }
 	    	    }
+	    	
             //otherwise send a route req in broadcast
           else{
-            radio_msg_t* rreq = (radio_msg_t*)call Packet.getPayload(&packet2, sizeof(radio_msg_t));
+            radio_msg_t* rreq = (radio_msg_t*)call Packet.getPayload(&packet, sizeof(radio_msg_t));
+            rreq->type=RREQ;
+            rreq->id=msg_id++;
+            rreq->content=NULL;
+            rreq->dest=msg_dest;
             dbg("AODVsimulator", "qua\n");
             if (rreq == NULL) {
 	                return;
                     }
-            id_msg++;
-            rreq->msg_type=RREQ;
-            rreq->msg_id=id_msg;
-            rreq->dest= random_dest;
-            rreq->content = NULL;
-            if(call AMSend.send(AM_BROADCAST_ADDR, &packet2, sizeof(radio_msg_t)) == SUCCESS) {
-        	    dbg("AODVsimulator", "AODVsimulator: route request sent in broadcast.\n\tID MSG:%hhu\n\tDEST:%hhu\n",rreq->msg_id,rreq->dest);	
+            if(call AMSend.send(AM_BROADCAST_ADDR, &packet, sizeof(radio_msg_t)) == SUCCESS) {
+        	    dbg("AODVsimulator", "AODVsimulator: route request sent in broadcast.\n\tID MSG:%hhu\n\tDEST:%hhu\n",rreq->id,rreq->dest);	
     	    	locked = TRUE;    
 	    	}
+	    	//TODO: si interrompe dopo questo punto
       }
     }
   }
 }
   event message_t* Receive.receive(message_t* bufPtr, 
 				   void* payload, uint8_t len) {
+				   
     dbg("AODVsimulator", "Received packet of length %hhu.\n", len);
     /*
     
@@ -145,7 +143,6 @@ implementation {
 }
 
   event void AMSend.sendDone(message_t* bufPtr, error_t error) {
-        dbg("AODVsimulator", "sent");
     if (&packet == bufPtr) {
       locked = FALSE;
     }

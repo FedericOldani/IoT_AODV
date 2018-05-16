@@ -8,11 +8,13 @@
 #define AODV_SIMULATOR_H
 
 typedef nx_struct radio_msg {
-	nx_uint8_t msg_type;
-	nx_uint16_t msg_id;
+	nx_uint8_t type;
+	nx_uint16_t id;
 	nx_uint16_t dest;
 	nx_uint16_t content;
 } radio_msg_t;
+
+
 
 enum {
   AM_RADIO_MSG = 6,//communication channel 
@@ -21,6 +23,9 @@ enum {
 #define DATA 1
 #define RREQ 2 
 #define RREPLY 3
+
+
+#define N 2 //number of motes
 
 /*
 
