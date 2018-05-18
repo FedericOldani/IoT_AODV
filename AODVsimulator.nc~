@@ -24,13 +24,16 @@ module AODVsimulator @safe() {
 implementation {
 
   message_t packet;
-  uint16_t routingTable[6][2];//number of nodes
+  uint16_t routingTable[N][2];//number of nodes
   bool locked=FALSE;
   uint16_t msg_dest,msg_content,msg_id=0,msg_type;
   uint16_t number;
   bool found;
   uint16_t random_dest;
   int i=0;
+  uint16_t nulla;
+  bool acceptRReply;
+  
 
 
   event void Boot.booted() {
@@ -55,6 +58,7 @@ implementation {
     // do nothing
   }
   
+  
   event void MilliTimer.fired() {
     found=0;
     if (locked) {
@@ -68,7 +72,7 @@ implementation {
       
       //IF THE DEST IS NOT MYSELF
       if(msg_dest!=TOS_NODE_ID) {
-          
+                      radio_msg_t* rreq = (radio_msg_t*)call Packet.getPayload(&packet, sizeof(radio_msg_t));
           //check the routing table
           i=0;
           found=FALSE;
@@ -83,6 +87,7 @@ implementation {
               rdm->id=msg_id++;
               rdm->content=msg_content;
               rdm->dest=msg_dest;
+              rdm->from=TOS_NODE_ID;
               if(call AMSend.send(routingTable[i-1][1], &packet, sizeof(radio_msg_t)) == SUCCESS) {
         	    dbg("AODVsimulator", "AODVsimulator: packet sent to the next hop: %hhu at time %s \n",routingTable[i][1], 
         	    sim_time_string());	
@@ -92,61 +97,71 @@ implementation {
 	    	
             //otherwise send a route req in broadcast
           else{
-            radio_msg_t* rreq = (radio_msg_t*)call Packet.getPayload(&packet, sizeof(radio_msg_t));
+
             rreq->type=RREQ;
             rreq->id=msg_id++;
-            rreq->content=NULL;
+            rreq->content=9;
             rreq->dest=msg_dest;
-            dbg("AODVsimulator", "qua\n");
+            rreq->from=TOS_NODE_ID;
             if (rreq == NULL) {
 	                return;
                     }
             if(call AMSend.send(AM_BROADCAST_ADDR, &packet, sizeof(radio_msg_t)) == SUCCESS) {
         	    dbg("AODVsimulator", "AODVsimulator: route request sent in broadcast.\n\tID MSG:%hhu\n\tDEST:%hhu\n",rreq->id,rreq->dest);	
-    	    	locked = TRUE;    
+    	    	locked = TRUE;  
+    	    	
+    	    	acceptRReply=TRUE;
+    	    	//call Timer2.startPeriodic(1000);  
 	    	}
-	    	//TODO: si interrompe dopo questo punto
+	    	
       }
     }
   }
 }
+
+ // event void Timer2.fired() {
+ //       acceptRReply=FALSE;
+ //   }
+
+
   event message_t* Receive.receive(message_t* bufPtr, 
 				   void* payload, uint8_t len) {
-				   
-    dbg("AODVsimulator", "Received packet of length %hhu.\n", len);
-    /*
-    
-    if (len == sizeof(radio_msg_t)) {
+    if (len != sizeof(radio_msg_t)) {return bufPtr;}
+    else {
       radio_msg_t* rdm = (radio_msg_t*)payload;
-	//1. sono io la destinazione? 
-	//	si: fine 
-	//	no: check routing table e invio al next hop (se non c'è nella routing table invia route req)
-	call Leds.led0On(); //modificare con nome led corretto
-	dbg("AODVsimulator", "AODVsimulator: data msg received.\n");
-      return bufPtr;
-       }
-    else if(len == sizeof(route_req_t)){
-	route_req_t* rq = (route_req_t*)payload;
-	//1. check route_req_id && sending node (tutti i nodi partono da id 0)
-	//2. new ID: 
-	//	2a. sono la destinazione? no: broadcast, si: route_reply al mittente 
-	//3. otherwise discard it.
-    } 
-    else if(len == sizeof(route_reply){
-	//se arriva entro 1 sec dal route_req:
-	// è la route_reply con meno hop? si: mantieni, no:scarta
-	//se arriva dopo: scarta
-	}
-	else return bufPtr;
+      switch(rdm->type){
+        case DATA:
+                if(rdm->dest==TOS_NODE_ID)
+                    dbg("AODVsimulator", "DATA packet received, I'm the destination.\n");
+                else
+                //TODO cerca nella routing table
+                break;
+        case RREQ:
+                if(rdm->dest==TOS_NODE_ID)
+                //1. check route_req_id && sending node (tutti i nodi partono da id 0)
+            	//2. new ID: 
+            	//	2a. sono la destinazione? no: broadcast, si: route_reply al mittente 
+            	//3. otherwise discard it.
+                dbg("AODVsimulator", "Received RREQ packet\n");
+                //TODO
+                break;
+        case RREPLY:
+                dbg("AODVsimulator", "Received RREPLY packet\n");
+                if(acceptRReply){
+                    // è la route_reply con meno hop? si: mantieni, no:scarta
+	            }
+                break;
+    }
+    }
+    return bufPtr;	
 	
-	*/
 }
 
   event void AMSend.sendDone(message_t* bufPtr, error_t error) {
     if (&packet == bufPtr) {
       locked = FALSE;
+      dbg("AODVsimulator", "unlocked\n");
     }
-            dbg("AODVsimulator", "unlocked");
   }
 
 }

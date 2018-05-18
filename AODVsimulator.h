@@ -9,12 +9,16 @@
 
 typedef nx_struct radio_msg {
 	nx_uint8_t type;
+	nx_uint16_t from;
 	nx_uint16_t id;
 	nx_uint16_t dest;
 	nx_uint16_t content;
 } radio_msg_t;
 
-
+typedef nx_struct routing_table{
+    nx_uint16_t dest;
+    nx_uint16_t next_hop;
+    }routing_table_t;
 
 enum {
   AM_RADIO_MSG = 6,//communication channel 

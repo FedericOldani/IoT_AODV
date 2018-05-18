@@ -7,10 +7,11 @@
 
 configuration AODVsimulatorApp {}
 implementation {
-  components MainC, AODVsimulator as App, LedsC;
+  components MainC, AODVsimulator as App;
   components new AMSenderC(AM_RADIO_MSG);
   components new AMReceiverC(AM_RADIO_MSG);
-  components new TimerMilliC();
+  components new TimerMilliC() as MilliTimer;
+  components new TimerMilliC() as Timer2;
   components ActiveMessageC;
   components RandomC;
   
@@ -19,9 +20,10 @@ implementation {
   App.Receive -> AMReceiverC;
   App.AMSend -> AMSenderC;
   App.AMControl -> ActiveMessageC;
-  App.MilliTimer -> TimerMilliC;
+  App.MilliTimer -> MilliTimer;
   App.Packet -> AMSenderC;
   App.Random -> RandomC;
+  App.Timer2 -> Timer2;
 }
 
 
