@@ -35,7 +35,7 @@ out = sys.stdout;
 
 #Add debug channel
 print "Activate debug message on channel AODVsimulator"
-t.addChannel("RadioCountToLedsC",out);
+t.addChannel("AODVsimulator",out);
 print "Activate debug message on channel ActiveNode"
 t.addChannel("ActiveNode",out);
 

@@ -11,10 +11,12 @@
 module AODVsimulator @safe() {
   uses {
     interface Boot;
-    interface Receive;
+    interface Receive as ReceiveRRP;
+    interface Receive as ReceiveRREQ;
+    interface Receive as ReceiveDATA;
     interface AMSend;
     interface Timer<TMilli> as MilliTimer;
-    //interface Timer<TMilli> as Timer2;
+    interface Timer<TMilli> as AcceptReply;
     interface SplitControl as AMControl;
     interface Packet;
     interface Random;
@@ -111,7 +113,7 @@ implementation {
     	    	locked = TRUE;  
     	    	
     	    	acceptRReply=TRUE;
-    	    	//call Timer2.startPeriodic(1000);  
+    	    	call Timer2.startPeriodic(1000);  
 	    	}
 	    	
       }
@@ -119,9 +121,9 @@ implementation {
   }
 }
 
- // event void Timer2.fired() {
- //       acceptRReply=FALSE;
- //   }
+  event void Timer2.fired() {
+        acceptRReply=FALSE;
+    }
 
 
   event message_t* Receive.receive(message_t* bufPtr, 
@@ -152,9 +154,8 @@ implementation {
 	            }
                 break;
     }
+    return bufPtr;
     }
-    return bufPtr;	
-	
 }
 
   event void AMSend.sendDone(message_t* bufPtr, error_t error) {

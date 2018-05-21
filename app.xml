@@ -55,17 +55,17 @@
         <arguments>
           <value cst="I:27">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:26">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:25">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
         </arguments>
@@ -82,17 +82,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:0">
@@ -112,17 +112,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:1">
@@ -142,17 +142,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:2">
@@ -172,17 +172,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:3">
@@ -202,17 +202,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:4">
@@ -232,17 +232,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:5">
@@ -262,17 +262,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:6">
@@ -292,17 +292,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:7">
@@ -322,17 +322,17 @@
         <arguments>
           <value cst="I:24">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:23">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:22">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
         </arguments>
@@ -349,17 +349,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:0">
@@ -379,17 +379,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:1">
@@ -409,17 +409,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:2">
@@ -439,17 +439,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:3">
@@ -469,17 +469,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:4">
@@ -499,17 +499,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:5">
@@ -529,17 +529,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:6">
@@ -559,17 +559,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:7">
@@ -589,17 +589,17 @@
         <arguments>
           <value cst="I:21">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:20">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:19">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
         </arguments>
@@ -616,17 +616,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:0">
@@ -646,17 +646,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:1">
@@ -676,17 +676,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:2">
@@ -706,17 +706,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:3">
@@ -736,17 +736,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:4">
@@ -766,17 +766,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:5">
@@ -796,17 +796,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:6">
@@ -826,17 +826,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:7">
@@ -856,17 +856,17 @@
         <arguments>
           <value cst="I:18">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:17">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:16">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
         </arguments>
@@ -883,17 +883,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:0">
@@ -913,17 +913,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:1">
@@ -943,17 +943,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:2">
@@ -973,17 +973,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:3">
@@ -1003,17 +1003,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:4">
@@ -1033,17 +1033,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:5">
@@ -1063,17 +1063,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:6">
@@ -1093,17 +1093,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:7">
@@ -1123,17 +1123,17 @@
         <arguments>
           <value cst="I:3">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:2">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:1">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
         </arguments>
@@ -1150,17 +1150,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:0">
@@ -1180,17 +1180,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:1">
@@ -1210,17 +1210,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:2">
@@ -1240,17 +1240,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:3">
@@ -1270,17 +1270,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:4">
@@ -1300,17 +1300,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:5">
@@ -1330,17 +1330,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:6">
@@ -1360,17 +1360,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:7">
@@ -1390,17 +1390,17 @@
         <arguments>
           <value cst="I:98">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:97">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:0">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
         </arguments>
@@ -1417,17 +1417,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:0">
@@ -1447,17 +1447,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:1">
@@ -1477,17 +1477,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:2">
@@ -1507,17 +1507,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:3">
@@ -1537,17 +1537,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:4">
@@ -1567,17 +1567,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:5">
@@ -1597,17 +1597,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:6">
@@ -1627,17 +1627,17 @@
         <arguments>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="U:">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:7">
@@ -1657,17 +1657,17 @@
         <arguments>
           <value cst="I:98">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:97">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:0">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:0">
@@ -1687,17 +1687,17 @@
         <arguments>
           <value cst="I:98">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:97">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:0">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:1">
@@ -1717,17 +1717,17 @@
         <arguments>
           <value cst="I:98">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:97">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:0">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:2">
@@ -1747,17 +1747,17 @@
         <arguments>
           <value cst="I:98">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:97">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:0">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:3">
@@ -1777,17 +1777,17 @@
         <arguments>
           <value cst="I:98">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:97">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:0">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:4">
@@ -1807,17 +1807,17 @@
         <arguments>
           <value cst="I:98">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:97">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:0">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:5">
@@ -1837,17 +1837,17 @@
         <arguments>
           <value cst="I:98">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:97">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:0">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:6">
@@ -1867,17 +1867,17 @@
         <arguments>
           <value cst="I:98">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:97">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:0">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:7">
@@ -1897,17 +1897,17 @@
         <arguments>
           <value cst="I:101">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:100">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:99">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:0">
@@ -1927,17 +1927,17 @@
         <arguments>
           <value cst="I:101">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:100">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:99">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:1">
@@ -1957,17 +1957,17 @@
         <arguments>
           <value cst="I:101">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:100">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:99">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:2">
@@ -1987,17 +1987,17 @@
         <arguments>
           <value cst="I:101">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:100">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:99">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:3">
@@ -2017,17 +2017,17 @@
         <arguments>
           <value cst="I:101">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:100">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:99">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </value>
           <value cst="I:4">
@@ -2369,25 +2369,25 @@
         <constant name="port_addr" ref="0x407aa69c" loc="41:/home/user/tinyos-main/tos/chips/atm128/pins/sim/HplAtm128GeneralIOPinP.nc">
           <component-ref qname="HplAtm128GeneralIOPinP"/>
           <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-            <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+            <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
           </type-int>
         </constant>
         <constant name="ddr_addr" ref="0x407aa8b4" loc="42:/home/user/tinyos-main/tos/chips/atm128/pins/sim/HplAtm128GeneralIOPinP.nc">
           <component-ref qname="HplAtm128GeneralIOPinP"/>
           <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-            <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+            <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
           </type-int>
         </constant>
         <constant name="pin_addr" ref="0x407aaacc" loc="43:/home/user/tinyos-main/tos/chips/atm128/pins/sim/HplAtm128GeneralIOPinP.nc">
           <component-ref qname="HplAtm128GeneralIOPinP"/>
           <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-            <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+            <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
           </type-int>
         </constant>
         <constant name="bit" ref="0x407aacb0" loc="44:/home/user/tinyos-main/tos/chips/atm128/pins/sim/HplAtm128GeneralIOPinP.nc">
           <component-ref qname="HplAtm128GeneralIOPinP"/>
           <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-            <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+            <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
           </type-int>
         </constant>
       </parameters>
@@ -2402,25 +2402,25 @@
         <constant name="port_addr" ref="0x4080729c" loc="42:/home/user/tinyos-main/tos/chips/atm128/pins/HplAtm128GeneralIOSlowPinP.nc">
           <component-ref qname="HplAtm128GeneralIOSlowPinP"/>
           <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-            <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+            <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
           </type-int>
         </constant>
         <constant name="ddr_addr" ref="0x408074b4" loc="43:/home/user/tinyos-main/tos/chips/atm128/pins/HplAtm128GeneralIOSlowPinP.nc">
           <component-ref qname="HplAtm128GeneralIOSlowPinP"/>
           <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-            <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+            <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
           </type-int>
         </constant>
         <constant name="pin_addr" ref="0x408076cc" loc="44:/home/user/tinyos-main/tos/chips/atm128/pins/HplAtm128GeneralIOSlowPinP.nc">
           <component-ref qname="HplAtm128GeneralIOSlowPinP"/>
           <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-            <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+            <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
           </type-int>
         </constant>
         <constant name="bit" ref="0x408078b0" loc="45:/home/user/tinyos-main/tos/chips/atm128/pins/HplAtm128GeneralIOSlowPinP.nc">
           <component-ref qname="HplAtm128GeneralIOSlowPinP"/>
           <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-            <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+            <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
           </type-int>
         </constant>
       </parameters>
@@ -2465,19 +2465,19 @@
         <constant name="port_addr" ref="0x407b3700" loc="40:/home/user/tinyos-main/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
           <component-ref qname="HplAtm128GeneralIOPortP"/>
           <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-            <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+            <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
           </type-int>
         </constant>
         <constant name="ddr_addr" ref="0x407b3908" loc="40:/home/user/tinyos-main/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
           <component-ref qname="HplAtm128GeneralIOPortP"/>
           <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-            <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+            <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
           </type-int>
         </constant>
         <constant name="pin_addr" ref="0x407b3b10" loc="40:/home/user/tinyos-main/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
           <component-ref qname="HplAtm128GeneralIOPortP"/>
           <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-            <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+            <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
           </type-int>
         </constant>
       </parameters>
@@ -2841,7 +2841,7 @@
         <interfacedef-ref qname="TossimPacket"/>
         <type-function size="I:1" alignment="I:1">
           <type-int cname="signed char" size="I:1" alignment="I:1">
-            <typename><typedef-ref name="int8_t" ref="0x4001a5e8"/></typename>
+            <typename><typedef-ref name="int8_t" ref="0x400465e8"/></typename>
           </type-int>
           <function-parameters>
             <type-pointer size="I:4" alignment="I:4">
@@ -2901,7 +2901,7 @@
         <interfacedef-ref qname="Packet"/>
         <type-function size="I:1" alignment="I:1">
           <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-            <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+            <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
           </type-int>
           <function-parameters>
             <type-pointer size="I:4" alignment="I:4">
@@ -2938,7 +2938,7 @@
               </type-tag>
             </type-pointer>
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </function-parameters>
         </type-function>
@@ -2952,7 +2952,7 @@
           </variable>
           <variable name="len" ref="0x4088c848" loc="126:/home/user/tinyos-main/tos/interfaces/Packet.nc">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </variable>
         </parameters>
@@ -2965,7 +2965,7 @@
         <interfacedef-ref qname="Packet"/>
         <type-function size="I:1" alignment="I:1">
           <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-            <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+            <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
           </type-int>
           <function-parameters>
           </function-parameters>
@@ -2988,7 +2988,7 @@
               </type-tag>
             </type-pointer>
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </function-parameters>
         </type-function>
@@ -3002,7 +3002,7 @@
           </variable>
           <variable name="len" ref="0x4088b5fc" loc="94:/home/user/tinyos-main/tos/interfaces/Packet.nc">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </variable>
         </parameters>
@@ -3027,7 +3027,7 @@
         <interfacedef-ref qname="LocalTime"/>
         <type-function size="I:1" alignment="I:1">
           <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-            <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+            <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
           </type-int>
           <function-parameters>
           </function-parameters>
@@ -3061,7 +3061,7 @@
               </type-tag>
             </type-pointer>
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </function-parameters>
         </type-function>
@@ -3080,7 +3080,7 @@
           </variable>
           <variable name="len" ref="0x4087b30c" loc="80:/home/user/tinyos-main/tos/interfaces/AMSend.nc">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </variable>
         </parameters>
@@ -3102,7 +3102,7 @@
               </type-tag>
             </type-pointer>
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </function-parameters>
         </type-function>
@@ -3116,7 +3116,7 @@
           </variable>
           <variable name="len" ref="0x40879eac" loc="135:/home/user/tinyos-main/tos/interfaces/AMSend.nc">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </variable>
         </parameters>
@@ -3129,7 +3129,7 @@
         <interfacedef-ref qname="AMSend"/>
         <type-function size="I:1" alignment="I:1">
           <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-            <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+            <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
           </type-int>
           <function-parameters>
           </function-parameters>
@@ -3213,7 +3213,7 @@
         <interfacedef-ref qname="Random"/>
         <type-function size="I:1" alignment="I:1">
           <type-int cname="unsigned short" unsigned="" size="I:2" alignment="I:2">
-            <typename><typedef-ref name="uint16_t" ref="0x402190d4"/></typename>
+            <typename><typedef-ref name="uint16_t" ref="0x4004b0d4"/></typename>
           </type-int>
           <function-parameters>
           </function-parameters>
@@ -3229,7 +3229,7 @@
         <interfacedef-ref qname="Random"/>
         <type-function size="I:1" alignment="I:1">
           <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-            <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+            <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
           </type-int>
           <function-parameters>
           </function-parameters>
@@ -3365,7 +3365,7 @@
               </type-tag>
             </type-pointer>
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </function-parameters>
         </type-function>
@@ -3379,7 +3379,7 @@
           </variable>
           <variable name="len" ref="0x409c9f0c" loc="75:/home/user/tinyos-main/tos/interfaces/Send.nc">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </variable>
         </parameters>
@@ -3401,7 +3401,7 @@
               </type-tag>
             </type-pointer>
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </function-parameters>
         </type-function>
@@ -3415,7 +3415,7 @@
           </variable>
           <variable name="len" ref="0x409e3894" loc="125:/home/user/tinyos-main/tos/interfaces/Send.nc">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </variable>
         </parameters>
@@ -3428,7 +3428,7 @@
         <interfacedef-ref qname="Send"/>
         <type-function size="I:1" alignment="I:1">
           <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-            <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+            <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
           </type-int>
           <function-parameters>
           </function-parameters>
@@ -3922,7 +3922,7 @@
               <type-void size="I:1" alignment="I:1"></type-void>
             </type-pointer>
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </function-parameters>
         </type-function>
@@ -3941,7 +3941,7 @@
           </variable>
           <variable name="len" ref="0x40880db8" loc="78:/home/user/tinyos-main/tos/interfaces/Receive.nc">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </variable>
         </parameters>
@@ -4499,7 +4499,7 @@
               </type-tag>
             </type-pointer>
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </function-parameters>
         </type-function>
@@ -4516,7 +4516,7 @@
           </variable>
           <variable name="len" ref="0x40893ba8" loc="57:/home/user/tinyos-main/tos/lib/tossim/TossimPacketModel.nc">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </variable>
         </parameters>
@@ -4699,14 +4699,14 @@
           <type-void size="I:1" alignment="I:1"></type-void>
           <function-parameters>
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </function-parameters>
         </type-function>
         <parameters>
           <variable name="scale" ref="0x40a79db8" loc="104:/home/user/tinyos-main/tos/chips/atm128/timer/HplAtm128Timer.nc">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-              <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+              <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
             </type-int>
           </variable>
         </parameters>
@@ -4719,7 +4719,7 @@
         <interfacedef-ref qname="HplAtm128Timer"/>
         <type-function size="I:1" alignment="I:1">
           <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-            <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+            <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
           </type-int>
           <function-parameters>
           </function-parameters>
@@ -5201,7 +5201,7 @@
         <interfacedef-ref qname="Timer"/>
         <type-function size="I:1" alignment="I:1">
           <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-            <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+            <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
           </type-int>
           <function-parameters>
           </function-parameters>
@@ -5233,22 +5233,22 @@
           <type-void size="I:1" alignment="I:1"></type-void>
           <function-parameters>
             <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-              <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+              <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
             </type-int>
             <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-              <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+              <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
             </type-int>
           </function-parameters>
         </type-function>
         <parameters>
           <variable name="t0" ref="0x4099b914" loc="114:/home/user/tinyos-main/tos/lib/timer/Timer.nc">
             <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-              <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+              <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
             </type-int>
           </variable>
           <variable name="dt" ref="0x4099baec" loc="114:/home/user/tinyos-main/tos/lib/timer/Timer.nc">
             <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-              <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+              <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
             </type-int>
           </variable>
         </parameters>
@@ -5277,7 +5277,7 @@
         <interfacedef-ref qname="Timer"/>
         <type-function size="I:1" alignment="I:1">
           <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-            <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+            <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
           </type-int>
           <function-parameters>
           </function-parameters>
@@ -5293,7 +5293,7 @@
         <interfacedef-ref qname="Timer"/>
         <type-function size="I:1" alignment="I:1">
           <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-            <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+            <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
           </type-int>
           <function-parameters>
           </function-parameters>
@@ -5327,14 +5327,14 @@
           <type-void size="I:1" alignment="I:1"></type-void>
           <function-parameters>
             <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-              <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+              <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
             </type-int>
           </function-parameters>
         </type-function>
         <parameters>
           <variable name="dt" ref="0x4099fb7c" loc="64:/home/user/tinyos-main/tos/lib/timer/Timer.nc">
             <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-              <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+              <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
             </type-int>
           </variable>
         </parameters>
@@ -5349,22 +5349,22 @@
           <type-void size="I:1" alignment="I:1"></type-void>
           <function-parameters>
             <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-              <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+              <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
             </type-int>
             <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-              <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+              <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
             </type-int>
           </function-parameters>
         </type-function>
         <parameters>
           <variable name="t0" ref="0x409992d8" loc="129:/home/user/tinyos-main/tos/lib/timer/Timer.nc">
             <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-              <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+              <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
             </type-int>
           </variable>
           <variable name="dt" ref="0x409994b0" loc="129:/home/user/tinyos-main/tos/lib/timer/Timer.nc">
             <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-              <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+              <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
             </type-int>
           </variable>
         </parameters>
@@ -5379,14 +5379,14 @@
           <type-void size="I:1" alignment="I:1"></type-void>
           <function-parameters>
             <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-              <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+              <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
             </type-int>
           </function-parameters>
         </type-function>
         <parameters>
           <variable name="dt" ref="0x4099c1f0" loc="73:/home/user/tinyos-main/tos/lib/timer/Timer.nc">
             <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-              <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+              <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
             </type-int>
           </variable>
         </parameters>
@@ -5436,17 +5436,17 @@
     <struct loc="94:/home/user/tinyos-main/tos/chips/atm128/adc/Atm128Adc.h" ref="0x40769d80" defined="" size="I:1" alignment="I:1">
       <field name="mux" ref="0x40769e88" bit-offset="I:0" bit-size="I:5">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="adlar" ref="0x40769ee8" bit-offset="I:5" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="refs" ref="0x40769f48" bit-offset="I:6" bit-size="I:2">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
     </struct>
@@ -5565,32 +5565,32 @@
     <struct loc="170:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a41354" defined="" size="I:1" alignment="I:1">
       <field name="psr321" ref="0x40a4145c" bit-offset="I:0" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="psr0" ref="0x40a414bc" bit-offset="I:1" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="pud" ref="0x40a4151c" bit-offset="I:2" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="acme" ref="0x40a4157c" bit-offset="I:3" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="rsvd" ref="0x40a415dc" bit-offset="I:4" bit-size="I:3">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="tsm" ref="0x40a4163c" bit-offset="I:7" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
     </struct>
@@ -5599,52 +5599,60 @@
         <type-int cname="int" size="I:4" alignment="I:4"></type-int>
       </field>
     </attribute>
+    <struct loc="288:/usr/include/inttypes.h" ref="0x4004fd80" defined="" size="I:16" alignment="I:4">
+      <field name="quot" ref="0x4004fe88" bit-offset="I:0" size="I:8">
+        <type-int cname="long long" size="I:8" alignment="I:8"></type-int>
+      </field>
+      <field name="rem" ref="0x4004fee8" bit-offset="I:64" size="I:8">
+        <type-int cname="long long" size="I:8" alignment="I:8"></type-int>
+      </field>
+    </struct>
+    <attribute name="number"  loc="NONE" ref="0x4000dc90" size="V:" alignment="V:">
+    </attribute>
     <union loc="167:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a417d4" defined="" size="I:1" alignment="I:1">
       <field name="flat" ref="0x40a418dc" bit-offset="I:0" size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="bits" ref="0x40a4193c" bit-offset="I:0" size="I:1">
         <type-tag size="I:1" alignment="I:1"><struct-ref ref="0x40a41354"/></type-tag>
       </field>
     </union>
-    <attribute name="number"  loc="NONE" ref="0x4000dc90" size="V:" alignment="V:">
-    </attribute>
     <struct loc="300:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a55f10" defined="" size="I:1" alignment="I:1">
       <field name="ocie1c" ref="0x40a54050" bit-offset="I:0" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="ocie3c" ref="0x40a540b0" bit-offset="I:1" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="toie3" ref="0x40a54110" bit-offset="I:2" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="ocie3b" ref="0x40a54170" bit-offset="I:3" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="ocie3a" ref="0x40a541d0" bit-offset="I:4" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="ticie3" ref="0x40a54230" bit-offset="I:5" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="rsvd" ref="0x40a54290" bit-offset="I:6" bit-size="I:2">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
     </struct>
@@ -5699,27 +5707,27 @@
     <struct loc="234:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a3bc84" defined="" size="I:1" alignment="I:1">
       <field name="cs" ref="0x40a3bd8c" bit-offset="I:0" bit-size="I:3">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="wgm32" ref="0x40a3bdec" bit-offset="I:3" bit-size="I:2">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="rsvd" ref="0x40a3be4c" bit-offset="I:5" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="ices1" ref="0x40a3beac" bit-offset="I:6" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="icnc1" ref="0x40a3bf0c" bit-offset="I:7" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
     </struct>
@@ -5921,42 +5929,42 @@
     <struct loc="153:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a42010" defined="" size="I:1" alignment="I:1">
       <field name="tov0" ref="0x40a42118" bit-offset="I:0" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="ocf0" ref="0x40a42178" bit-offset="I:1" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="tov1" ref="0x40a421d8" bit-offset="I:2" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="ocf1b" ref="0x40a42238" bit-offset="I:3" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="ocf1a" ref="0x40a42298" bit-offset="I:4" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="icf1" ref="0x40a422f8" bit-offset="I:5" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="tov2" ref="0x40a42358" bit-offset="I:6" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="ocf2" ref="0x40a423b8" bit-offset="I:7" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
     </struct>
@@ -6074,7 +6082,7 @@
     <union loc="133:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a44e4c" defined="" size="I:1" alignment="I:1">
       <field name="flat" ref="0x40a44f54" bit-offset="I:0" size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="bits" ref="0x40a43010" bit-offset="I:0" size="I:1">
@@ -6094,64 +6102,56 @@
     <enum loc="76:/home/user/tinyos-main/tos/lib/tossim/tos.h" ref="0x40508648" defined="" size="I:4" alignment="I:4">
       <type-int cname="int" size="I:4" alignment="I:4"></type-int>
     </enum>
-    <struct loc="288:/usr/include/inttypes.h" ref="0x4021dd80" defined="" size="I:16" alignment="I:4">
-      <field name="quot" ref="0x4021de88" bit-offset="I:0" size="I:8">
-        <type-int cname="long long" size="I:8" alignment="I:8"></type-int>
-      </field>
-      <field name="rem" ref="0x4021dee8" bit-offset="I:64" size="I:8">
-        <type-int cname="long long" size="I:8" alignment="I:8"></type-int>
-      </field>
-    </struct>
     <struct name="sim_packet" loc="59:/home/user/tinyos-main/tos/lib/tossim/sim_packet.h" ref="0x406be0e0" defined="" size="I:0" alignment="I:1">
     </struct>
-    <enum loc="23:AODVsimulator.h" ref="0x406ec76c" defined="" size="I:4" alignment="I:4">
-      <type-int cname="int" size="I:4" alignment="I:4"></type-int>
-    </enum>
     <enum loc="58:/home/user/tinyos-main/tos/chips/atm128/adc/Atm128Adc.h" ref="0x4076ec58" defined="" size="I:4" alignment="I:4">
       <type-int cname="int" size="I:4" alignment="I:4"></type-int>
     </enum>
-    <struct loc="150:/home/user/tinyos-main/tos/chips/atm128/adc/Atm128Adc.h" ref="0x40765ef8" defined="" size="I:1" alignment="I:1">
-      <field name="adps" ref="0x40764050" bit-offset="I:0" bit-size="I:3">
-        <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
-        </type-int>
-      </field>
-      <field name="adie" ref="0x407640b0" bit-offset="I:3" bit-size="I:1">
-        <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
-        </type-int>
-      </field>
-      <field name="adif" ref="0x40764110" bit-offset="I:4" bit-size="I:1">
-        <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
-        </type-int>
-      </field>
-      <field name="adfr" ref="0x40764170" bit-offset="I:5" bit-size="I:1">
-        <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
-        </type-int>
-      </field>
-      <field name="adsc" ref="0x407641d0" bit-offset="I:6" bit-size="I:1">
-        <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
-        </type-int>
-      </field>
-      <field name="aden" ref="0x40764230" bit-offset="I:7" bit-size="I:1">
-        <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
-        </type-int>
-      </field>
-    </struct>
+    <enum loc="23:AODVsimulator.h" ref="0x406ec76c" defined="" size="I:4" alignment="I:4">
+      <type-int cname="int" size="I:4" alignment="I:4"></type-int>
+    </enum>
     <union loc="312:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a5389c" defined="" size="I:1" alignment="I:1">
       <field name="flat" ref="0x40a539a4" bit-offset="I:0" size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="bits" ref="0x40a53a04" bit-offset="I:0" size="I:1">
         <type-tag size="I:1" alignment="I:1"><struct-ref ref="0x40a533bc"/></type-tag>
       </field>
     </union>
+    <struct loc="150:/home/user/tinyos-main/tos/chips/atm128/adc/Atm128Adc.h" ref="0x40765ef8" defined="" size="I:1" alignment="I:1">
+      <field name="adps" ref="0x40764050" bit-offset="I:0" bit-size="I:3">
+        <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
+        </type-int>
+      </field>
+      <field name="adie" ref="0x407640b0" bit-offset="I:3" bit-size="I:1">
+        <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
+        </type-int>
+      </field>
+      <field name="adif" ref="0x40764110" bit-offset="I:4" bit-size="I:1">
+        <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
+        </type-int>
+      </field>
+      <field name="adfr" ref="0x40764170" bit-offset="I:5" bit-size="I:1">
+        <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
+        </type-int>
+      </field>
+      <field name="adsc" ref="0x407641d0" bit-offset="I:6" bit-size="I:1">
+        <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
+        </type-int>
+      </field>
+      <field name="aden" ref="0x40764230" bit-offset="I:7" bit-size="I:1">
+        <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
+        </type-int>
+      </field>
+    </struct>
     <enum loc="138:/home/user/tinyos-main/tos/chips/atm128/adc/Atm128Adc.h" ref="0x4076690c" defined="" size="I:4" alignment="I:4">
       <type-int cname="int" size="I:4" alignment="I:4"></type-int>
     </enum>
@@ -6181,29 +6181,29 @@
     <struct loc="253:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a5b2ac" defined="" size="I:1" alignment="I:1">
       <field name="rsvd" ref="0x40a5b3b4" bit-offset="I:0" bit-size="I:5">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="focC" ref="0x40a5b414" bit-offset="I:5" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="focB" ref="0x40a5b474" bit-offset="I:6" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="focA" ref="0x40a5b4d4" bit-offset="I:7" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
     </struct>
     <union loc="120:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a467bc" defined="" size="I:1" alignment="I:1">
       <field name="flat" ref="0x40a468c4" bit-offset="I:0" size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="bits" ref="0x40a46924" bit-offset="I:0" size="I:1">
@@ -6228,7 +6228,7 @@
     <union loc="98:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a48540" defined="" size="I:1" alignment="I:1">
       <field name="flat" ref="0x40a48648" bit-offset="I:0" size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="bits" ref="0x40a486a8" bit-offset="I:0" size="I:1">
@@ -6238,7 +6238,7 @@
     <union loc="193:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a3e20c" defined="" size="I:1" alignment="I:1">
       <field name="flat" ref="0x40a3e314" bit-offset="I:0" size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="bits" ref="0x40a3e374" bit-offset="I:0" size="I:1">
@@ -6409,42 +6409,42 @@
     <struct loc="136:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a4490c" defined="" size="I:1" alignment="I:1">
       <field name="toie0" ref="0x40a44a14" bit-offset="I:0" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="ocie0" ref="0x40a44a74" bit-offset="I:1" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="toie1" ref="0x40a44ad4" bit-offset="I:2" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="ocie1b" ref="0x40a44b34" bit-offset="I:3" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="ocie1a" ref="0x40a44b94" bit-offset="I:4" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="ticie1" ref="0x40a44bf4" bit-offset="I:5" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="toie2" ref="0x40a44c54" bit-offset="I:6" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="ocie2" ref="0x40a44cb4" bit-offset="I:7" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
     </struct>
@@ -6485,21 +6485,21 @@
       <field name="fptr" ref="0x4036ae70" bit-offset="I:0" size="I:4">
         <type-pointer size="I:4" alignment="I:4">
           <type-int cname="int" size="I:4" alignment="I:4">
-            <typename><typedef-ref name="int32_t" ref="0x4001aa44"/></typename>
+            <typename><typedef-ref name="int32_t" ref="0x40046a44"/></typename>
           </type-int>
         </type-pointer>
       </field>
       <field name="rptr" ref="0x4036aed0" bit-offset="I:32" size="I:4">
         <type-pointer size="I:4" alignment="I:4">
           <type-int cname="int" size="I:4" alignment="I:4">
-            <typename><typedef-ref name="int32_t" ref="0x4001aa44"/></typename>
+            <typename><typedef-ref name="int32_t" ref="0x40046a44"/></typename>
           </type-int>
         </type-pointer>
       </field>
       <field name="state" ref="0x4036af30" bit-offset="I:64" size="I:4">
         <type-pointer size="I:4" alignment="I:4">
           <type-int cname="int" size="I:4" alignment="I:4">
-            <typename><typedef-ref name="int32_t" ref="0x4001aa44"/></typename>
+            <typename><typedef-ref name="int32_t" ref="0x40046a44"/></typename>
           </type-int>
         </type-pointer>
       </field>
@@ -6515,7 +6515,7 @@
       <field name="end_ptr" ref="0x403690d0" bit-offset="I:192" size="I:4">
         <type-pointer size="I:4" alignment="I:4">
           <type-int cname="int" size="I:4" alignment="I:4">
-            <typename><typedef-ref name="int32_t" ref="0x4001aa44"/></typename>
+            <typename><typedef-ref name="int32_t" ref="0x40046a44"/></typename>
           </type-int>
         </type-pointer>
       </field>
@@ -6627,73 +6627,73 @@
     <struct name="radio_stats" loc="109:/home/user/tinyos-main/tos/lib/serial/Serial.h" ref="0x406c39d0" defined="" size="I:18" alignment="I:2">
       <field name="version" ref="0x406c2ac8" bit-offset="I:0" size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="flags" ref="0x406c2b28" bit-offset="I:8" size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="reserved" ref="0x406c2b88" bit-offset="I:16" size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="platform" ref="0x406c2be8" bit-offset="I:24" size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="MTU" ref="0x406c2c48" bit-offset="I:32" size="I:2">
         <type-int cname="unsigned short" unsigned="" size="I:2" alignment="I:2">
-          <typename><typedef-ref name="uint16_t" ref="0x402190d4"/></typename>
+          <typename><typedef-ref name="uint16_t" ref="0x4004b0d4"/></typename>
         </type-int>
       </field>
       <field name="radio_crc_fail" ref="0x406c2ca8" bit-offset="I:48" size="I:2">
         <type-int cname="unsigned short" unsigned="" size="I:2" alignment="I:2">
-          <typename><typedef-ref name="uint16_t" ref="0x402190d4"/></typename>
+          <typename><typedef-ref name="uint16_t" ref="0x4004b0d4"/></typename>
         </type-int>
       </field>
       <field name="radio_queue_drops" ref="0x406c2d08" bit-offset="I:64" size="I:2">
         <type-int cname="unsigned short" unsigned="" size="I:2" alignment="I:2">
-          <typename><typedef-ref name="uint16_t" ref="0x402190d4"/></typename>
+          <typename><typedef-ref name="uint16_t" ref="0x4004b0d4"/></typename>
         </type-int>
       </field>
       <field name="serial_crc_fail" ref="0x406c2d68" bit-offset="I:80" size="I:2">
         <type-int cname="unsigned short" unsigned="" size="I:2" alignment="I:2">
-          <typename><typedef-ref name="uint16_t" ref="0x402190d4"/></typename>
+          <typename><typedef-ref name="uint16_t" ref="0x4004b0d4"/></typename>
         </type-int>
       </field>
       <field name="serial_tx_fail" ref="0x406c2dc8" bit-offset="I:96" size="I:2">
         <type-int cname="unsigned short" unsigned="" size="I:2" alignment="I:2">
-          <typename><typedef-ref name="uint16_t" ref="0x402190d4"/></typename>
+          <typename><typedef-ref name="uint16_t" ref="0x4004b0d4"/></typename>
         </type-int>
       </field>
       <field name="serial_short_packets" ref="0x406c2e28" bit-offset="I:112" size="I:2">
         <type-int cname="unsigned short" unsigned="" size="I:2" alignment="I:2">
-          <typename><typedef-ref name="uint16_t" ref="0x402190d4"/></typename>
+          <typename><typedef-ref name="uint16_t" ref="0x4004b0d4"/></typename>
         </type-int>
       </field>
       <field name="serial_proto_drops" ref="0x406c2e88" bit-offset="I:128" size="I:2">
         <type-int cname="unsigned short" unsigned="" size="I:2" alignment="I:2">
-          <typename><typedef-ref name="uint16_t" ref="0x402190d4"/></typename>
+          <typename><typedef-ref name="uint16_t" ref="0x4004b0d4"/></typename>
         </type-int>
       </field>
     </struct>
-    <attribute name="one_nok" loc="14:/usr/lib/ncc/deputy_nodeputy.h" ref="0x40017b6c" defined="" size="I:4" alignment="I:4">
-      <field name="dummy" ref="0x40017d30" bit-offset="I:0" size="I:4">
+    <attribute name="one_nok" loc="14:/usr/lib/ncc/deputy_nodeputy.h" ref="0x40043b6c" defined="" size="I:4" alignment="I:4">
+      <field name="dummy" ref="0x40043d30" bit-offset="I:0" size="I:4">
         <type-int cname="int" size="I:4" alignment="I:4"></type-int>
       </field>
     </attribute>
-    <attribute name="dmemset" loc="15:/usr/lib/ncc/deputy_nodeputy.h" ref="0x400190b4" defined="" size="I:12" alignment="I:4">
-      <field name="a1" ref="0x40019324" bit-offset="I:0" size="I:4">
+    <attribute name="dmemset" loc="15:/usr/lib/ncc/deputy_nodeputy.h" ref="0x400450b4" defined="" size="I:12" alignment="I:4">
+      <field name="a1" ref="0x40045324" bit-offset="I:0" size="I:4">
         <type-int cname="int" size="I:4" alignment="I:4"></type-int>
       </field>
-      <field name="a2" ref="0x40019384" bit-offset="I:32" size="I:4">
+      <field name="a2" ref="0x40045384" bit-offset="I:32" size="I:4">
         <type-int cname="int" size="I:4" alignment="I:4"></type-int>
       </field>
-      <field name="a3" ref="0x400193e4" bit-offset="I:64" size="I:4">
+      <field name="a3" ref="0x400453e4" bit-offset="I:64" size="I:4">
         <type-int cname="int" size="I:4" alignment="I:4"></type-int>
       </field>
     </attribute>
@@ -6708,7 +6708,7 @@
     <union loc="297:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a54430" defined="" size="I:1" alignment="I:1">
       <field name="flat" ref="0x40a54538" bit-offset="I:0" size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="bits" ref="0x40a54598" bit-offset="I:0" size="I:1">
@@ -6744,35 +6744,35 @@
     <enum loc="47:/home/user/tinyos-main/tos/lib/tossim/sim_log.c" ref="0x40523ea8" defined="" size="I:4" alignment="I:4">
       <type-int cname="int" size="I:4" alignment="I:4"></type-int>
     </enum>
-    <attribute name="count_nok" loc="12:/usr/lib/ncc/deputy_nodeputy.h" ref="0x4001715c" defined="" size="I:4" alignment="I:4">
-      <field name="n" ref="0x400172f8" bit-offset="I:0" size="I:4">
+    <attribute name="count_nok" loc="12:/usr/lib/ncc/deputy_nodeputy.h" ref="0x4004315c" defined="" size="I:4" alignment="I:4">
+      <field name="n" ref="0x400432f8" bit-offset="I:0" size="I:4">
         <type-int cname="int" size="I:4" alignment="I:4"></type-int>
       </field>
     </attribute>
     <struct loc="123:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a463b0" defined="" size="I:1" alignment="I:1">
       <field name="tcr0ub" ref="0x40a464b8" bit-offset="I:0" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="ocr0ub" ref="0x40a46518" bit-offset="I:1" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="tcn0ub" ref="0x40a46578" bit-offset="I:2" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="as0" ref="0x40a465d8" bit-offset="I:3" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="rsvd" ref="0x40a46638" bit-offset="I:4" bit-size="I:4">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
     </struct>
@@ -6812,8 +6812,8 @@
     <enum loc="185:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a41b48" defined="" size="I:4" alignment="I:4">
       <type-int cname="int" size="I:4" alignment="I:4"></type-int>
     </enum>
-    <attribute name="one" loc="13:/usr/lib/ncc/deputy_nodeputy.h" ref="0x4001763c" defined="" size="I:4" alignment="I:4">
-      <field name="dummy" ref="0x40017800" bit-offset="I:0" size="I:4">
+    <attribute name="one" loc="13:/usr/lib/ncc/deputy_nodeputy.h" ref="0x4004363c" defined="" size="I:4" alignment="I:4">
+      <field name="dummy" ref="0x40043800" bit-offset="I:0" size="I:4">
         <type-int cname="int" size="I:4" alignment="I:4"></type-int>
       </field>
     </attribute>
@@ -6843,7 +6843,7 @@
     <union loc="250:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a5b6bc" defined="" size="I:1" alignment="I:1">
       <field name="flat" ref="0x40a5b7c4" bit-offset="I:0" size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="bits" ref="0x40a5b824" bit-offset="I:0" size="I:1">
@@ -6877,7 +6877,7 @@
     <union loc="231:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a5c130" defined="" size="I:1" alignment="I:1">
       <field name="flat" ref="0x40a5c238" bit-offset="I:0" size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="bits" ref="0x40a5c298" bit-offset="I:0" size="I:1">
@@ -6892,22 +6892,22 @@
     <struct loc="196:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a3fda8" defined="" size="I:1" alignment="I:1">
       <field name="wgm10" ref="0x40a3feb0" bit-offset="I:0" bit-size="I:2">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="comC" ref="0x40a3ff10" bit-offset="I:2" bit-size="I:2">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="comB" ref="0x40a3ff70" bit-offset="I:4" bit-size="I:2">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="comA" ref="0x40a3e010" bit-offset="I:6" bit-size="I:2">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
     </struct>
@@ -6917,15 +6917,15 @@
     <enum loc="51:/home/user/tinyos-main/tos/types/TinyError.h" ref="0x405d0a7c" defined="" size="I:4" alignment="I:4">
       <type-int cname="int" size="I:4" alignment="I:4"></type-int>
     </enum>
-    <attribute name="nts" loc="17:/usr/lib/ncc/deputy_nodeputy.h" ref="0x40019dc4" defined="" size="I:4" alignment="I:4">
-      <field name="dummy" ref="0x40019f88" bit-offset="I:0" size="I:4">
+    <attribute name="nts" loc="17:/usr/lib/ncc/deputy_nodeputy.h" ref="0x40045dc4" defined="" size="I:4" alignment="I:4">
+      <field name="dummy" ref="0x40045f88" bit-offset="I:0" size="I:4">
         <type-int cname="int" size="I:4" alignment="I:4"></type-int>
       </field>
     </attribute>
     <union loc="150:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a42544" defined="" size="I:1" alignment="I:1">
       <field name="flat" ref="0x40a4264c" bit-offset="I:0" size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="bits" ref="0x40a426ac" bit-offset="I:0" size="I:1">
@@ -7056,27 +7056,27 @@
     <struct loc="101:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a480e4" defined="" size="I:1" alignment="I:1">
       <field name="cs" ref="0x40a481ec" bit-offset="I:0" bit-size="I:3">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="wgm1" ref="0x40a4824c" bit-offset="I:3" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="com" ref="0x40a482ac" bit-offset="I:4" bit-size="I:2">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="wgm0" ref="0x40a4830c" bit-offset="I:6" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="foc" ref="0x40a4836c" bit-offset="I:7" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
     </struct>
@@ -7166,37 +7166,37 @@
     <struct loc="315:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a533bc" defined="" size="I:1" alignment="I:1">
       <field name="ocf1c" ref="0x40a534c4" bit-offset="I:0" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="ocf3c" ref="0x40a53524" bit-offset="I:1" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="tov3" ref="0x40a53584" bit-offset="I:2" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="ocf3b" ref="0x40a535e4" bit-offset="I:3" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="ocf3a" ref="0x40a53644" bit-offset="I:4" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="icf3" ref="0x40a536a4" bit-offset="I:5" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
       <field name="rsvd" ref="0x40a53704" bit-offset="I:6" bit-size="I:2">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </field>
     </struct>
@@ -7216,7 +7216,7 @@
       </field>
       <field name="noiseGenTime" ref="0x405a6d48" bit-offset="I:352" size="I:4">
         <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-          <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+          <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
         </type-int>
       </field>
       <field name="noiseTable" ref="0x405a6da8" bit-offset="I:384" size="I:4">
@@ -7231,12 +7231,12 @@
       </field>
       <field name="noiseTraceLen" ref="0x405a6e68" bit-offset="I:448" size="I:4">
         <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-          <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+          <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
         </type-int>
       </field>
       <field name="noiseTraceIndex" ref="0x405a6ec8" bit-offset="I:480" size="I:4">
         <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-          <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+          <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
         </type-int>
       </field>
       <field name="generated" ref="0x405a6f28" bit-offset="I:512" size="I:1">
@@ -7247,14 +7247,14 @@
     </struct>
     <attribute name="atomic_hwevent"  loc="NONE" ref="0x4000f598" size="V:" alignment="V:">
     </attribute>
-    <attribute name="dmemcpy" loc="16:/usr/lib/ncc/deputy_nodeputy.h" ref="0x40019750" defined="" size="I:12" alignment="I:4">
-      <field name="a1" ref="0x400199c0" bit-offset="I:0" size="I:4">
+    <attribute name="dmemcpy" loc="16:/usr/lib/ncc/deputy_nodeputy.h" ref="0x40045750" defined="" size="I:12" alignment="I:4">
+      <field name="a1" ref="0x400459c0" bit-offset="I:0" size="I:4">
         <type-int cname="int" size="I:4" alignment="I:4"></type-int>
       </field>
-      <field name="a2" ref="0x40019a20" bit-offset="I:32" size="I:4">
+      <field name="a2" ref="0x40045a20" bit-offset="I:32" size="I:4">
         <type-int cname="int" size="I:4" alignment="I:4"></type-int>
       </field>
-      <field name="a3" ref="0x40019a80" bit-offset="I:64" size="I:4">
+      <field name="a3" ref="0x40045a80" bit-offset="I:64" size="I:4">
         <type-int cname="int" size="I:4" alignment="I:4"></type-int>
       </field>
     </attribute>
@@ -7322,7 +7322,7 @@
       </field>
       <field name="strength" ref="0x40925e14" bit-offset="I:288" size="I:1">
         <type-int cname="signed char" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="int8_t" ref="0x4001a5e8"/></typename>
+          <typename><typedef-ref name="int8_t" ref="0x400465e8"/></typename>
         </type-int>
       </field>
       <field name="lost" ref="0x40925e74" bit-offset="I:296" size="I:1">
@@ -7392,12 +7392,12 @@
       <component-ref qname="VirtualizeTimerC"/>
       <field name="t0" ref="0x40b66144" bit-offset="I:0" size="I:4">
         <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-          <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+          <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
         </type-int>
       </field>
       <field name="dt" ref="0x40b661a4" bit-offset="I:32" size="I:4">
         <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-          <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+          <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
         </type-int>
       </field>
       <field name="isoneshot" ref="0x40b66204" bit-offset="I:64" bit-size="I:1">
@@ -7491,7 +7491,7 @@
     </variable>
     <variable name="FreqKeyNum" ref="0x40654a1c" loc="56:/home/user/tinyos-main/tos/lib/tossim/sim_noise.c">
       <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-        <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+        <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
       </type-int>
     </variable>
     <variable name="csmaLow" ref="0x405d8ac0" loc="47:/home/user/tinyos-main/tos/lib/tossim/sim_csma.c">
@@ -7520,7 +7520,7 @@
     </variable>
     <variable name="TOS_NODE_ID" ref="0x40508bb0" loc="78:/home/user/tinyos-main/tos/lib/tossim/tos.h">
       <type-int cname="unsigned short" unsigned="" size="I:2" alignment="I:2">
-        <typename><typedef-ref name="uint16_t" ref="0x402190d4"/></typename>
+        <typename><typedef-ref name="uint16_t" ref="0x4004b0d4"/></typename>
       </type-int>
     </variable>
     <variable name="sys_errlist" ref="0x4050df14" loc="28:/usr/include/i386-linux-gnu/bits/sys_errlist.h">
@@ -7568,7 +7568,7 @@
       <type-array elements="I:1000" size="I:160000" alignment="I:1">
         <type-array elements="I:160" size="I:160" alignment="I:1">
           <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-            <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+            <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
           </type-int>
         </type-array>
       </type-array>
@@ -7670,20 +7670,20 @@
     <variable name="m_tail" ref="0x406ebc7c" loc="60:/home/user/tinyos-main/tos/lib/tossim/SimSchedulerBasicP.nc">
       <component-ref qname="SimSchedulerBasicP"/>
       <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+        <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
       </type-int>
     </variable>
     <variable name="m_head" ref="0x406eba78" loc="59:/home/user/tinyos-main/tos/lib/tossim/SimSchedulerBasicP.nc">
       <component-ref qname="SimSchedulerBasicP"/>
       <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+        <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
       </type-int>
     </variable>
     <variable name="m_next" ref="0x406ea010" loc="61:/home/user/tinyos-main/tos/lib/tossim/SimSchedulerBasicP.nc">
       <component-ref qname="SimSchedulerBasicP"/>
       <type-array elements="I:7" size="I:7" alignment="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </type-array>
     </variable>
@@ -7744,19 +7744,19 @@
     <variable name="error" ref="0x40912140" loc="294:/home/user/tinyos-main/tos/lib/tossim/TossimPacketModelC.nc">
       <component-ref qname="TossimPacketModelC"/>
       <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+        <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
       </type-int>
     </variable>
     <variable name="backoffCount" ref="0x408dadec" loc="72:/home/user/tinyos-main/tos/lib/tossim/TossimPacketModelC.nc">
       <component-ref qname="TossimPacketModelC"/>
       <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+        <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
       </type-int>
     </variable>
     <variable name="neededFreeSamples" ref="0x408d9110" loc="73:/home/user/tinyos-main/tos/lib/tossim/TossimPacketModelC.nc">
       <component-ref qname="TossimPacketModelC"/>
       <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+        <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
       </type-int>
     </variable>
     <variable name="sending" ref="0x408d934c" loc="74:/home/user/tinyos-main/tos/lib/tossim/TossimPacketModelC.nc">
@@ -7782,7 +7782,7 @@
     <variable name="sendingLength" ref="0x408d99d4" loc="76:/home/user/tinyos-main/tos/lib/tossim/TossimPacketModelC.nc">
       <component-ref qname="TossimPacketModelC"/>
       <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+        <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
       </type-int>
     </variable>
     <variable name="transmitting" ref="0x408d96d8" loc="75:/home/user/tinyos-main/tos/lib/tossim/TossimPacketModelC.nc">
@@ -7890,31 +7890,31 @@
     <variable name="number" ref="0x409b3a60" loc="30:AODVsimulator.nc">
       <component-ref qname="AODVsimulator"/>
       <type-int cname="unsigned short" unsigned="" size="I:2" alignment="I:2">
-        <typename><typedef-ref name="uint16_t" ref="0x402190d4"/></typename>
+        <typename><typedef-ref name="uint16_t" ref="0x4004b0d4"/></typename>
       </type-int>
     </variable>
     <variable name="msg_content" ref="0x409b34bc" loc="29:AODVsimulator.nc">
       <component-ref qname="AODVsimulator"/>
       <type-int cname="unsigned short" unsigned="" size="I:2" alignment="I:2">
-        <typename><typedef-ref name="uint16_t" ref="0x402190d4"/></typename>
+        <typename><typedef-ref name="uint16_t" ref="0x4004b0d4"/></typename>
       </type-int>
     </variable>
     <variable name="msg_id" ref="0x409b362c" loc="29:AODVsimulator.nc">
       <component-ref qname="AODVsimulator"/>
       <type-int cname="unsigned short" unsigned="" size="I:2" alignment="I:2">
-        <typename><typedef-ref name="uint16_t" ref="0x402190d4"/></typename>
+        <typename><typedef-ref name="uint16_t" ref="0x4004b0d4"/></typename>
       </type-int>
     </variable>
     <variable name="msg_dest" ref="0x409b331c" loc="29:AODVsimulator.nc">
       <component-ref qname="AODVsimulator"/>
       <type-int cname="unsigned short" unsigned="" size="I:2" alignment="I:2">
-        <typename><typedef-ref name="uint16_t" ref="0x402190d4"/></typename>
+        <typename><typedef-ref name="uint16_t" ref="0x4004b0d4"/></typename>
       </type-int>
     </variable>
     <variable name="nulla" ref="0x409b02e8" loc="34:AODVsimulator.nc">
       <component-ref qname="AODVsimulator"/>
       <type-int cname="unsigned short" unsigned="" size="I:2" alignment="I:2">
-        <typename><typedef-ref name="uint16_t" ref="0x402190d4"/></typename>
+        <typename><typedef-ref name="uint16_t" ref="0x4004b0d4"/></typename>
       </type-int>
     </variable>
     <variable name="acceptRReply" ref="0x409b050c" loc="35:AODVsimulator.nc">
@@ -7932,7 +7932,7 @@
     <variable name="msg_type" ref="0x409b3850" loc="29:AODVsimulator.nc">
       <component-ref qname="AODVsimulator"/>
       <type-int cname="unsigned short" unsigned="" size="I:2" alignment="I:2">
-        <typename><typedef-ref name="uint16_t" ref="0x402190d4"/></typename>
+        <typename><typedef-ref name="uint16_t" ref="0x4004b0d4"/></typename>
       </type-int>
     </variable>
     <variable name="found" ref="0x409b3c3c" loc="31:AODVsimulator.nc">
@@ -7950,7 +7950,7 @@
       <type-array elements="I:2" size="I:8" alignment="I:2">
         <type-array elements="I:2" size="I:4" alignment="I:2">
           <type-int cname="unsigned short" unsigned="" size="I:2" alignment="I:2">
-            <typename><typedef-ref name="uint16_t" ref="0x402190d4"/></typename>
+            <typename><typedef-ref name="uint16_t" ref="0x4004b0d4"/></typename>
           </type-int>
         </type-array>
       </type-array>
@@ -7958,13 +7958,13 @@
     <variable name="random_dest" ref="0x409b3e7c" loc="32:AODVsimulator.nc">
       <component-ref qname="AODVsimulator"/>
       <type-int cname="unsigned short" unsigned="" size="I:2" alignment="I:2">
-        <typename><typedef-ref name="uint16_t" ref="0x402190d4"/></typename>
+        <typename><typedef-ref name="uint16_t" ref="0x4004b0d4"/></typename>
       </type-int>
     </variable>
     <variable name="current" ref="0x409f2bf8" loc="59:/home/user/tinyos-main/tos/system/AMQueueImplP.nc">
       <component-ref qname="AMQueueImplP"/>
       <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+        <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
       </type-int>
     </variable>
     <variable name="queue" ref="0x409f1064" loc="60:/home/user/tinyos-main/tos/system/AMQueueImplP.nc">
@@ -7979,32 +7979,32 @@
       <component-ref qname="AMQueueImplP"/>
       <type-array elements="U:" size="U:" alignment="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+          <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
         </type-int>
       </type-array>
     </variable>
     <variable name="base" ref="0x40a90558" loc="40:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128AlarmAsyncP.nc">
       <component-ref qname="Atm128AlarmAsyncP"/>
       <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-        <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+        <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
       </type-int>
     </variable>
     <variable name="t0" ref="0x40a901f8" loc="39:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128AlarmAsyncP.nc">
       <component-ref qname="Atm128AlarmAsyncP"/>
       <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-        <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+        <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
       </type-int>
     </variable>
     <variable name="set" ref="0x40a90010" loc="38:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128AlarmAsyncP.nc">
       <component-ref qname="Atm128AlarmAsyncP"/>
       <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+        <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
       </type-int>
     </variable>
     <variable name="dt" ref="0x40a90340" loc="39:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128AlarmAsyncP.nc">
       <component-ref qname="Atm128AlarmAsyncP"/>
       <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-        <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+        <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
       </type-int>
     </variable>
     <variable name="oldScale" ref="0x40abfb60" loc="80:/home/user/tinyos-main/tos/chips/atm128/timer/sim/HplAtm128Timer0AsyncP.nc">
@@ -8014,7 +8014,7 @@
       </documentation>
       <component-ref qname="HplAtm128Timer0AsyncP"/>
       <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+        <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
       </type-int>
     </variable>
     <variable name="lastZero" ref="0x40abf898" loc="74:/home/user/tinyos-main/tos/chips/atm128/timer/sim/HplAtm128Timer0AsyncP.nc">
@@ -8042,7 +8042,7 @@
     <variable name="savedCounter" ref="0x40ac1010" loc="58:/home/user/tinyos-main/tos/chips/atm128/timer/sim/HplAtm128Timer0AsyncP.nc">
       <component-ref qname="HplAtm128Timer0AsyncP"/>
       <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+        <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
       </type-int>
     </variable>
     <variable name="inOverflow" ref="0x40ac2c8c" loc="57:/home/user/tinyos-main/tos/chips/atm128/timer/sim/HplAtm128Timer0AsyncP.nc">
@@ -8054,7 +8054,7 @@
     <variable name="m_dt" ref="0x40b37bdc" loc="55:/home/user/tinyos-main/tos/lib/timer/AlarmToTimerC.nc">
       <component-ref qname="AlarmToTimerC"/>
       <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-        <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+        <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
       </type-int>
     </variable>
     <variable name="m_oneshot" ref="0x40b37de0" loc="56:/home/user/tinyos-main/tos/lib/timer/AlarmToTimerC.nc">
@@ -8080,7 +8080,7 @@
     <variable name="seed" ref="0x40ba3064" loc="52:/home/user/tinyos-main/tos/system/RandomMlcgC.nc">
       <component-ref qname="RandomMlcgC"/>
       <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-        <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+        <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
       </type-int>
     </variable>
   </variables>
@@ -10512,9 +10512,9 @@
   <functions>
   </functions>
   <typedefs>
-    <typedef name="intptr_t" ref="0x4021cdd0" loc="126:/usr/include/stdint.h">
+    <typedef name="intptr_t" ref="0x4004edd0" loc="126:/usr/include/stdint.h">
       <type-int cname="int" size="I:4" alignment="I:4">
-        <typename><typedef-ref name="intptr_t" ref="0x4021cdd0"/></typename>
+        <typename><typedef-ref name="intptr_t" ref="0x4004edd0"/></typename>
       </type-int>
     </typedef>
     <typedef name="serial_packet_t" ref="0x406bf43c" loc="134:/home/user/tinyos-main/tos/lib/serial/Serial.h">
@@ -10666,9 +10666,9 @@
         <typename><typedef-ref name="_IO_lock_t" ref="0x404b4010"/></typename>
       </type-void>
     </typedef>
-    <typedef name="int_least32_t" ref="0x40219bec" loc="68:/usr/include/stdint.h">
+    <typedef name="int_least32_t" ref="0x4004bbec" loc="68:/usr/include/stdint.h">
       <type-int cname="int" size="I:4" alignment="I:4">
-        <typename><typedef-ref name="int_least32_t" ref="0x40219bec"/></typename>
+        <typename><typedef-ref name="int_least32_t" ref="0x4004bbec"/></typename>
       </type-int>
     </typedef>
     <typedef name="__builtin_va_list" ref="0x4000d010"  loc="NONE">
@@ -10760,9 +10760,9 @@
         <typename><typedef-ref name="Atm128_TCCR3C_t" ref="0x40a5bf18"/></typename>
       </type-tag>
     </typedef>
-    <typedef name="uint_least8_t" ref="0x4021a0e8" loc="77:/usr/include/stdint.h">
+    <typedef name="uint_least8_t" ref="0x4004c0e8" loc="77:/usr/include/stdint.h">
       <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="uint_least8_t" ref="0x4021a0e8"/></typename>
+        <typename><typedef-ref name="uint_least8_t" ref="0x4004c0e8"/></typename>
       </type-int>
     </typedef>
     <typedef name="__fsid_t" ref="0x4033eca4" loc="144:/usr/include/i386-linux-gnu/bits/types.h">
@@ -10780,9 +10780,9 @@
         <typename><typedef-ref name="Atm128_TCNT3L_t" ref="0x40a59934"/></typename>
       </type-int>
     </typedef>
-    <typedef name="uint_fast32_t" ref="0x4021c938" loc="111:/usr/include/stdint.h">
+    <typedef name="uint_fast32_t" ref="0x4004e938" loc="111:/usr/include/stdint.h">
       <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-        <typename><typedef-ref name="uint_fast32_t" ref="0x4021c938"/></typename>
+        <typename><typedef-ref name="uint_fast32_t" ref="0x4004e938"/></typename>
       </type-int>
     </typedef>
     <typedef name="blksize_t" ref="0x40356c58" loc="229:/usr/include/i386-linux-gnu/sys/types.h">
@@ -10790,9 +10790,9 @@
         <typename><typedef-ref name="blksize_t" ref="0x40356c58"/></typename>
       </type-int>
     </typedef>
-    <typedef name="int_least64_t" ref="0x40219e50" loc="73:/usr/include/stdint.h">
+    <typedef name="int_least64_t" ref="0x4004be50" loc="73:/usr/include/stdint.h">
       <type-int cname="long long" size="I:8" alignment="I:8">
-        <typename><typedef-ref name="int_least64_t" ref="0x40219e50"/></typename>
+        <typename><typedef-ref name="int_least64_t" ref="0x4004be50"/></typename>
       </type-int>
     </typedef>
     <typedef name="Atm128_ETIFR_t" ref="0x40a53ab8" loc="324:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
@@ -10859,9 +10859,9 @@
         <typename><typedef-ref name="_G_uint16_t" ref="0x404b643c"/></typename>
       </type-int>
     </typedef>
-    <typedef name="int_least8_t" ref="0x40219798" loc="66:/usr/include/stdint.h">
+    <typedef name="int_least8_t" ref="0x4004b798" loc="66:/usr/include/stdint.h">
       <type-int cname="signed char" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="int_least8_t" ref="0x40219798"/></typename>
+        <typename><typedef-ref name="int_least8_t" ref="0x4004b798"/></typename>
       </type-int>
     </typedef>
     <typedef name="FILE" ref="0x404afecc" loc="49:/usr/include/stdio.h">
@@ -10955,9 +10955,9 @@
         <typename><typedef-ref name="Atm128Adcsra_t" ref="0x407642e4"/></typename>
       </type-tag>
     </typedef>
-    <typedef name="int8_t" ref="0x4001a5e8" loc="37:/usr/include/stdint.h">
+    <typedef name="int8_t" ref="0x400465e8" loc="37:/usr/include/stdint.h">
       <type-int cname="signed char" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="int8_t" ref="0x4001a5e8"/></typename>
+        <typename><typedef-ref name="int8_t" ref="0x400465e8"/></typename>
       </type-int>
     </typedef>
     <typedef name="sim_log_output_t" ref="0x4052f840" loc="54:/home/user/tinyos-main/tos/lib/tossim/sim_log.c">
@@ -11005,9 +11005,9 @@
         <typename><typedef-ref name="TSecond" ref="0x409a228c"/></typename>
       </type-tag>
     </typedef>
-    <typedef name="uint32_t" ref="0x402192dc" loc="52:/usr/include/stdint.h">
+    <typedef name="uint32_t" ref="0x4004b2dc" loc="52:/usr/include/stdint.h">
       <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-        <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
+        <typename><typedef-ref name="uint32_t" ref="0x4004b2dc"/></typename>
       </type-int>
     </typedef>
     <typedef name="nxle_uint64_t" ref="0x402fb9c8" loc="448:/usr/lib/ncc/nesc_nx.h">
@@ -11020,9 +11020,9 @@
         <typename><typedef-ref name="nx_uint8_t" ref="0x402f8878"/></typename>
       </type-int>
     </typedef>
-    <typedef name="uintptr_t" ref="0x4021d010" loc="129:/usr/include/stdint.h">
+    <typedef name="uintptr_t" ref="0x4004f010" loc="129:/usr/include/stdint.h">
       <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-        <typename><typedef-ref name="uintptr_t" ref="0x4021d010"/></typename>
+        <typename><typedef-ref name="uintptr_t" ref="0x4004f010"/></typename>
       </type-int>
     </typedef>
     <typedef name="caddr_t" ref="0x403472e8" loc="117:/usr/include/i386-linux-gnu/sys/types.h">
@@ -11036,9 +11036,9 @@
         <typename><typedef-ref name="__u_long" ref="0x40338aec"/></typename>
       </type-int>
     </typedef>
-    <typedef name="uint_fast64_t" ref="0x4021cbb8" loc="113:/usr/include/stdint.h">
+    <typedef name="uint_fast64_t" ref="0x4004ebb8" loc="113:/usr/include/stdint.h">
       <type-int cname="unsigned long long" unsigned="" size="I:8" alignment="I:8">
-        <typename><typedef-ref name="uint_fast64_t" ref="0x4021cbb8"/></typename>
+        <typename><typedef-ref name="uint_fast64_t" ref="0x4004ebb8"/></typename>
       </type-int>
     </typedef>
     <typedef name="Atm128_TCNT3H_t" ref="0x40a596bc" loc="271:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
@@ -11061,9 +11061,9 @@
         <typename><typedef-ref name="mcu_power_t" ref="0x4075cdd0"/></typename>
       </type-int>
     </typedef>
-    <typedef name="int_fast16_t" ref="0x4021ad8c" loc="97:/usr/include/stdint.h">
+    <typedef name="int_fast16_t" ref="0x4004cd8c" loc="97:/usr/include/stdint.h">
       <type-int cname="int" size="I:4" alignment="I:4">
-        <typename><typedef-ref name="int_fast16_t" ref="0x4021ad8c"/></typename>
+        <typename><typedef-ref name="int_fast16_t" ref="0x4004cd8c"/></typename>
       </type-int>
     </typedef>
     <typedef name="Atm128_OCR1AH_t" ref="0x40a59bbc" loc="275:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
@@ -11164,9 +11164,9 @@
         <typename><typedef-ref name="Atm128_ADCH_t" ref="0x40764548"/></typename>
       </type-int>
     </typedef>
-    <typedef name="uint_least16_t" ref="0x4021a448" loc="78:/usr/include/stdint.h">
+    <typedef name="uint_least16_t" ref="0x4004c448" loc="78:/usr/include/stdint.h">
       <type-int cname="unsigned short" unsigned="" size="I:2" alignment="I:2">
-        <typename><typedef-ref name="uint_least16_t" ref="0x4021a448"/></typename>
+        <typename><typedef-ref name="uint_least16_t" ref="0x4004c448"/></typename>
       </type-int>
     </typedef>
     <typedef name="__io_close_fn" ref="0x404c23e8" loc="386:/usr/include/libio.h">
@@ -11180,9 +11180,9 @@
         <typename><typedef-ref name="__io_close_fn" ref="0x404c23e8"/></typename>
       </type-function>
     </typedef>
-    <typedef name="uint8_t" ref="0x4001ae94" loc="49:/usr/include/stdint.h">
+    <typedef name="uint8_t" ref="0x40046e94" loc="49:/usr/include/stdint.h">
       <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="uint8_t" ref="0x4001ae94"/></typename>
+        <typename><typedef-ref name="uint8_t" ref="0x40046e94"/></typename>
       </type-int>
     </typedef>
     <typedef name="time_t" ref="0x40347a24" loc="76:/usr/include/time.h">
@@ -11274,9 +11274,9 @@
         <typename><typedef-ref name="__off_t" ref="0x4033e378"/></typename>
       </type-int>
     </typedef>
-    <typedef name="int_fast8_t" ref="0x4021ab78" loc="91:/usr/include/stdint.h">
+    <typedef name="int_fast8_t" ref="0x4004cb78" loc="91:/usr/include/stdint.h">
       <type-int cname="signed char" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="int_fast8_t" ref="0x4021ab78"/></typename>
+        <typename><typedef-ref name="int_fast8_t" ref="0x4004cb78"/></typename>
       </type-int>
     </typedef>
     <typedef name="__blkcnt_t" ref="0x40342bf0" loc="169:/usr/include/i386-linux-gnu/bits/types.h">
@@ -11294,9 +11294,9 @@
         <typename><typedef-ref name="am_id_t" ref="0x406b6c4c"/></typename>
       </type-int>
     </typedef>
-    <typedef name="intmax_t" ref="0x4021d254" loc="139:/usr/include/stdint.h">
+    <typedef name="intmax_t" ref="0x4004f254" loc="139:/usr/include/stdint.h">
       <type-int cname="long long" size="I:8" alignment="I:8">
-        <typename><typedef-ref name="intmax_t" ref="0x4021d254"/></typename>
+        <typename><typedef-ref name="intmax_t" ref="0x4004f254"/></typename>
       </type-int>
     </typedef>
     <typedef name="Atm128TimerCtrlCapture_t" ref="0x40a5c34c" loc="241:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
@@ -11319,9 +11319,9 @@
         <typename><typedef-ref name="__fsblkcnt_t" ref="0x40346118"/></typename>
       </type-int>
     </typedef>
-    <typedef name="uint16_t" ref="0x402190d4" loc="50:/usr/include/stdint.h">
+    <typedef name="uint16_t" ref="0x4004b0d4" loc="50:/usr/include/stdint.h">
       <type-int cname="unsigned short" unsigned="" size="I:2" alignment="I:2">
-        <typename><typedef-ref name="uint16_t" ref="0x402190d4"/></typename>
+        <typename><typedef-ref name="uint16_t" ref="0x4004b0d4"/></typename>
       </type-int>
     </typedef>
     <typedef name="_G_fpos_t" ref="0x404b7404" loc="26:/usr/include/_G_config.h">
@@ -11425,9 +11425,9 @@
         <typename><typedef-ref name="fsfilcnt_t" ref="0x4035b3e0"/></typename>
       </type-int>
     </typedef>
-    <typedef name="uint_fast8_t" ref="0x4021c4c8" loc="104:/usr/include/stdint.h">
+    <typedef name="uint_fast8_t" ref="0x4004e4c8" loc="104:/usr/include/stdint.h">
       <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="uint_fast8_t" ref="0x4021c4c8"/></typename>
+        <typename><typedef-ref name="uint_fast8_t" ref="0x4004e4c8"/></typename>
       </type-int>
     </typedef>
     <typedef name="__rlim64_t" ref="0x403433ac" loc="147:/usr/include/i386-linux-gnu/bits/types.h">
@@ -11479,9 +11479,9 @@
         <typename><typedef-ref name="nx_int16_t" ref="0x402f5b70"/></typename>
       </type-int>
     </typedef>
-    <typedef name="__gwchar_t" ref="0x4021d894" loc="35:/usr/include/inttypes.h">
+    <typedef name="__gwchar_t" ref="0x4004f894" loc="35:/usr/include/inttypes.h">
       <type-int cname="int" size="I:4" alignment="I:4">
-        <typename><typedef-ref name="__gwchar_t" ref="0x4021d894"/></typename>
+        <typename><typedef-ref name="__gwchar_t" ref="0x4004f894"/></typename>
       </type-int>
     </typedef>
     <typedef name="Atm128_ICR1L_t" ref="0x40a57c68" loc="292:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
@@ -11523,14 +11523,14 @@
         <typename><typedef-ref name="__quad_t" ref="0x4033becc"/></typename>
       </type-int>
     </typedef>
-    <typedef name="int32_t" ref="0x4001aa44" loc="39:/usr/include/stdint.h">
+    <typedef name="int32_t" ref="0x40046a44" loc="39:/usr/include/stdint.h">
       <type-int cname="int" size="I:4" alignment="I:4">
-        <typename><typedef-ref name="int32_t" ref="0x4001aa44"/></typename>
+        <typename><typedef-ref name="int32_t" ref="0x40046a44"/></typename>
       </type-int>
     </typedef>
-    <typedef name="uint64_t" ref="0x4021952c" loc="59:/usr/include/stdint.h">
+    <typedef name="uint64_t" ref="0x4004b52c" loc="59:/usr/include/stdint.h">
       <type-int cname="unsigned long long" unsigned="" size="I:8" alignment="I:8">
-        <typename><typedef-ref name="uint64_t" ref="0x4021952c"/></typename>
+        <typename><typedef-ref name="uint64_t" ref="0x4004b52c"/></typename>
       </type-int>
     </typedef>
     <typedef name="u_long" ref="0x40344010" loc="37:/usr/include/i386-linux-gnu/sys/types.h">
@@ -11573,9 +11573,9 @@
         <typename><typedef-ref name="__blksize_t" ref="0x40342998"/></typename>
       </type-int>
     </typedef>
-    <typedef name="imaxdiv_t" ref="0x40221010" loc="292:/usr/include/inttypes.h">
-      <type-tag size="I:16" alignment="I:4"><struct-ref ref="0x4021dd80"/>
-        <typename><typedef-ref name="imaxdiv_t" ref="0x40221010"/></typename>
+    <typedef name="imaxdiv_t" ref="0x40053010" loc="292:/usr/include/inttypes.h">
+      <type-tag size="I:16" alignment="I:4"><struct-ref ref="0x4004fd80"/>
+        <typename><typedef-ref name="imaxdiv_t" ref="0x40053010"/></typename>
       </type-tag>
     </typedef>
     <typedef name="__nlink_t" ref="0x4033e160" loc="140:/usr/include/i386-linux-gnu/bits/types.h">
@@ -11593,9 +11593,9 @@
         <typename><typedef-ref name="__id_t" ref="0x403435bc"/></typename>
       </type-int>
     </typedef>
-    <typedef name="uint_least32_t" ref="0x4021a68c" loc="79:/usr/include/stdint.h">
+    <typedef name="uint_least32_t" ref="0x4004c68c" loc="79:/usr/include/stdint.h">
       <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-        <typename><typedef-ref name="uint_least32_t" ref="0x4021a68c"/></typename>
+        <typename><typedef-ref name="uint_least32_t" ref="0x4004c68c"/></typename>
       </type-int>
     </typedef>
     <typedef name="__mbstate_t" ref="0x404add58" loc="95:/usr/include/wchar.h">
@@ -11678,9 +11678,9 @@
         <typename><typedef-ref name="__clockid_t" ref="0x4034250c"/></typename>
       </type-int>
     </typedef>
-    <typedef name="uint_fast16_t" ref="0x4021c700" loc="110:/usr/include/stdint.h">
+    <typedef name="uint_fast16_t" ref="0x4004e700" loc="110:/usr/include/stdint.h">
       <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
-        <typename><typedef-ref name="uint_fast16_t" ref="0x4021c700"/></typename>
+        <typename><typedef-ref name="uint_fast16_t" ref="0x4004e700"/></typename>
       </type-int>
     </typedef>
     <typedef name="Atm128_OCR3AL_t" ref="0x40a58d64" loc="284:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
@@ -11688,9 +11688,9 @@
         <typename><typedef-ref name="Atm128_OCR3AL_t" ref="0x40a58d64"/></typename>
       </type-int>
     </typedef>
-    <typedef name="uintmax_t" ref="0x4021d4c8" loc="141:/usr/include/stdint.h">
+    <typedef name="uintmax_t" ref="0x4004f4c8" loc="141:/usr/include/stdint.h">
       <type-int cname="unsigned long long" unsigned="" size="I:8" alignment="I:8">
-        <typename><typedef-ref name="uintmax_t" ref="0x4021d4c8"/></typename>
+        <typename><typedef-ref name="uintmax_t" ref="0x4004f4c8"/></typename>
       </type-int>
     </typedef>
     <typedef name="nx_am_addr_t" ref="0x406b6a24" loc="8:/home/user/tinyos-main/tos/types/AM.h">
@@ -11718,14 +11718,14 @@
         <typename><typedef-ref name="u_quad_t" ref="0x40344490"/></typename>
       </type-int>
     </typedef>
-    <typedef name="int_fast32_t" ref="0x4021c010" loc="98:/usr/include/stdint.h">
+    <typedef name="int_fast32_t" ref="0x4004e010" loc="98:/usr/include/stdint.h">
       <type-int cname="int" size="I:4" alignment="I:4">
-        <typename><typedef-ref name="int_fast32_t" ref="0x4021c010"/></typename>
+        <typename><typedef-ref name="int_fast32_t" ref="0x4004e010"/></typename>
       </type-int>
     </typedef>
-    <typedef name="int_least16_t" ref="0x402199d0" loc="67:/usr/include/stdint.h">
+    <typedef name="int_least16_t" ref="0x4004b9d0" loc="67:/usr/include/stdint.h">
       <type-int cname="short" size="I:2" alignment="I:2">
-        <typename><typedef-ref name="int_least16_t" ref="0x402199d0"/></typename>
+        <typename><typedef-ref name="int_least16_t" ref="0x4004b9d0"/></typename>
       </type-int>
     </typedef>
     <typedef name="ldiv_t" ref="0x4032eef4" loc="110:/usr/include/stdlib.h">
@@ -11753,9 +11753,9 @@
         <typename><typedef-ref name="Atm128_TCCR3A_t" ref="0x40a3ea90"/></typename>
       </type-tag>
     </typedef>
-    <typedef name="uint_least64_t" ref="0x4021a918" loc="84:/usr/include/stdint.h">
+    <typedef name="uint_least64_t" ref="0x4004c918" loc="84:/usr/include/stdint.h">
       <type-int cname="unsigned long long" unsigned="" size="I:8" alignment="I:8">
-        <typename><typedef-ref name="uint_least64_t" ref="0x4021a918"/></typename>
+        <typename><typedef-ref name="uint_least64_t" ref="0x4004c918"/></typename>
       </type-int>
     </typedef>
     <typedef name="__int32_t" ref="0x4033b5a8" loc="41:/usr/include/i386-linux-gnu/bits/types.h">
@@ -11843,14 +11843,14 @@
         <typename><typedef-ref name="Atm128_OCR3CL_t" ref="0x40a57778"/></typename>
       </type-int>
     </typedef>
-    <typedef name="int64_t" ref="0x4001ac6c" loc="44:/usr/include/stdint.h">
+    <typedef name="int64_t" ref="0x40046c6c" loc="44:/usr/include/stdint.h">
       <type-int cname="long long" size="I:8" alignment="I:8">
-        <typename><typedef-ref name="int64_t" ref="0x4001ac6c"/></typename>
+        <typename><typedef-ref name="int64_t" ref="0x40046c6c"/></typename>
       </type-int>
     </typedef>
-    <typedef name="int16_t" ref="0x4001a864" loc="38:/usr/include/stdint.h">
+    <typedef name="int16_t" ref="0x40046864" loc="38:/usr/include/stdint.h">
       <type-int cname="short" size="I:2" alignment="I:2">
-        <typename><typedef-ref name="int16_t" ref="0x4001a864"/></typename>
+        <typename><typedef-ref name="int16_t" ref="0x40046864"/></typename>
       </type-int>
     </typedef>
     <typedef name="ulong" ref="0x4034e384" loc="151:/usr/include/i386-linux-gnu/sys/types.h">
@@ -11858,9 +11858,9 @@
         <typename><typedef-ref name="ulong" ref="0x4034e384"/></typename>
       </type-int>
     </typedef>
-    <typedef name="int_fast64_t" ref="0x4021c26c" loc="100:/usr/include/stdint.h">
+    <typedef name="int_fast64_t" ref="0x4004e26c" loc="100:/usr/include/stdint.h">
       <type-int cname="long long" size="I:8" alignment="I:8">
-        <typename><typedef-ref name="int_fast64_t" ref="0x4021c26c"/></typename>
+        <typename><typedef-ref name="int_fast64_t" ref="0x4004e26c"/></typename>
       </type-int>
     </typedef>
     <typedef name="uid_t" ref="0x403485b8" loc="81:/usr/include/i386-linux-gnu/sys/types.h">

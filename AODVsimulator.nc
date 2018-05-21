@@ -11,10 +11,14 @@
 module AODVsimulator @safe() {
   uses {
     interface Boot;
-    interface Receive;
-    interface AMSend;
+    interface Receive as ReceiveRRP;
+    interface Receive as ReceiveRREQ;
+    interface Receive as ReceiveDATA;
+    interface AMSend as SendRRP;
+    interface AMSend as SendRREQ;
+    interface AMSend as SendDATA;
     interface Timer<TMilli> as MilliTimer;
-    interface Timer<TMilli> as Timer2;
+    interface Timer<TMilli> as AcceptReply;
     interface SplitControl as AMControl;
     interface Packet;
     interface Random;
