@@ -21,15 +21,17 @@ implementation {
   
   App.Boot -> MainC.Boot;
   
-  App.ReceiveRRP -> AMReceiverC;
-  App.ReceiveRREQ -> AMReceiverC;
-  App.ReceiveDATA -> AMReceiverC;
-  App.SendRRP -> AMSenderC;
-  App.SendRREQ -> AMSenderC;
-  App.SendDATA -> AMSenderC;
+  App.ReceiveRRP -> ReceiveRRP;
+  App.ReceiveRREQ -> ReceiveRREQ;
+  App.ReceiveDATA -> ReceiveDATA;
+  App.SendRRP -> SendRRP;
+  App.SendRREQ -> SendRREQ;
+  App.SendDATA -> SendDATA;
   App.AMControl -> ActiveMessageC;
   App.MilliTimer -> MilliTimer;
-  App.Packet -> AMSenderC;
+  App.Packet -> SendRRP;
+  App.Packet -> SendDATA;
+  App.Packet -> SendRREQ;
   App.Random -> RandomC;
   App.AcceptReply -> AcceptReply;
 }
