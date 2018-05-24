@@ -25,10 +25,12 @@ typedef nx_struct rrp_msg {
 	nx_uint16_t src;
 	nx_uint16_t dest;
 	nx_uint16_t hop;
+	nx_uint16_t orig;
 } rrp_msg_t;
 
 
 typedef nx_struct routing_table{
+    nx_uint16_t dest;
     nx_uint16_t next_hop;
     nx_uint16_t num_hop;
     }routing_table_t;

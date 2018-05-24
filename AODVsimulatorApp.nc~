@@ -8,12 +8,12 @@
 configuration AODVsimulatorApp {}
 implementation {
   components MainC, AODVsimulator as App;
-  components new AMSenderC(AM_RADIO_MSG) as SendRRP ;
-  components new AMSenderC(AM_RADIO_MSG) as SendDATA ;
-  components new AMSenderC(AM_RADIO_MSG) as SendRREQ ;
-  components new AMReceiverC(AM_RADIO_MSG) as ReceiveRRP ;
-  components new AMReceiverC(AM_RADIO_MSG) as ReceiveDATA ;
-  components new AMReceiverC(AM_RADIO_MSG) as ReceiveRREQ ;
+  components new AMSenderC(AM_RRP_MSG) as SendRRP ;
+  components new AMSenderC(AM_DATA_MSG) as SendDATA ;
+  components new AMSenderC(AM_RREQ_MSG) as SendRREQ ;
+  components new AMReceiverC(AM_RRP_MSG) as ReceiveRRP ;
+  components new AMReceiverC(AM_DATA_MSG) as ReceiveDATA ;
+  components new AMReceiverC(AM_RREQ_MSG) as ReceiveRREQ ;
   components new TimerMilliC() as MilliTimer;
   components new TimerMilliC() as AcceptReply;
   components ActiveMessageC;
@@ -21,15 +21,15 @@ implementation {
   
   App.Boot -> MainC.Boot;
   
-  App.ReceiveRRP -> AMReceiverC;
-  App.ReceiveRREQ -> AMReceiverC;
-  App.ReceiveDATA -> AMReceiverC;
-  App.SendRRP -> AMSenderC;
-  App.SendRREQ -> AMSenderC;
-  App.SendDATA -> AMSenderC;
+  App.ReceiveRRP -> ReceiveRRP;
+  App.ReceiveRREQ -> ReceiveRREQ;
+  App.ReceiveDATA -> ReceiveDATA;
+  App.SendRRP -> SendRRP;
+  App.SendRREQ -> SendRREQ;
+  App.SendDATA -> SendDATA;
   App.AMControl -> ActiveMessageC;
   App.MilliTimer -> MilliTimer;
-  App.Packet -> AMSenderC;
+  App.Packet -> SendRRP;
   App.Random -> RandomC;
   App.AcceptReply -> AcceptReply;
 }
