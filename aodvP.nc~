@@ -1,0 +1,21 @@
+#include aodv.h
+module aodvP 
+{
+  uses{	     
+
+    interface Boot;
+    interface Receive;
+    interface AMSend;
+    interface Timer<TMilli> as MilliTimer;
+    interface SplitControl as AMControl;
+    interface Packet;
+  
+  }
+}
+implementation
+{
+  event void Boot.booted()
+  {
+
+  }
+}
