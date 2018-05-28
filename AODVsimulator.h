@@ -25,6 +25,7 @@ typedef nx_struct rrp_msg {
 	nx_uint16_t src;
 	nx_uint16_t dest;
 	nx_uint16_t hop;
+    nx_uint16_t sender;
 } rrp_msg_t;
 
 
@@ -51,8 +52,8 @@ enum {
 };
 
 
-#define N 3 //number of motes
+#define N 4 //number of motes
 #define DISCOVERY 1
-#define ACTIVE 1
-#define INACTIVE 1
+#define ACTIVE 2
+#define INACTIVE 3
 #endif
