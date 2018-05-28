@@ -33,7 +33,7 @@ implementation {
   
   cache_table_t cacheTable[256];
   bool lockedDATA=FALSE,lockedRREQ=FALSE,lockedRRP=FALSE;
-  bool locked;
+  bool locked=FALSE;
   uint16_t msg_id=0;
   bool found;
   uint16_t random_dest,msg_dest,content;
@@ -50,11 +50,11 @@ implementation {
         rdm->content=content_;
         if(call SendDATA.send(next_hop, &packet, sizeof(data_msg_t)) == SUCCESS) {
           dbg("AODVsimulator", "AODVsimulator: data packet sent to the next hop: %hhu dest: %hhu at time %s \n",next_hop,dest_, sim_time_string());	
-          lockedDATA = TRUE;
+          locked = TRUE;
         }
     }
   
-   void sendRReplyMsg(uint16_t id_, uint16_t dest_,uint16_t src_,uint16_t sender_, uint16_t hop_){ 
+   void sendRReplyMsg(uint16_t id_, uint16_t next_hop_, uint16_t dest_,uint16_t src_,uint16_t sender_, uint16_t hop_){ 
      rrp_msg_t* rdm = (rrp_msg_t*)call Packet.getPayload(&packet, sizeof(rrp_msg_t));
         if (rdm == NULL)  
           return;
@@ -63,9 +63,9 @@ implementation {
         rdm->hop=hop_;
         rdm->sender=sender_;
         rdm->src=src_;
-        if(call SendRRP.send(dest_, &packet, sizeof(rrp_msg_t)) == SUCCESS) {
-          dbg("AODVsimulator", "AODVsimulator: reply back to the previous hop. origin:  %hhu  dest: %hhuat time %s \n",src_,dest_, sim_time_string());	
-          lockedRRP = TRUE;
+        if(call SendRRP.send(next_hop_, &packet, sizeof(rrp_msg_t)) == SUCCESS) {
+          dbg("AODVsimulator", "AODVsimulator: reply back to the previous hop %hhu. origin:  %hhu  dest: %hhuat time %s \n",next_hop_,src_,dest_, sim_time_string());	
+          locked = TRUE;
         }
     }
   
@@ -80,7 +80,7 @@ implementation {
         }
         if(call  SendRREQ.send(AM_BROADCAST_ADDR, &packet, sizeof(rreq_msg_t)) == SUCCESS) {
           dbg("AODVsimulator", "AODVsimulator: route request sent in broadcast. ID MSG:%hhu DEST:%hhu\n",rreq->id,rreq->dest);	
-          lockedRREQ = TRUE; 
+          locked = TRUE; 
           
         }
   
@@ -126,8 +126,8 @@ void printRT(){
   
   event void MilliTimer.fired() {
     found=0;
-    if (lockedDATA) {
-      //return;
+    if (locked) {
+      return;
     }
     else {      
       //PREPARE MESSAGE:
@@ -202,7 +202,7 @@ event message_t* ReceiveRREQ.receive(message_t* bufPtr, void* payload, uint8_t l
         cacheTable[k].dest=rreq->dest;
         if(rreq->dest==TOS_NODE_ID){
             dbg("AODVsimulator","rreq found the dest! sending back rreply\n"); 
-            sendRReplyMsg(rreq->id,rreq->sender,TOS_NODE_ID,TOS_NODE_ID,1);
+            sendRReplyMsg(rreq->id,rreq->sender,rreq->src,TOS_NODE_ID,TOS_NODE_ID,1);
         }
         else{
             found=FALSE;
@@ -210,7 +210,7 @@ event message_t* ReceiveRREQ.receive(message_t* bufPtr, void* payload, uint8_t l
                 if(routingTable[i].dest==rreq->dest && routingTable[i].status==ACTIVE){
                     found=TRUE; 
                     dbg("AODVsimulator","route found in my routing table, send rreply back\n"); 
-                    sendRReplyMsg(rreq->id,rreq->src,routingTable[i].dest,TOS_NODE_ID,routingTable[i].num_hop+1);
+                    sendRReplyMsg(rreq->id,rreq->sender,rreq->src,routingTable[i].dest,TOS_NODE_ID,routingTable[i].num_hop+1);
                     }}
             if(!found){
                                        
@@ -282,7 +282,11 @@ event message_t* ReceiveRRP.receive(message_t* bufPtr, void* payload, uint8_t le
        
       for(i=0;i<N;i++){
         if(cacheTable[i].dest==rreply->src && cacheTable[i].id==rreply->id){
-            sendRReplyMsg(rreply->id,cacheTable[i].src,rreply->src,TOS_NODE_ID,rreply->hop+1);
+            dbg("AODVsimulator","send rreply to %hhu!hop: %hhu\n",cacheTable[i].src,rreply->hop);
+            sendRReplyMsg(rreply->id,cacheTable[i].src,rreply->dest,rreply->src,TOS_NODE_ID,rreply->hop+1);
+            cacheTable[i].dest=0;
+            cacheTable[i].src=0;
+            cacheTable[i].id=0;
    }
   }
   return bufPtr;
