@@ -190,7 +190,7 @@ event message_t* ReceiveRREQ.receive(message_t* bufPtr, void* payload, uint8_t l
     if(rreq->src!=TOS_NODE_ID){
     duplicated=FALSE;
     for(i=0;i<256;i++){
-        if(cacheTable[i].id==rreq->id && cacheTable[i].src==rreq->sender && cacheTable[i].dest==rreq->dest){
+        if(cacheTable[i].id==rreq->id && cacheTable[i].src==rreq->src && cacheTable[i].dest==rreq->dest){
             dbg("AODVsimulator","duplicate\n");
             duplicated=TRUE;}
     }
@@ -204,19 +204,21 @@ event message_t* ReceiveRREQ.receive(message_t* bufPtr, void* payload, uint8_t l
             dbg("AODVsimulator","rreq found the dest! sending back rreply\n"); 
             sendRReplyMsg(rreq->id,rreq->sender,rreq->src,TOS_NODE_ID,TOS_NODE_ID,1);
         }
-        else{
+        else
+	{
             found=FALSE;
             for(i=0;i<N && !found;i++){//in realtà basta guardare per NODE_ID -1
                 if(routingTable[i].dest==rreq->dest && routingTable[i].status==ACTIVE){
                     found=TRUE; 
-                    dbg("AODVsimulator","route found in my routing table, send rreply back\n"); 
-                    sendRReplyMsg(rreq->id,rreq->sender,rreq->src,routingTable[i].dest,TOS_NODE_ID,routingTable[i].num_hop+1);
-                    }}
-            if(!found){
+                    dbg("AODVsimulator","route found in my routing table \n"); 
+                   
+                    }
+	}
+            
                                        
-                    dbg("AODVsimulator","route not found in this node, send in broadcast the request\n");             
-                    sendRReqMsg(rreq->id,rreq->src,rreq->dest);
-                }                       
+            dbg("AODVsimulator","send in broadcast the request\n");             
+            sendRReqMsg(rreq->id,rreq->src,rreq->dest);
+                                      
     }
   }}
   return bufPtr;
@@ -265,7 +267,7 @@ event message_t* ReceiveRRP.receive(message_t* bufPtr, void* payload, uint8_t le
         found=FALSE;
         for(i=0;i<N && !found;i++){
             if(routingTable[i].dest==rreply->src){
-                if(routingTable[i].num_hop>rreply->hop || routingTable[i].status!=ACTIVE) {
+                if(routingTable[i].num_hop>rreply->hop || routingTable[i].num_hop==0 || routingTable[i].status!=ACTIVE) {
                     routingTable[i].next_hop=rreply->sender;
                     routingTable[i].num_hop=rreply->hop;
                     routingTable[i].status=ACTIVE;

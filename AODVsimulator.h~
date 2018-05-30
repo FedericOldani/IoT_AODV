@@ -54,6 +54,6 @@ enum {
 
 #define N 4 //number of motes
 #define DISCOVERY 1
-#define ACTIVE 1
-#define INACTIVE 1
+#define ACTIVE 2
+#define INACTIVE 3
 #endif
