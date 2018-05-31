@@ -142,7 +142,7 @@ void printRT(){
       i=0;
       found=FALSE;
   
-      for(i=0;i<N && !found;i++){//in realtà basta guardare per NODE_ID -1
+      for(i=0;i<N && !found;i++){
         if(routingTable[i].dest==msg_dest && routingTable[i].status==ACTIVE){
             found=TRUE; 
             sendDatatMsg(msg_dest,TOS_NODE_ID,content,routingTable[i].next_hop);
@@ -172,7 +172,7 @@ event void AcceptReply.fired() {//TODO
     dbg("AODVsimulator","1sec passed, send data msg\n");
     found=FALSE;
       printRT();
-    for(i=0;i<N && !found;i++){//in realtà basta guardare per NODE_ID -1
+    for(i=0;i<N && !found;i++){
         if(routingTable[i].dest==msg_dest && routingTable[i].next_hop!=0){
             found=TRUE; 
             sendDatatMsg(msg_dest,TOS_NODE_ID,content,routingTable[i].next_hop);
@@ -187,43 +187,50 @@ event message_t* ReceiveRREQ.receive(message_t* bufPtr, void* payload, uint8_t l
   if (len != sizeof(rreq_msg_t)) {return bufPtr;}
   else {
     rreq_msg_t* rreq = (rreq_msg_t*)payload;
-    if(rreq->src!=TOS_NODE_ID){
-    duplicated=FALSE;
-    for(i=0;i<256;i++){
-        if(cacheTable[i].id==rreq->id && cacheTable[i].src==rreq->src && cacheTable[i].dest==rreq->dest){
-            dbg("AODVsimulator","duplicate\n");
-            duplicated=TRUE;}
+    if(rreq->dest==TOS_NODE_ID){
+        dbg("AODVsimulator","rreq found the dest! sending back rreply\n"); 
+        sendRReplyMsg(rreq->id,rreq->sender,rreq->src,TOS_NODE_ID,TOS_NODE_ID,1);
     }
-    if(!duplicated){
-        k++;
-        if(k>255) k=0;
-        cacheTable[k].id=rreq->id;
-        cacheTable[k].src=rreq->sender;
-        cacheTable[k].dest=rreq->dest;
-        if(rreq->dest==TOS_NODE_ID){
-            dbg("AODVsimulator","rreq found the dest! sending back rreply\n"); 
-            sendRReplyMsg(rreq->id,rreq->sender,rreq->src,TOS_NODE_ID,TOS_NODE_ID,1);
-        }
-        else
-	{
-            found=FALSE;
-            for(i=0;i<N && !found;i++){//in realtà basta guardare per NODE_ID -1
-                if(routingTable[i].dest==rreq->dest && routingTable[i].status==ACTIVE){
-                    found=TRUE; 
-                    dbg("AODVsimulator","route found in my routing table \n"); 
-                   
-                    }
-	}
-            
-                                       
-            dbg("AODVsimulator","send in broadcast the request\n");             
-            sendRReqMsg(rreq->id,rreq->src,rreq->dest);
-                                      
+    else{
+
+	if(rreq->src!=TOS_NODE_ID){
+	    duplicated=FALSE;
+	    for(i=0;i<256;i++){
+		if(cacheTable[i].id==rreq->id && cacheTable[i].src==rreq->src && cacheTable[i].dest==rreq->dest){
+		    dbg("AODVsimulator","duplicate\n");
+		    duplicated=TRUE;}
+	    }
+	    if(!duplicated){
+		k++;
+		if(k>255) k=0;
+		cacheTable[k].id=rreq->id;
+		cacheTable[k].src=rreq->src;
+		cacheTable[k].sender=rreq->sender;
+		cacheTable[k].dest=rreq->dest;
+
+		    found=FALSE;
+		    for(i=0;i<N && !found;i++){
+		        if(routingTable[i].dest==rreq->dest && routingTable[i].status==ACTIVE){
+		            found=TRUE; 
+		            dbg("AODVsimulator","route found in my routing table \n"); 
+		           
+		            }
+	 	    }
+		                               
+		    dbg("AODVsimulator","send in broadcast the request\n");             
+		    sendRReqMsg(rreq->id,rreq->src,rreq->dest);
+		                              
+		 
+ 	    }
     }
-  }}
-  return bufPtr;
+     
+
+
+    }
+    
+     return bufPtr;
   }
-  }
+}
 
 
 
@@ -235,11 +242,12 @@ event message_t* ReceiveDATA.receive(message_t* bufPtr, void* payload, uint8_t l
                 
     if(data->dest!=TOS_NODE_ID){
         found=FALSE;
-        for(i=0;i<N && !found;i++){//in realtà basta guardare per NODE_ID -1
+        for(i=0;i<N && !found;i++){
            if(routingTable[i].dest==data->dest) {
             found=TRUE;             
             printRT();
             dbg("AODVsimulator"," next_hop %hhu , %hhu\n",routingTable[i].dest,data->dest); 
+		if(routingTable[i].dest==data->dest){dbg("AODVsimulator"," next_hop %hhu , %hhu\n",routingTable[i].dest,data->dest);}
             dbg("AODVsimulator","data packet forwarded from %hhu to next_hop %hhu \n",TOS_NODE_ID,routingTable[i].next_hop);                 
             sendDatatMsg(data->dest,data->src,data->content,routingTable[i].next_hop);
             }
@@ -266,7 +274,7 @@ event message_t* ReceiveRRP.receive(message_t* bufPtr, void* payload, uint8_t le
     /*sono la dest? si: aggiorna routingTable. no:  cache*/
         found=FALSE;
         for(i=0;i<N && !found;i++){
-            if(routingTable[i].dest==rreply->src){
+             if(routingTable[i].dest==rreply->src){
                 if(routingTable[i].num_hop>rreply->hop || routingTable[i].num_hop==0 || routingTable[i].status!=ACTIVE) {
                     routingTable[i].next_hop=rreply->sender;
                     routingTable[i].num_hop=rreply->hop;
@@ -274,7 +282,8 @@ event message_t* ReceiveRRP.receive(message_t* bufPtr, void* payload, uint8_t le
 
                    }
                 found=TRUE;
-      }}
+	      }
+	}
       if(!found && i<N){
                     routingTable[i].next_hop=rreply->sender;
                     routingTable[i].num_hop=rreply->hop;
@@ -283,9 +292,9 @@ event message_t* ReceiveRRP.receive(message_t* bufPtr, void* payload, uint8_t le
       }
        
       for(i=0;i<N;i++){
-        if(cacheTable[i].dest==rreply->src && cacheTable[i].id==rreply->id){
+        if(cacheTable[i].dest==rreply->src && cacheTable[i].src==rreply->dest && cacheTable[i].id==rreply->id){
             dbg("AODVsimulator","send rreply to %hhu!hop: %hhu\n",cacheTable[i].src,rreply->hop);
-            sendRReplyMsg(rreply->id,cacheTable[i].src,rreply->dest,rreply->src,TOS_NODE_ID,rreply->hop+1);
+            sendRReplyMsg(rreply->id,cacheTable[i].sender,rreply->dest,rreply->src,TOS_NODE_ID,(rreply->hop)+1);
             cacheTable[i].dest=0;
             cacheTable[i].src=0;
             cacheTable[i].id=0;

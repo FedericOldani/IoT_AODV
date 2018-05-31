@@ -40,7 +40,6 @@ typedef nx_struct cache_table{
     nx_uint16_t id;
     nx_uint16_t src;
     nx_uint16_t dest;
-    nx_uint16_t cost;
     }cache_table_t;
 
 
