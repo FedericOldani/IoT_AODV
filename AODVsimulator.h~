@@ -39,6 +39,7 @@ typedef nx_struct routing_table{
 typedef nx_struct cache_table{
     nx_uint16_t id;
     nx_uint16_t src;
+    nx_uint16_t sender;
     nx_uint16_t dest;
     }cache_table_t;
 

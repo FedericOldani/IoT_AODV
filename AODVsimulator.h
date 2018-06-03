@@ -32,7 +32,6 @@ typedef nx_struct rrp_msg {
 typedef nx_struct routing_table{
     nx_uint16_t dest;
     nx_uint16_t next_hop;
-    nx_uint16_t status;
     nx_uint16_t num_hop;
     }routing_table_t;
     
