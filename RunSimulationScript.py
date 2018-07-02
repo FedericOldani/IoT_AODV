@@ -47,19 +47,19 @@ print ">>>Will boot at time",  time1/t.ticksPerSecond(), "[sec]";
 
 print "Creating node 2...";
 node2 = t.getNode(2);
-time2 = 1*t.ticksPerSecond();
+time2 = 7*t.ticksPerSecond();
 node2.bootAtTime(time2);
 print ">>>Will boot at time", time2/t.ticksPerSecond(), "[sec]";
 
 print "Creating node 3...";
 node3 = t.getNode(3);
-time3 = 2*t.ticksPerSecond();
+time3 = 12*t.ticksPerSecond();
 node3.bootAtTime(time3);
 print ">>>Will boot at time", time3/t.ticksPerSecond(), "[sec]";
 
 print "Creating node 4...";
 node4 = t.getNode(4);
-time4 = 3*t.ticksPerSecond();
+time4 = 20*t.ticksPerSecond();
 node4.bootAtTime(time4);
 print ">>>Will boot at time", time4/t.ticksPerSecond(), "[sec]";
 

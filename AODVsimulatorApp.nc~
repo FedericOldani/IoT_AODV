@@ -29,7 +29,9 @@ implementation {
   App.SendDATA -> SendDATA;
   App.AMControl -> ActiveMessageC;
   App.MilliTimer -> MilliTimer;
-  App.Packet -> SendRRP;
+  App.PacketRRP -> SendRRP;
+  App.PacketDATA -> SendDATA;
+  App.PacketRREQ -> SendRREQ;
   App.Random -> RandomC;
   App.AcceptReply -> AcceptReply;
 }

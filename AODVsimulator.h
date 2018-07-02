@@ -46,13 +46,11 @@ typedef nx_struct cache_table{
 
 enum {
   AM_DATA_MSG = 6,//communication channel 
-  AM_RREQ_MSG = 4,//communication channel 
-  AM_RRP_MSG = 2,//communication channel 
+  AM_RREQ_MSG = 5,//communication channel 
+  AM_RRP_MSG = 3,//communication channel 
 };
 
 
 #define N 4 //number of motes
-#define DISCOVERY 1
-#define ACTIVE 2
-#define INACTIVE 3
+#define CT_size 256
 #endif
