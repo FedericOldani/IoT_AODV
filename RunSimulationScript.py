@@ -13,7 +13,7 @@ t = Tossim([]);
 
 
 topofile="topology.txt";
-modelfile="meyer-heavy.txt";
+modelfile="noise.txt";
 
 
 print "Initializing mac....";

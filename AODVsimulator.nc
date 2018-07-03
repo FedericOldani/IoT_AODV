@@ -27,53 +27,58 @@ module AODVsimulator @safe() {
 }
 implementation {
 
-  message_t packet;
+  message_t packetData, packetRRep, packetRReq;
   
   routing_table_t routingTable[N];//number of nodes
   cache_table_t cacheTable[CT_size];
   bool locked=FALSE;
-  uint16_t msg_id=0;
-  uint16_t random_dest,msg_dest,content;
+  uint16_t msg_dest,content, msg_id=0;
 
   
  void sendDatatMsg(uint16_t dest_, uint16_t src_, uint16_t content_,uint16_t next_hop){
-     data_msg_t* rdm = (data_msg_t*)call Packet.getPayload(&packet, sizeof(data_msg_t));
-        if (rdm == NULL)  
+     data_msg_t* rdm = (data_msg_t*)call Packet.getPayload(&packetData, sizeof(data_msg_t));
+        if (rdm == NULL){  
+          dbg("AODVsimulator", "problema\n"); 
           return;
+        }
         rdm->src=src_;
         rdm->dest=dest_;
         rdm->content=content_;
-        if(call SendDATA.send(next_hop, &packet, sizeof(data_msg_t)) == SUCCESS) {
+        if(call SendDATA.send(next_hop, &packetData, sizeof(data_msg_t)) == SUCCESS) {
           dbg("AODVsimulator", "AODVsimulator: data packet sent to the next hop: %hhu dest: %hhu at time %s \n",next_hop,dest_, sim_time_string());	
           locked = TRUE;
         }
     }
   
    void sendRReplyMsg(uint16_t id_, uint16_t next_hop_, uint16_t dest_,uint16_t src_,uint16_t sender_, uint16_t hop_){ 
-     rrp_msg_t* rdm = (rrp_msg_t*)call Packet.getPayload(&packet, sizeof(rrp_msg_t));
-        if (rdm == NULL)  
+    message_t packet;
+     rrp_msg_t* rdm = (rrp_msg_t*)call Packet.getPayload(&packetRRep, sizeof(rrp_msg_t));
+        if (rdm == NULL){  
+          dbg("AODVsimulator", "problema\n"); 
           return;
+        }
         rdm->id=id_;
         rdm->dest=dest_;
         rdm->hop=hop_;
         rdm->sender=sender_;
         rdm->src=src_;
-        if(call SendRRP.send(next_hop_, &packet, sizeof(rrp_msg_t)) == SUCCESS) {
+        if(call SendRRP.send(next_hop_, &packetRRep, sizeof(rrp_msg_t)) == SUCCESS) {
           dbg("AODVsimulator", "AODVsimulator: reply back to the previous hop %hhu. origin:  %hhu  dest: %hhuat time %s \n",next_hop_,src_,dest_, sim_time_string());	
           locked = TRUE;
         }
     }
   
   void sendRReqMsg(uint16_t id_, uint16_t src_,uint16_t dest_){
-  rreq_msg_t* rreq = (rreq_msg_t*)call Packet.getPayload(&packet, sizeof(rreq_msg_t));
+  rreq_msg_t* rreq = (rreq_msg_t*)call Packet.getPayload(&packetRReq, sizeof(rreq_msg_t));
+        if (rreq == NULL) {
+           dbg("AODVsimulator", "problema\n"); 
+           return;
+        }
         rreq->id=id_;
         rreq->src=src_;
         rreq->sender=TOS_NODE_ID;
         rreq->dest=dest_;
-        if (rreq == NULL) {
-              return;
-        }
-        if(call  SendRREQ.send(AM_BROADCAST_ADDR, &packet, sizeof(rreq_msg_t)) == SUCCESS) {
+        if(call  SendRREQ.send(AM_BROADCAST_ADDR, &packetRReq, sizeof(rreq_msg_t)) == SUCCESS) {
           dbg("AODVsimulator", "AODVsimulator: route request sent in broadcast. ID MSG:%hhu DEST:%hhu\n",rreq->id,rreq->dest);	
           locked = TRUE; 
           
@@ -129,7 +134,7 @@ void printCT(){
   
   
   event void MilliTimer.fired() {
-    bool found=0;
+
     if (locked) {
       return;
     }
@@ -149,27 +154,32 @@ void printCT(){
 
 
 
-event void AcceptReply.fired() {//TODO
-    bool found=FALSE;
+event void AcceptReply.fired() {
+    int found;
     int i;
     dbg("AODVsimulator","1sec passed, send data msg\n");
     printRT();
+    found = 0;
     for(i=0;i<N && !found;i++){
         if(routingTable[i].dest==msg_dest && routingTable[i].next_hop!=0){
-            found=TRUE; 
+            found=1; 
             sendDatatMsg(msg_dest,TOS_NODE_ID,content,routingTable[i].next_hop);
       }      
       }
-    if(!found)
+    if(found==0){
        dbg("AODVsimulator","c'è qlk problema\n");
+     }
 }
 
 
 event message_t* ReceiveRREQ.receive(message_t* bufPtr, void* payload, uint8_t len) {
-  if (len != sizeof(rreq_msg_t)) {return bufPtr;}
+  if (len != sizeof(rreq_msg_t)) {
+    return bufPtr;}
   else {
     rreq_msg_t* rreq = (rreq_msg_t*)payload;
-    int i,k; bool found, duplicated;
+    int i,k; 
+    bool duplicated;
+
     if(rreq->dest==TOS_NODE_ID){
         dbg("AODVsimulator","rreq found the dest! sending back rreply\n"); 
         sendRReplyMsg(rreq->id,rreq->sender,rreq->src,TOS_NODE_ID,TOS_NODE_ID,1);
@@ -205,10 +215,12 @@ event message_t* ReceiveRREQ.receive(message_t* bufPtr, void* payload, uint8_t l
 
 
 event message_t* ReceiveDATA.receive(message_t* bufPtr, void* payload, uint8_t len) {
-  if (len != sizeof(data_msg_t)) {return bufPtr;}
+  if (len != sizeof(data_msg_t)) {    return bufPtr;}
   else {
     data_msg_t* data = (data_msg_t*)payload;
-    int i; bool found;
+    int i; 
+    bool found;
+
     if(data->dest!=TOS_NODE_ID){
         found=FALSE;
         for(i=0;i<N && !found;i++){
@@ -233,13 +245,14 @@ event message_t* ReceiveDATA.receive(message_t* bufPtr, void* payload, uint8_t l
   }  
   
 event message_t* ReceiveRRP.receive(message_t* bufPtr, void* payload, uint8_t len) {
-  if (len != sizeof(rrp_msg_t)) {return bufPtr;}
+  if (len != sizeof(rrp_msg_t)) {    return bufPtr;}
   else {
     rrp_msg_t* rreply = (rrp_msg_t*)payload;
-    int i,j; bool found;
-    dbg("AODVsimulator","rreply received!hop: %hhu\n",rreply->hop);     
+    int i,j; 
+    bool found;
     
-    //if(rreply->dest  != TOS_NODE_ID)/*sono la dest? si: aggiorna routingTable. no:  cache*/
+    dbg("AODVsimulator","rreply received!hop: %hhu\n",rreply->hop);     
+
     found=FALSE;
     for(i=0;i<N && !found;i++){
              if(routingTable[i].dest==rreply->src){
@@ -279,27 +292,20 @@ event message_t* ReceiveRRP.receive(message_t* bufPtr, void* payload, uint8_t le
 }
 
 event void SendRRP.sendDone(message_t* bufPtr, error_t error) {
-  if (&packet == bufPtr) {
+  if (&packetRRep == bufPtr) {
     locked = FALSE;
     //dbg("AODVsimulator", "unlocked\n");
   }
 }
 event void SendRREQ.sendDone(message_t* bufPtr, error_t error) {
-  if (&packet == bufPtr) {
+  if (&packetRReq == bufPtr) {
     locked = FALSE;
     //dbg("AODVsimulator", "unlocked\n");
   }
   }
   event void SendDATA.sendDone(message_t* bufPtr, error_t error) {
-  if (&packet == bufPtr) {
+  if (&packetData == bufPtr) {
     locked = FALSE;
-   // dbg("AODVsimulator", "SENT\n");
+    //dbg("AODVsimulator", "SENT\n");
   }}
-
-
-
 }
-
-
-
-
