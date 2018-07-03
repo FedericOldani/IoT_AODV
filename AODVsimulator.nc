@@ -33,6 +33,7 @@ implementation {
   cache_table_t cacheTable[CT_size];
   bool locked=FALSE;
   uint16_t msg_dest,content, msg_id=0;
+  int max_tries = 3;
 
   
  void sendDatatMsg(uint16_t dest_, uint16_t src_, uint16_t content_,uint16_t next_hop){
@@ -134,7 +135,7 @@ void printCT(){
   
   
   event void MilliTimer.fired() {
-
+    bool found; int i;
     if (locked) {
       return;
     }
@@ -147,8 +148,20 @@ void printCT(){
       content = call Random.rand16() % 150;//random content
       dbg("AODVsimulator", "------------- TIMER FIRED prepare msg ---------------\n\tfrom: %hhu -> %hhu at time %s CONTENT: %hhu\n",TOS_NODE_ID,msg_dest, sim_time_string (),content);
 
-      sendRReqMsg(msg_id++,TOS_NODE_ID,msg_dest);
-      call AcceptReply.startOneShot(1000);
+      i=0;
+      found=FALSE;
+  
+      for(i=0;i<N && !found;i++){
+        if(routingTable[i].dest==msg_dest){
+            found=TRUE; 
+            sendDatatMsg(msg_dest,TOS_NODE_ID,content,routingTable[i].next_hop);
+      }      
+      }
+      //if dest is not found in the routing table,the request is sent in broadcast data msg will be sent to the next hop
+      if(!found){
+         sendRReqMsg(msg_id++,TOS_NODE_ID,msg_dest);
+         call AcceptReply.startOneShot(1000);
+} 
     }   
     }  
 
@@ -167,8 +180,13 @@ event void AcceptReply.fired() {
       }      
       }
     if(found==0){
-       dbg("AODVsimulator","c'è qlk problema\n");
+       dbg("AODVsimulator","ERROR: routing table has no the destination, try again\n");
+       max_tries--;
+       if(max_tries>0){
+        sendRReqMsg(msg_id++,TOS_NODE_ID,msg_dest);
+        call AcceptReply.startOneShot(1000);
      }
+   }
 }
 
 
