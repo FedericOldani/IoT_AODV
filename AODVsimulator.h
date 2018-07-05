@@ -33,6 +33,7 @@ typedef nx_struct routing_table{
     nx_uint16_t dest;
     nx_uint16_t next_hop;
     nx_uint16_t num_hop;
+    nx_uint16_t status;
     }routing_table_t;
     
 typedef nx_struct cache_table{
@@ -45,12 +46,14 @@ typedef nx_struct cache_table{
 
 
 enum {
-  AM_DATA_MSG = 6,//communication channel 
-  AM_RREQ_MSG = 5,//communication channel 
-  AM_RRP_MSG = 3,//communication channel 
+  AM_DATA_MSG = 1,//communication channel 
+  AM_RREQ_MSG = 10,//communication channel 
+  AM_RRP_MSG = 20,//communication channel 
 };
 
-
-#define N 4 //number of motes
+#define INVALID 0
+#define ACTIVE 1
+#define N 8 //number of motes
 #define CT_size 256
+#define RT_size 20
 #endif

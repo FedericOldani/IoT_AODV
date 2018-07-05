@@ -19,6 +19,7 @@ module AODVsimulator @safe() {
     interface AMSend as SendDATA;
     interface Timer<TMilli> as MilliTimer;
     interface Timer<TMilli> as AcceptReply;
+    interface Timer<TMilli> as CleanRTtimer;
     interface SplitControl as AMControl;
     interface Packet;
     interface Random;
@@ -29,33 +30,32 @@ implementation {
 
   message_t packetData, packetRRep, packetRReq;
   
-  routing_table_t routingTable[N];//number of nodes
+  routing_table_t routingTable[RT_size];
   cache_table_t cacheTable[CT_size];
   bool locked=FALSE;
   uint16_t msg_dest,content, msg_id=0;
-  int max_tries = 3;
+  int end = 0,k=0;
 
   
  void sendDatatMsg(uint16_t dest_, uint16_t src_, uint16_t content_,uint16_t next_hop){
      data_msg_t* rdm = (data_msg_t*)call Packet.getPayload(&packetData, sizeof(data_msg_t));
         if (rdm == NULL){  
-          dbg("AODVsimulator", "problema\n"); 
+          dbg("AODVsimulator", "rdm is NULL\n"); 
           return;
         }
         rdm->src=src_;
         rdm->dest=dest_;
         rdm->content=content_;
         if(call SendDATA.send(next_hop, &packetData, sizeof(data_msg_t)) == SUCCESS) {
-          dbg("AODVsimulator", "AODVsimulator: data packet sent to the next hop: %hhu dest: %hhu at time %s \n",next_hop,dest_, sim_time_string());	
+          dbg("AODVsimulator", "DATA: packet sent to the next hop: %hhu (SRC: %hhu, DEST: %hhu)\n",next_hop,src_,dest_);	
           locked = TRUE;
         }
     }
   
    void sendRReplyMsg(uint16_t id_, uint16_t next_hop_, uint16_t dest_,uint16_t src_,uint16_t sender_, uint16_t hop_){ 
-    message_t packet;
      rrp_msg_t* rdm = (rrp_msg_t*)call Packet.getPayload(&packetRRep, sizeof(rrp_msg_t));
         if (rdm == NULL){  
-          dbg("AODVsimulator", "problema\n"); 
+          dbg("AODVsimulator", "rdm is NULL\n"); 
           return;
         }
         rdm->id=id_;
@@ -64,7 +64,7 @@ implementation {
         rdm->sender=sender_;
         rdm->src=src_;
         if(call SendRRP.send(next_hop_, &packetRRep, sizeof(rrp_msg_t)) == SUCCESS) {
-          dbg("AODVsimulator", "AODVsimulator: reply back to the previous hop %hhu. origin:  %hhu  dest: %hhuat time %s \n",next_hop_,src_,dest_, sim_time_string());	
+          dbg("AODVsimulator", "RREPLY: back to the previous node %hhu (SRC:  %hhu,  DEST: %hhu)\n",next_hop_,src_,dest_);	
           locked = TRUE;
         }
     }
@@ -72,7 +72,7 @@ implementation {
   void sendRReqMsg(uint16_t id_, uint16_t src_,uint16_t dest_){
   rreq_msg_t* rreq = (rreq_msg_t*)call Packet.getPayload(&packetRReq, sizeof(rreq_msg_t));
         if (rreq == NULL) {
-           dbg("AODVsimulator", "problema\n"); 
+           dbg("AODVsimulator", "rdm is NULL\n"); 
            return;
         }
         rreq->id=id_;
@@ -80,19 +80,20 @@ implementation {
         rreq->sender=TOS_NODE_ID;
         rreq->dest=dest_;
         if(call  SendRREQ.send(AM_BROADCAST_ADDR, &packetRReq, sizeof(rreq_msg_t)) == SUCCESS) {
-          dbg("AODVsimulator", "AODVsimulator: route request sent in broadcast. ID MSG:%hhu DEST:%hhu\n",rreq->id,rreq->dest);	
-          locked = TRUE; 
-          
+          dbg("AODVsimulator", "RREQUEST: sent in broadcast (SRC:%hhu, DEST:%hhu)\n",rreq->src,rreq->dest);	
+          locked = TRUE;  
         }
-  
 }
 
 void printRT(){
     int i;
     //PRINT ROUTING TABLE
-    for(i=0;i<N;i++)
-    if(routingTable[i].dest!=0)
-        dbg("AODVsimulator","RT dest: %hhu, next_hop %hhu, num_hop %hhu\n",routingTable[i].dest,routingTable[i].next_hop,routingTable[i].num_hop);
+    dbg("AODVsimulator",".-------------- ROUTING TABLE -------------.\n");
+    for(i=0;i<RT_size;i++)
+      if(routingTable[i].dest!=0)
+        dbg("AODVsimulator","| dest: %hhu, next_hop %hhu, num_hop %hhu, status %hhu |\n",routingTable[i].dest,routingTable[i].next_hop,routingTable[i].num_hop,routingTable[i].status);
+    dbg("AODVsimulator","'------------------------------------------'\n");
+
 }
 
 void printCT(){
@@ -107,10 +108,11 @@ void printCT(){
   event void Boot.booted() {
     int i;
     dbg("ActiveNode", "ActiveNode: node %u started\n",TOS_NODE_ID);
-    for(i=0;i<N;i++){
+    for(i=0;i<RT_size;i++){
 	    routingTable[i].dest= 0;
       routingTable[i].next_hop=0;
       routingTable[i].num_hop=0;
+      routingTable[i].status=INVALID;
   	}
     for(i=0;i<CT_size;i++){
 	    cacheTable[i].dest=0;
@@ -133,7 +135,25 @@ void printCT(){
     // do nothing
   }
   
+  event void CleanRTtimer.fired(){
+    int i = 0;
+    dbg("AODVsimulator", ">>>> 90 sec passed, remove routing table entry\n");
+    printRT();
+    for(i=0;i<RT_size-1;i++){
+     routingTable[i].dest=routingTable[i+1].dest;
+     routingTable[i].next_hop=routingTable[i+1].next_hop;
+     routingTable[i].num_hop=routingTable[i+1].num_hop;
+     routingTable[i].status=routingTable[i+1].status;
+    }
+    routingTable[RT_size-1].dest=0;
+    routingTable[RT_size-1].next_hop=0;
+    routingTable[RT_size-1].num_hop=0;
+    routingTable[RT_size-1].status=INVALID;
+    dbg("AODVsimulator", "NEW routing table:\n");
+    printRT();
+  }
   
+
   event void MilliTimer.fired() {
     bool found; int i;
     if (locked) {
@@ -146,18 +166,19 @@ void printCT(){
         msg_dest = (call Random.rand16() % N)+1; //random destination
       }
       content = call Random.rand16() % 150;//random content
-      dbg("AODVsimulator", "------------- TIMER FIRED prepare msg ---------------\n\tfrom: %hhu -> %hhu at time %s CONTENT: %hhu\n",TOS_NODE_ID,msg_dest, sim_time_string (),content);
+      dbg("AODVsimulator", "\n\n\t:::::::::::::::::: TIMER FIRED :::::::::::::::::\nPreparing message... %hhu -> %hhu at time %s CONTENT: %hhu\n",TOS_NODE_ID,msg_dest, sim_time_string (),content);
 
       i=0;
       found=FALSE;
   
-      for(i=0;i<N && !found;i++){
-        if(routingTable[i].dest==msg_dest){
+      for(i=0;i<RT_size && !found;i++){
+        if(routingTable[i].dest==msg_dest && routingTable[i].status==ACTIVE){
             found=TRUE; 
+            printRT();
             sendDatatMsg(msg_dest,TOS_NODE_ID,content,routingTable[i].next_hop);
       }      
       }
-      //if dest is not found in the routing table,the request is sent in broadcast data msg will be sent to the next hop
+      //if dest is not found in the routing table,the request is sent in broadcast data msg will be sent to the  next hop
       if(!found){
          sendRReqMsg(msg_id++,TOS_NODE_ID,msg_dest);
          call AcceptReply.startOneShot(1000);
@@ -168,24 +189,24 @@ void printCT(){
 
 
 event void AcceptReply.fired() {
-    int found;
+    bool found;
     int i;
-    dbg("AODVsimulator","1sec passed, send data msg\n");
+    dbg("AODVsimulator",">> One sec passed, send data msg <<\n");
     printRT();
-    found = 0;
-    for(i=0;i<N && !found;i++){
-        if(routingTable[i].dest==msg_dest && routingTable[i].next_hop!=0){
-            found=1; 
+    found = FALSE;
+    for(i=0;i<RT_size && !found;i++){
+        if(routingTable[i].dest==msg_dest && routingTable[i].next_hop!=0 && routingTable[i].status==ACTIVE){
+            found=TRUE; 
             sendDatatMsg(msg_dest,TOS_NODE_ID,content,routingTable[i].next_hop);
       }      
       }
-    if(found==0){
-       dbg("AODVsimulator","ERROR: routing table has no the destination, try again\n");
-       max_tries--;
-       if(max_tries>0){
-        sendRReqMsg(msg_id++,TOS_NODE_ID,msg_dest);
-        call AcceptReply.startOneShot(1000);
-     }
+    if(!found){
+       dbg("AODVsimulator","ERROR: routing table has no the destination.\n");
+       //max_tries--;
+       //if(max_tries>0){
+       // sendRReqMsg(msg_id++,TOS_NODE_ID,msg_dest);
+       // call AcceptReply.startOneShot(1000);
+     //}
    }
 }
 
@@ -195,11 +216,11 @@ event message_t* ReceiveRREQ.receive(message_t* bufPtr, void* payload, uint8_t l
     return bufPtr;}
   else {
     rreq_msg_t* rreq = (rreq_msg_t*)payload;
-    int i,k; 
+    int i; 
     bool duplicated;
 
     if(rreq->dest==TOS_NODE_ID){
-        dbg("AODVsimulator","rreq found the dest! sending back rreply\n"); 
+        dbg("AODVsimulator","RReq reached the destination!\n"); 
         sendRReplyMsg(rreq->id,rreq->sender,rreq->src,TOS_NODE_ID,TOS_NODE_ID,1);
     }
     else{
@@ -208,7 +229,7 @@ event message_t* ReceiveRREQ.receive(message_t* bufPtr, void* payload, uint8_t l
 	    duplicated=FALSE;
 	    for(i=0;i<CT_size;i++){
 		    if(cacheTable[i].id==rreq->id && cacheTable[i].src==rreq->src && cacheTable[i].dest==rreq->dest){
-		    dbg("AODVsimulator","duplicated\n");
+		    dbg("AODVsimulator","Duplicated packet\n");
 		    duplicated=TRUE;}
 	    }
 	    if(!duplicated){
@@ -219,7 +240,7 @@ event message_t* ReceiveRREQ.receive(message_t* bufPtr, void* payload, uint8_t l
 		    cacheTable[k].dest=rreq->dest;
         cacheTable[k].sender=rreq->sender;
 	 	    		                               
-		    dbg("AODVsimulator","Send in broadcast the request\n");             
+		    //dbg("AODVsimulator","Send in broadcast the request\n");             
 		    sendRReqMsg(rreq->id,rreq->src,rreq->dest);
       }
 
@@ -229,11 +250,8 @@ event message_t* ReceiveRREQ.receive(message_t* bufPtr, void* payload, uint8_t l
   }
 }
 
-
-
-
 event message_t* ReceiveDATA.receive(message_t* bufPtr, void* payload, uint8_t len) {
-  if (len != sizeof(data_msg_t)) {    return bufPtr;}
+  if (len != sizeof(data_msg_t)) { return bufPtr; }
   else {
     data_msg_t* data = (data_msg_t*)payload;
     int i; 
@@ -241,13 +259,13 @@ event message_t* ReceiveDATA.receive(message_t* bufPtr, void* payload, uint8_t l
 
     if(data->dest!=TOS_NODE_ID){
         found=FALSE;
-        for(i=0;i<N && !found;i++){
-           if(routingTable[i].dest==data->dest) {
+        for(i=0;i<RT_size && !found;i++){
+           if(routingTable[i].dest==data->dest && routingTable[i].status==ACTIVE) {
             found=TRUE;             
             printRT();
-            dbg("AODVsimulator"," dest: %hhu , %hhu\n",routingTable[i].dest,data->dest); 
+            //dbg("AODVsimulator"," dest: %hhu , %hhu\n",routingTable[i].dest,data->dest); 
 		        //if(routingTable[i].dest==data->dest){dbg("AODVsimulator"," dest %hhu , %hhu\n",routingTable[i].dest,data->dest);}
-            dbg("AODVsimulator","data packet forwarded from %hhu to next_hop %hhu \n",TOS_NODE_ID,routingTable[i].next_hop);                 
+            //dbg("AODVsimulator","Data packet forwarded from %hhu to next_hop %hhu \n",TOS_NODE_ID,routingTable[i].next_hop);                 
             sendDatatMsg(data->dest,data->src,data->content,routingTable[i].next_hop);
             }
         }
@@ -256,9 +274,8 @@ event message_t* ReceiveDATA.receive(message_t* bufPtr, void* payload, uint8_t l
             dbg("AODVsimulator","Error, data pck stops here\n");               
             }
      } else
-      dbg("AODVsimulator","FINISH data packet from %hhu to %hhu received\n",data->src,data->dest);
-    }
-  
+      dbg("AODVsimulator","FINISH data packet from %hhu to %hhu received, CONTENT: %hhu\n",data->src,data->dest,data->content);
+    } 
   return bufPtr;
   }  
   
@@ -269,35 +286,39 @@ event message_t* ReceiveRRP.receive(message_t* bufPtr, void* payload, uint8_t le
     int i,j; 
     bool found;
     
-    dbg("AODVsimulator","rreply received!hop: %hhu\n",rreply->hop);     
+    dbg("AODVsimulator","RREPLY received, %hhu hops\n",rreply->hop);     
 
     found=FALSE;
-    for(i=0;i<N && !found;i++){
-             if(routingTable[i].dest==rreply->src){
-                if(routingTable[i].num_hop>rreply->hop || routingTable[i].num_hop==0) {
-                    routingTable[i].next_hop=rreply->sender;
-                    routingTable[i].num_hop=rreply->hop;
-                    routingTable[i].dest=rreply->src;
+    for(i=0;i<RT_size && !found;i++){
+             if(routingTable[i].dest==rreply->src && routingTable[i].status==ACTIVE){
+                if(routingTable[i].num_hop>=rreply->hop) {
+                    routingTable[i].status=INVALID;
+
+                    routingTable[end].dest=rreply->src;
+                    routingTable[end].next_hop=rreply->sender;
+                    routingTable[end].num_hop=rreply->hop;
+                    routingTable[end].status=ACTIVE;
+                    end++;
+                    call CleanRTtimer.startOneShot(90000);
                     dbg("AODVsimulator","RT updated\n");
+                    printRT();
                    }
-                   printRT();
                 found=TRUE;
 	           }
 	  }
     if(!found){
-        i=0;
-        while(routingTable[i].dest != 0) i++;
-        if(i<N){
-          routingTable[i].dest=rreply->src;
-          routingTable[i].next_hop=rreply->sender;
-          routingTable[i].num_hop=rreply->hop;
+          routingTable[end].dest=rreply->src;
+          routingTable[end].next_hop=rreply->sender;
+          routingTable[end].num_hop=rreply->hop;
+          routingTable[end].status=ACTIVE;
+          end++;
           dbg("AODVsimulator","RT new entry\n");
+          call CleanRTtimer.startOneShot(90000);
           printRT();        
         }
-    }
     for(j=0;j<CT_size;j++){
        if(cacheTable[j].dest==rreply->src && cacheTable[j].src==rreply->dest && cacheTable[j].id==rreply->id){
-            dbg("AODVsimulator","send rreply to %hhu!hop: %hhu\n",cacheTable[j].src,rreply->hop);
+            //dbg("AODVsimulator","Send RREPLY to %hhu, %hhu hops\n",cacheTable[j].src,rreply->hop);
             sendRReplyMsg(rreply->id,cacheTable[j].sender,rreply->dest,rreply->src,TOS_NODE_ID,(rreply->hop)+1);
         }
     }

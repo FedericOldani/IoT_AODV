@@ -16,6 +16,7 @@ implementation {
   components new AMReceiverC(AM_RREQ_MSG) as ReceiveRREQ ;
   components new TimerMilliC() as MilliTimer;
   components new TimerMilliC() as AcceptReply;
+  components new TimerMilliC() as CleanRTtimer;
   components ActiveMessageC;
   components RandomC;
   
@@ -34,6 +35,7 @@ implementation {
   App.Packet -> SendRREQ;
   App.Random -> RandomC;
   App.AcceptReply -> AcceptReply;
+  App.CleanRTtimer -> CleanRTtimer;
 }
 
 
