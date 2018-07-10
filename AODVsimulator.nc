@@ -29,12 +29,13 @@ module AODVsimulator @safe() {
 implementation {
 
   message_t packetData, packetRRep, packetRReq;
+  rrp_msg_t cache_rrep[10];
   
   routing_table_t routingTable[RT_size];
   cache_table_t cacheTable[CT_size];
   bool locked=FALSE;
   uint16_t msg_dest,content, msg_id=0;
-  int end = 0,k=0;
+  int end = 0,k=0,rrep_i=0;
 
  void sendDatatMsg(uint16_t dest_, uint16_t src_, uint16_t content_,uint16_t next_hop){
      data_msg_t* rdm = (data_msg_t*)call Packet.getPayload(&packetData, sizeof(data_msg_t));
@@ -51,21 +52,54 @@ implementation {
         }
     }
   
-   void sendRReplyMsg(uint16_t id_, uint16_t next_hop_, uint16_t dest_,uint16_t src_,uint16_t sender_, uint16_t hop_){ 
-     rrp_msg_t* rdm = (rrp_msg_t*)call Packet.getPayload(&packetRRep, sizeof(rrp_msg_t));
+task void goRReply(){
+        rrp_msg_t* rdm = (rrp_msg_t*)call Packet.getPayload(&packetRRep, sizeof(rrp_msg_t));
+        int i, next_hop;
+
         if (rdm == NULL){  
           dbg("AODVsimulator", "rdm is NULL\n"); 
           return;
         }
-        rdm->id=id_;
-        rdm->dest=dest_;
-        rdm->hop=hop_;
-        rdm->sender=sender_;
-        rdm->src=src_;
-        if(call SendRRP.send(next_hop_, &packetRRep, sizeof(rrp_msg_t)) == SUCCESS) {
-          dbg("AODVsimulator", "RREPLY: back to the previous node %hhu (SRC:  %hhu,  DEST: %hhu)\n",next_hop_,src_,dest_);	
+        rdm->id=cache_rrep[0].id;
+        rdm->dest=cache_rrep[0].dest;
+        rdm->hop=cache_rrep[0].hop;
+        rdm->sender=cache_rrep[0].sender;
+        rdm->src=cache_rrep[0].src;
+
+        next_hop = cache_rrep[0].nh;
+
+        for(i=0;i<9;i++){
+          cache_rrep[i]=cache_rrep[i+1];
+        }
+
+        cache_rrep[9].id=0;
+        cache_rrep[9].src=0;
+        cache_rrep[9].sender=0;
+        cache_rrep[9].dest=0;
+        cache_rrep[9].hop=0;
+        cache_rrep[9].nh=0;
+
+        rrep_i--;
+
+        if(call SendRRP.send(next_hop, &packetRRep, sizeof(rrp_msg_t)) == SUCCESS) {
+          dbg("AODVsimulator", "RREPLY: back to the previous node %hhu \n",next_hop);  
           locked = TRUE;
         }
+        else           dbg("AODVsimulator", "????????????\n"); 
+  }
+  
+   void sendRReplyMsg(uint16_t id_, uint16_t next_hop_, uint16_t dest_,uint16_t src_,uint16_t sender_, uint16_t hop_){ 
+    cache_rrep[rrep_i].id=id_;
+    cache_rrep[rrep_i].src=src_;
+    cache_rrep[rrep_i].sender=sender_;
+    cache_rrep[rrep_i].dest=dest_;
+    cache_rrep[rrep_i].hop=hop_;
+    cache_rrep[rrep_i].nh=next_hop_;
+
+    rrep_i++;
+    if(locked == FALSE)
+      post goRReply();
+
     }
   
   void sendRReqMsg(uint16_t id_, uint16_t src_,uint16_t dest_){
@@ -333,18 +367,20 @@ event message_t* ReceiveRRP.receive(message_t* bufPtr, void* payload, uint8_t le
 event void SendRRP.sendDone(message_t* bufPtr, error_t error) {
   if (&packetRRep == bufPtr) {
     locked = FALSE;
-    //dbg("AODVsimulator", "unlocked\n");
+    if(rrep_i>0)
+      post goRReply();
+    //dbg("AODVsimulator", "unlocked rrp\n");
   }
 }
 event void SendRREQ.sendDone(message_t* bufPtr, error_t error) {
   if (&packetRReq == bufPtr) {
     locked = FALSE;
-    //dbg("AODVsimulator", "unlocked\n");
+    //dbg("AODVsimulator", "unlocked rreq\n");
   }
   }
   event void SendDATA.sendDone(message_t* bufPtr, error_t error) {
   if (&packetData == bufPtr) {
     locked = FALSE;
-    //dbg("AODVsimulator", "SENT\n");
+    //dbg("AODVsimulator", "unlocked data\n");
   }}
 }

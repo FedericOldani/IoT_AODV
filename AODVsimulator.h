@@ -26,6 +26,7 @@ typedef nx_struct rrp_msg {
 	nx_uint16_t dest;
 	nx_uint16_t hop;
     nx_uint16_t sender;
+    nx_uint16_t nh;
 } rrp_msg_t;
 
 
