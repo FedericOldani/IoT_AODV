@@ -4949,17 +4949,16 @@ int AODVsimulator$end[1000];
 #line 37
 int AODVsimulator$k[1000];
 
-
 static void AODVsimulator$sendDatatMsg(uint16_t dest_, uint16_t src_, uint16_t content_, uint16_t next_hop);
-#line 55
+#line 54
 static void AODVsimulator$sendRReplyMsg(uint16_t id_, uint16_t next_hop_, uint16_t dest_, uint16_t src_, uint16_t sender_, uint16_t hop_);
-#line 72
+#line 71
 static void AODVsimulator$sendRReqMsg(uint16_t id_, uint16_t src_, uint16_t dest_);
-#line 88
+#line 87
 static void AODVsimulator$printRT(void );
-#line 108
+#line 107
 static inline void AODVsimulator$Boot$booted(void );
-#line 127
+#line 126
 static inline void AODVsimulator$AMControl$startDone(error_t err);
 
 
@@ -4972,7 +4971,7 @@ static inline void AODVsimulator$AMControl$stopDone(error_t err);
 
 
 static inline void AODVsimulator$CleanRTtimer$fired(void );
-#line 157
+#line 156
 static inline void AODVsimulator$MilliTimer$fired(void );
 #line 191
 static inline void AODVsimulator$AcceptReply$fired(void );
@@ -7582,15 +7581,15 @@ inline static void AODVsimulator$MilliTimer$startPeriodic(uint32_t dt){
 #line 64
 }
 #line 64
-# 127 "AODVsimulator.nc"
+# 126 "AODVsimulator.nc"
 static inline void AODVsimulator$AMControl$startDone(error_t err)
-#line 127
+#line 126
 {
   if (err == SUCCESS) {
     AODVsimulator$MilliTimer$startPeriodic(30000);
     }
   else {
-#line 131
+#line 130
     AODVsimulator$AMControl$start();
     }
 }
@@ -7610,9 +7609,9 @@ static inline void TossimPacketModelC$startDoneTask$runTask(void )
   TossimPacketModelC$Control$startDone(SUCCESS);
 }
 
-# 134 "AODVsimulator.nc"
+# 133 "AODVsimulator.nc"
 static inline void AODVsimulator$AMControl$stopDone(error_t err)
-#line 134
+#line 133
 {
 }
 
@@ -8062,15 +8061,15 @@ inline static uint16_t AODVsimulator$Random$rand16(void ){
 #line 52
 }
 #line 52
-# 157 "AODVsimulator.nc"
+# 156 "AODVsimulator.nc"
 static inline void AODVsimulator$MilliTimer$fired(void )
-#line 157
+#line 156
 {
   bool found;
-#line 158
+#line 157
   int i;
 
-#line 159
+#line 158
   if (AODVsimulator$locked[sim_node()]) {
       return;
     }
@@ -8096,6 +8095,7 @@ static inline void AODVsimulator$MilliTimer$fired(void )
 
       if (!found) {
           AODVsimulator$sendRReqMsg(AODVsimulator$msg_id[sim_node()]++, TOS_NODE_ID, AODVsimulator$msg_dest[sim_node()]);
+
           AODVsimulator$AcceptReply$startOneShot(1000);
         }
     }
@@ -8124,13 +8124,13 @@ static inline void AODVsimulator$AcceptReply$fired(void )
     }
 }
 
-#line 138
+#line 137
 static inline void AODVsimulator$CleanRTtimer$fired(void )
-#line 138
+#line 137
 {
   int i = 0;
 
-#line 140
+#line 139
   sim_log_debug(159U, "AODVsimulator", ">>>> 90 sec passed, remove routing table entry\n");
   AODVsimulator$printRT();
   for (i = 0; i < 20 - 1; i++) {
@@ -8802,13 +8802,13 @@ inline static error_t SimMainP$SoftwareInit$init(void ){
 #line 62
 }
 #line 62
-# 108 "AODVsimulator.nc"
+# 107 "AODVsimulator.nc"
 static inline void AODVsimulator$Boot$booted(void )
-#line 108
+#line 107
 {
   int i;
 
-#line 110
+#line 109
   sim_log_debug(158U, "ActiveNode", "ActiveNode: node %u started\n", TOS_NODE_ID);
   for (i = 0; i < 20; i++) {
       __nesc_hton_uint16(AODVsimulator$routingTable[sim_node()][i].dest.nxdata, 0);
@@ -10375,13 +10375,13 @@ static am_id_t TossimActiveMessageC$AMPacket$type(message_t *amsg)
   return __nesc_ntoh_uint8(header->type.nxdata);
 }
 
-# 55 "AODVsimulator.nc"
+# 54 "AODVsimulator.nc"
 static void AODVsimulator$sendRReplyMsg(uint16_t id_, uint16_t next_hop_, uint16_t dest_, uint16_t src_, uint16_t sender_, uint16_t hop_)
-#line 55
+#line 54
 {
   rrp_msg_t *rdm = (rrp_msg_t *)AODVsimulator$Packet$getPayload(&AODVsimulator$packetRRep[sim_node()], sizeof(rrp_msg_t ));
 
-#line 57
+#line 56
   if (rdm == (void *)0) {
       sim_log_debug(150U, "AODVsimulator", "rdm is NULL\n");
       return;
@@ -10659,13 +10659,13 @@ static void CpmModelC$sim_gain_schedule_ack(int source, sim_time_t t, CpmModelC$
   sim_queue_insert(ackEvent);
 }
 
-# 72 "AODVsimulator.nc"
+# 71 "AODVsimulator.nc"
 static void AODVsimulator$sendRReqMsg(uint16_t id_, uint16_t src_, uint16_t dest_)
-#line 72
+#line 71
 {
   rreq_msg_t *rreq = (rreq_msg_t *)AODVsimulator$Packet$getPayload(&AODVsimulator$packetRReq[sim_node()], sizeof(rreq_msg_t ));
 
-#line 74
+#line 73
   if (rreq == (void *)0) {
       sim_log_debug(152U, "AODVsimulator", "rdm is NULL\n");
       return;
@@ -10681,7 +10681,7 @@ static void AODVsimulator$sendRReqMsg(uint16_t id_, uint16_t src_, uint16_t dest
 }
 
 static void AODVsimulator$printRT(void )
-#line 88
+#line 87
 {
   int i;
 
@@ -10690,17 +10690,17 @@ static void AODVsimulator$printRT(void )
     if (__nesc_ntoh_uint16(AODVsimulator$routingTable[sim_node()][i].dest.nxdata) != 0) {
       sim_log_debug(155U, "AODVsimulator", "| dest: %hhu, next_hop %hhu, num_hop %hhu, status %hhu |\n", __nesc_ntoh_uint16(AODVsimulator$routingTable[sim_node()][i].dest.nxdata), __nesc_ntoh_uint16(AODVsimulator$routingTable[sim_node()][i].next_hop.nxdata), __nesc_ntoh_uint16(AODVsimulator$routingTable[sim_node()][i].num_hop.nxdata), __nesc_ntoh_uint16(AODVsimulator$routingTable[sim_node()][i].status.nxdata));
       }
-#line 95
+#line 94
   sim_log_debug(156U, "AODVsimulator", "'------------------------------------------'\n");
 }
 
-#line 40
+#line 39
 static void AODVsimulator$sendDatatMsg(uint16_t dest_, uint16_t src_, uint16_t content_, uint16_t next_hop)
-#line 40
+#line 39
 {
   data_msg_t *rdm = (data_msg_t *)AODVsimulator$Packet$getPayload(&AODVsimulator$packetData[sim_node()], sizeof(data_msg_t ));
 
-#line 42
+#line 41
   if (rdm == (void *)0) {
       sim_log_debug(148U, "AODVsimulator", "rdm is NULL\n");
       return;

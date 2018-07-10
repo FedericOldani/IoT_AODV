@@ -36,7 +36,6 @@ implementation {
   uint16_t msg_dest,content, msg_id=0;
   int end = 0,k=0;
 
-  
  void sendDatatMsg(uint16_t dest_, uint16_t src_, uint16_t content_,uint16_t next_hop){
      data_msg_t* rdm = (data_msg_t*)call Packet.getPayload(&packetData, sizeof(data_msg_t));
         if (rdm == NULL){  
@@ -175,13 +174,14 @@ void printCT(){
         if(routingTable[i].dest==msg_dest && routingTable[i].status==ACTIVE){
             found=TRUE; 
             printRT();
-            sendDatatMsg(msg_dest,TOS_NODE_ID,content,routingTable[i].next_hop);
+            sendDatatMsg(msg_dest, TOS_NODE_ID, content, routingTable[i].next_hop);
       }      
       }
       //if dest is not found in the routing table,the request is sent in broadcast data msg will be sent to the  next hop
       if(!found){
-         sendRReqMsg(msg_id++,TOS_NODE_ID,msg_dest);
-         call AcceptReply.startOneShot(1000);
+        sendRReqMsg(msg_id++,TOS_NODE_ID,msg_dest);
+
+        call AcceptReply.startOneShot(1000);
 } 
     }   
     }  
