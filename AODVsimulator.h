@@ -11,14 +11,14 @@ typedef nx_struct data_msg {
 	nx_uint16_t src;
 	nx_uint16_t dest;
 	nx_uint16_t content;
-} data_msg_t;
+} data_msg_t; //Data message
 
 typedef nx_struct rreq_msg {
 	nx_uint16_t id;
 	nx_uint16_t src;
 	nx_uint16_t sender;
 	nx_uint16_t dest;
-} rreq_msg_t;
+} rreq_msg_t; //Route Request message
 
 typedef nx_struct rrp_msg {
 	nx_uint16_t id;
@@ -27,7 +27,7 @@ typedef nx_struct rrp_msg {
 	nx_uint16_t hop;
     nx_uint16_t sender;
     nx_uint16_t nh;
-} rrp_msg_t;
+} rrp_msg_t; //Route Reply message
 
 
 typedef nx_struct routing_table{ 
@@ -35,14 +35,14 @@ typedef nx_struct routing_table{
     nx_uint16_t next_hop;
     nx_uint16_t num_hop;
     nx_uint16_t status;
-    }routing_table_t;
+    }routing_table_t; //used to find the next hop for a destination
     
 typedef nx_struct cache_table{
     nx_uint16_t id;
     nx_uint16_t src;
     nx_uint16_t sender;
     nx_uint16_t dest;
-    }cache_table_t;
+    }cache_table_t; //used to send a route reply back to all the nodes from which an intermediatenode receives a route request
 
 
 
@@ -55,6 +55,6 @@ enum {
 #define INVALID 0
 #define ACTIVE 1
 #define N 8 //number of motes
-#define CT_size 256
-#define RT_size 20
+#define CT_size 256 //size of the cache table
+#define RT_size 20 //size of the routing table
 #endif
