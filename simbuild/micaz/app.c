@@ -1297,7 +1297,7 @@ typedef struct sim_log_channel {
 } sim_log_channel_t;
 
 enum __nesc_unnamed4272 {
-  SIM_LOG_OUTPUT_COUNT = 204U
+  SIM_LOG_OUTPUT_COUNT = 205U
 };
 
 sim_log_output_t outputs[SIM_LOG_OUTPUT_COUNT];
@@ -4080,7 +4080,7 @@ error_t error);
 # 110 "/home/user/tinyos-main/tos/interfaces/AMSend.nc"
 static void /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$AMSend$sendDone(
 # 48 "/home/user/tinyos-main/tos/system/AMQueueImplP.nc"
-am_id_t arg_0x40a318c0, 
+am_id_t arg_0x40a2fb6c, 
 # 103 "/home/user/tinyos-main/tos/interfaces/AMSend.nc"
 message_t * msg, 
 
@@ -4093,7 +4093,7 @@ error_t error);
 # 75 "/home/user/tinyos-main/tos/interfaces/Send.nc"
 static error_t /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$Send$send(
 # 46 "/home/user/tinyos-main/tos/system/AMQueueImplP.nc"
-uint8_t arg_0x40a35eb8, 
+uint8_t arg_0x40a2f1d0, 
 # 67 "/home/user/tinyos-main/tos/interfaces/Send.nc"
 message_t * msg, 
 
@@ -4107,7 +4107,7 @@ uint8_t len);
 #line 100
 static void /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$Send$default$sendDone(
 # 46 "/home/user/tinyos-main/tos/system/AMQueueImplP.nc"
-uint8_t arg_0x40a35eb8, 
+uint8_t arg_0x40a2f1d0, 
 # 96 "/home/user/tinyos-main/tos/interfaces/Send.nc"
 message_t * msg, 
 
@@ -4226,11 +4226,11 @@ static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$TimerFrom$fire
 #line 83
 static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$Timer$default$fired(
 # 48 "/home/user/tinyos-main/tos/lib/timer/VirtualizeTimerC.nc"
-uint8_t arg_0x40bb7cf8);
+uint8_t arg_0x40bb7644);
 # 64 "/home/user/tinyos-main/tos/lib/timer/Timer.nc"
 static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$Timer$startPeriodic(
 # 48 "/home/user/tinyos-main/tos/lib/timer/VirtualizeTimerC.nc"
-uint8_t arg_0x40bb7cf8, 
+uint8_t arg_0x40bb7644, 
 # 64 "/home/user/tinyos-main/tos/lib/timer/Timer.nc"
 uint32_t dt);
 
@@ -4243,7 +4243,7 @@ uint32_t dt);
 
 static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$Timer$startOneShot(
 # 48 "/home/user/tinyos-main/tos/lib/timer/VirtualizeTimerC.nc"
-uint8_t arg_0x40bb7cf8, 
+uint8_t arg_0x40bb7644, 
 # 73 "/home/user/tinyos-main/tos/lib/timer/Timer.nc"
 uint32_t dt);
 # 82 "/home/user/tinyos-main/tos/lib/timer/Counter.nc"
@@ -5071,7 +5071,7 @@ static inline void /*AODVsimulatorApp.SendRRP.SenderC.AMQueueEntryP*/AMQueueEntr
 # 80 "/home/user/tinyos-main/tos/interfaces/AMSend.nc"
 static error_t /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$AMSend$send(
 # 48 "/home/user/tinyos-main/tos/system/AMQueueImplP.nc"
-am_id_t arg_0x40a318c0, 
+am_id_t arg_0x40a2fb6c, 
 # 80 "/home/user/tinyos-main/tos/interfaces/AMSend.nc"
 am_addr_t addr, 
 #line 71
@@ -5088,7 +5088,7 @@ uint8_t len);
 # 100 "/home/user/tinyos-main/tos/interfaces/Send.nc"
 static void /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$Send$sendDone(
 # 46 "/home/user/tinyos-main/tos/system/AMQueueImplP.nc"
-uint8_t arg_0x40a35eb8, 
+uint8_t arg_0x40a2f1d0, 
 # 96 "/home/user/tinyos-main/tos/interfaces/Send.nc"
 message_t * msg, 
 
@@ -5594,7 +5594,7 @@ static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$TimerFrom$stop
 
 static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$Timer$fired(
 # 48 "/home/user/tinyos-main/tos/lib/timer/VirtualizeTimerC.nc"
-uint8_t arg_0x40bb7cf8);
+uint8_t arg_0x40bb7644);
 #line 71
 enum /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$__nesc_unnamed4338 {
 #line 71
@@ -6142,7 +6142,7 @@ static inline message_t *AODVsimulator$ReceiveRRP$receive(message_t *bufPtr, voi
       int j;
       bool found;
 
-      sim_log_debug(169U, "AODVsimulator", "RREPLY received, %hhu hops\n", __nesc_ntoh_uint16(rreply->hop.nxdata));
+      sim_log_debug(170U, "AODVsimulator", "%hhu -> %hhu RREPLY received, %hhu hops\n", __nesc_ntoh_uint16(rreply->sender.nxdata), TOS_NODE_ID, __nesc_ntoh_uint16(rreply->hop.nxdata));
 
       found = FALSE;
       for (i = 0; i < 20 && !found; i++) {
@@ -6156,7 +6156,7 @@ static inline message_t *AODVsimulator$ReceiveRRP$receive(message_t *bufPtr, voi
                   __nesc_hton_uint16(AODVsimulator$routingTable[sim_node()][AODVsimulator$end[sim_node()]].status.nxdata, 1);
                   AODVsimulator$end[sim_node()]++;
                   AODVsimulator$CleanRTtimer$startOneShot(90000);
-                  sim_log_debug(170U, "AODVsimulator", "RT updated\n");
+                  sim_log_debug(171U, "AODVsimulator", "RT updated\n");
                   AODVsimulator$printRT();
                 }
               found = TRUE;
@@ -6168,7 +6168,7 @@ static inline message_t *AODVsimulator$ReceiveRRP$receive(message_t *bufPtr, voi
           __nesc_hton_uint16(AODVsimulator$routingTable[sim_node()][AODVsimulator$end[sim_node()]].num_hop.nxdata, __nesc_ntoh_uint16(rreply->hop.nxdata));
           __nesc_hton_uint16(AODVsimulator$routingTable[sim_node()][AODVsimulator$end[sim_node()]].status.nxdata, 1);
           AODVsimulator$end[sim_node()]++;
-          sim_log_debug(171U, "AODVsimulator", "RT new entry\n");
+          sim_log_debug(172U, "AODVsimulator", "RT new entry\n");
           AODVsimulator$CleanRTtimer$startOneShot(90000);
           AODVsimulator$printRT();
         }
@@ -6213,12 +6213,12 @@ static inline message_t *AODVsimulator$ReceiveDATA$receive(message_t *bufPtr, vo
             }
 
           if (!found) {
-              sim_log_debug(167U, "AODVsimulator", "Error, data pck stops here\n");
+              sim_log_debug(168U, "AODVsimulator", "Error, data pck stops here\n");
             }
         }
       else {
 #line 311
-        sim_log_debug(168U, "AODVsimulator", "FINISH data packet from %hhu to %hhu received, CONTENT: %hhu\n", __nesc_ntoh_uint16(data->src.nxdata), __nesc_ntoh_uint16(data->dest.nxdata), __nesc_ntoh_uint16(data->content.nxdata));
+        sim_log_debug(169U, "AODVsimulator", "FINISH data packet from %hhu to %hhu received, CONTENT: %hhu\n", __nesc_ntoh_uint16(data->src.nxdata), __nesc_ntoh_uint16(data->dest.nxdata), __nesc_ntoh_uint16(data->content.nxdata));
         }
     }
 #line 313
@@ -6240,7 +6240,7 @@ static inline message_t *AODVsimulator$ReceiveRREQ$receive(message_t *bufPtr, vo
       bool duplicated;
 
       if (__nesc_ntoh_uint16(rreq->dest.nxdata) == TOS_NODE_ID) {
-          sim_log_debug(165U, "AODVsimulator", "RReq reached the destination!\n");
+          sim_log_debug(165U, "AODVsimulator", "%hhu -> %hhu RREQUEST reached the destination!\n", __nesc_ntoh_uint16(rreq->sender.nxdata), TOS_NODE_ID);
           AODVsimulator$sendRReplyMsg(__nesc_ntoh_uint16(rreq->id.nxdata), __nesc_ntoh_uint16(rreq->sender.nxdata), __nesc_ntoh_uint16(rreq->src.nxdata), TOS_NODE_ID, TOS_NODE_ID, 1);
         }
       else {
@@ -6266,7 +6266,7 @@ static inline message_t *AODVsimulator$ReceiveRREQ$receive(message_t *bufPtr, vo
                   __nesc_hton_uint16(AODVsimulator$cacheTable[sim_node()][AODVsimulator$k[sim_node()]].dest.nxdata, __nesc_ntoh_uint16(rreq->dest.nxdata));
                   __nesc_hton_uint16(AODVsimulator$cacheTable[sim_node()][AODVsimulator$k[sim_node()]].sender.nxdata, __nesc_ntoh_uint16(rreq->sender.nxdata));
 
-
+                  sim_log_debug(167U, "AODVsimulator", "%hhu -> %hhu RREQUEST received, forward it in broadcast\n", __nesc_ntoh_uint16(rreq->sender.nxdata), TOS_NODE_ID);
                   AODVsimulator$sendRReqMsg(__nesc_ntoh_uint16(rreq->id.nxdata), __nesc_ntoh_uint16(rreq->src.nxdata), __nesc_ntoh_uint16(rreq->dest.nxdata));
                 }
             }
@@ -6493,13 +6493,13 @@ inline static am_addr_t /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$AMPacket$destina
 }
 #line 78
 # 80 "/home/user/tinyos-main/tos/interfaces/AMSend.nc"
-inline static error_t /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$AMSend$send(am_id_t arg_0x40a318c0, am_addr_t addr, message_t * msg, uint8_t len){
+inline static error_t /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$AMSend$send(am_id_t arg_0x40a2fb6c, am_addr_t addr, message_t * msg, uint8_t len){
 #line 80
   unsigned char __nesc_result;
 #line 80
 
 #line 80
-  __nesc_result = TossimActiveMessageC$AMSend$send(arg_0x40a318c0, addr, msg, len);
+  __nesc_result = TossimActiveMessageC$AMSend$send(arg_0x40a2fb6c, addr, msg, len);
 #line 80
 
 #line 80
@@ -7791,9 +7791,9 @@ static inline void /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$Send$default$sendDone
 }
 
 # 100 "/home/user/tinyos-main/tos/interfaces/Send.nc"
-inline static void /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$Send$sendDone(uint8_t arg_0x40a35eb8, message_t * msg, error_t error){
+inline static void /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$Send$sendDone(uint8_t arg_0x40a2f1d0, message_t * msg, error_t error){
 #line 100
-  switch (arg_0x40a35eb8) {
+  switch (arg_0x40a2f1d0) {
 #line 100
     case 0U:
 #line 100
@@ -7815,7 +7815,7 @@ inline static void /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$Send$sendDone(uint8_t
 #line 100
     default:
 #line 100
-      /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$Send$default$sendDone(arg_0x40a35eb8, msg, error);
+      /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$Send$default$sendDone(arg_0x40a2f1d0, msg, error);
 #line 100
       break;
 #line 100
@@ -8229,9 +8229,9 @@ static inline void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$Timer$d
 }
 
 # 83 "/home/user/tinyos-main/tos/lib/timer/Timer.nc"
-inline static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$Timer$fired(uint8_t arg_0x40bb7cf8){
+inline static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$Timer$fired(uint8_t arg_0x40bb7644){
 #line 83
-  switch (arg_0x40bb7cf8) {
+  switch (arg_0x40bb7644) {
 #line 83
     case 0U:
 #line 83
@@ -8253,7 +8253,7 @@ inline static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$Timer$f
 #line 83
     default:
 #line 83
-      /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$Timer$default$fired(arg_0x40bb7cf8);
+      /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$Timer$default$fired(arg_0x40bb7644);
 #line 83
       break;
 #line 83
@@ -8327,7 +8327,7 @@ static inline void /*AlarmCounterMilliP.Atm128AlarmAsyncC.Atm128AlarmAsyncP*/Atm
 static inline void HplAtm128Timer0AsyncP$cancel_compare(void )
 #line 577
 {
-  sim_log_debug(203U, "HplAtm128CompareC", "Cancelling compare at 0x%p\n", HplAtm128Timer0AsyncP$compare[sim_node()]);
+  sim_log_debug(204U, "HplAtm128CompareC", "Cancelling compare at 0x%p\n", HplAtm128Timer0AsyncP$compare[sim_node()]);
   if (HplAtm128Timer0AsyncP$compare[sim_node()] != (void *)0) {
       HplAtm128Timer0AsyncP$compare[sim_node()]->cancelled = 1;
       HplAtm128Timer0AsyncP$compare[sim_node()]->cleanup = sim_queue_cleanup_total;
@@ -8356,7 +8356,7 @@ static inline void HplAtm128Timer0AsyncP$cancel_overflow(void )
 {
   if (HplAtm128Timer0AsyncP$overflow[sim_node()] != (void *)0) {
       HplAtm128Timer0AsyncP$overflow[sim_node()]->cancelled = 1;
-      sim_log_debug(202U, "HplAtm128Timer0AsyncP", "Cancelling overflow %p.\n", HplAtm128Timer0AsyncP$overflow[sim_node()]);
+      sim_log_debug(203U, "HplAtm128Timer0AsyncP", "Cancelling overflow %p.\n", HplAtm128Timer0AsyncP$overflow[sim_node()]);
       HplAtm128Timer0AsyncP$overflow[sim_node()]->cleanup = sim_queue_cleanup_total;
     }
 }
@@ -8371,11 +8371,11 @@ static inline void HplAtm128Timer0AsyncP$timer0_overflow_handle(sim_event_t *evt
   else {
       if ((atm128RegFile[sim_node()][ATM128_TIMSK] & (1 << TOIE0)) != 0) {
           atm128RegFile[sim_node()][ATM128_TIFR] &= ~(1 << TOV0);
-          sim_log_debug(199U, "HplAtm128Timer0AsyncP", "Overflow interrupt at %s\n", sim_time_string());
+          sim_log_debug(200U, "HplAtm128Timer0AsyncP", "Overflow interrupt at %s\n", sim_time_string());
           INTERRUPT_16();
         }
       else {
-          sim_log_debug(200U, "HplAtm128Timer0AsyncP", "Setting overflow bit at %s\n", sim_time_string());
+          sim_log_debug(201U, "HplAtm128Timer0AsyncP", "Setting overflow bit at %s\n", sim_time_string());
           atm128RegFile[sim_node()][ATM128_TIFR] |= 1 << TOV0;
         }
       HplAtm128Timer0AsyncP$configure_overflow(evt);
@@ -8425,7 +8425,7 @@ static inline void HplAtm128Timer0AsyncP$Timer0$set(uint8_t newVal)
   uint8_t curVal = HplAtm128Timer0AsyncP$Timer0$get();
 
 #line 299
-  sim_log_debug(192U, "HplAtm128Timer0AsyncP", "HplAtm128Timer0AsyncP: Setting timer: %hhu\n", newVal);
+  sim_log_debug(193U, "HplAtm128Timer0AsyncP", "HplAtm128Timer0AsyncP: Setting timer: %hhu\n", newVal);
   if (newVal == curVal) {
       return;
     }
@@ -8452,7 +8452,7 @@ static inline void HplAtm128Timer0AsyncP$Timer0$set(uint8_t newVal)
 static inline void HplAtm128Timer0AsyncP$timer0_compare_handle(sim_event_t *evt)
 #line 187
 {
-  sim_log_debug(182U, "HplAtm128Timer0AsyncP", "Beginning compare 0x%p at %s\n", evt, sim_time_string());
+  sim_log_debug(183U, "HplAtm128Timer0AsyncP", "Beginning compare 0x%p at %s\n", evt, sim_time_string());
   if (evt->cancelled) {
       return;
     }
@@ -8461,21 +8461,21 @@ static inline void HplAtm128Timer0AsyncP$timer0_compare_handle(sim_event_t *evt)
 
 #line 194
       sim_print_now(timeStr, 128);
-      sim_log_debug(183U, "HplAtm128Timer0AsyncP", "Handling compare at 0x%p @ %s\n", evt, sim_time_string());
+      sim_log_debug(184U, "HplAtm128Timer0AsyncP", "Handling compare at 0x%p @ %s\n", evt, sim_time_string());
 
       if ((atm128RegFile[sim_node()][ATM128_TCCR0] & (1 << WGM01)) != 0 && !((atm128RegFile[sim_node()][ATM128_TCCR0] & (1 << WGM00)) != 0)) {
-          sim_log_debug(184U, "HplAtm128Timer0AsyncP", "%s: CTC is set, clear timer.\n", __FUNCTION__);
+          sim_log_debug(185U, "HplAtm128Timer0AsyncP", "%s: CTC is set, clear timer.\n", __FUNCTION__);
           HplAtm128Timer0AsyncP$Timer0$set(0);
         }
       else {
-          sim_log_debug(185U, "HplAtm128Timer0AsyncP", "%s: TCCR is 0x%hhx, %i, %i\n", __FUNCTION__, * (volatile uint8_t *)&atm128RegFile[sim_node()][0x33], (int )((atm128RegFile[sim_node()][ATM128_TCCR0] & (1 << WGM01)) != 0), (int )((atm128RegFile[sim_node()][ATM128_TCCR0] & (1 << WGM00)) != 0));
+          sim_log_debug(186U, "HplAtm128Timer0AsyncP", "%s: TCCR is 0x%hhx, %i, %i\n", __FUNCTION__, * (volatile uint8_t *)&atm128RegFile[sim_node()][0x33], (int )((atm128RegFile[sim_node()][ATM128_TCCR0] & (1 << WGM01)) != 0), (int )((atm128RegFile[sim_node()][ATM128_TCCR0] & (1 << WGM00)) != 0));
         }
 
       if ((atm128RegFile[sim_node()][ATM128_TIMSK] & (1 << OCIE0)) != 0) {
-          sim_log_debug(186U, "HplAtm128Timer0AsyncP", "TIFR is %hhx\n", * (volatile uint8_t *)&atm128RegFile[sim_node()][0x36]);
-          atm128RegFile[sim_node()][ATM128_TIFR] &= ~(1 << OCF0);
           sim_log_debug(187U, "HplAtm128Timer0AsyncP", "TIFR is %hhx\n", * (volatile uint8_t *)&atm128RegFile[sim_node()][0x36]);
-          sim_log_debug(188U, "HplAtm128Timer0AsyncP", "Compare interrupt @ %s\n", timeStr);
+          atm128RegFile[sim_node()][ATM128_TIFR] &= ~(1 << OCF0);
+          sim_log_debug(188U, "HplAtm128Timer0AsyncP", "TIFR is %hhx\n", * (volatile uint8_t *)&atm128RegFile[sim_node()][0x36]);
+          sim_log_debug(189U, "HplAtm128Timer0AsyncP", "Compare interrupt @ %s\n", timeStr);
           INTERRUPT_15();
         }
       else {
@@ -8495,7 +8495,7 @@ static inline sim_event_t *HplAtm128Timer0AsyncP$allocate_compare(void )
   sim_event_t *newEvent = sim_queue_allocate_event();
 
 #line 225
-  sim_log_debug(189U, "HplAtm128Timer0AsyncP", "Allocated compare at 0x%p\n", newEvent);
+  sim_log_debug(190U, "HplAtm128Timer0AsyncP", "Allocated compare at 0x%p\n", newEvent);
   newEvent->handle = HplAtm128Timer0AsyncP$timer0_compare_handle;
   newEvent->cleanup = sim_queue_cleanup_none;
   return newEvent;
@@ -8803,7 +8803,7 @@ inline static void /*AlarmCounterMilliP.Atm128AlarmAsyncC.Atm128AlarmAsyncP*/Atm
 static inline void HplAtm128Timer0AsyncP$Timer0Ctrl$setControl(Atm128TimerControl_t x)
 #line 364
 {
-  sim_log_debug(194U, "HplAtm128Timer0AsyncP", "Setting control to be 0x%hhx\n", x.flat);
+  sim_log_debug(195U, "HplAtm128Timer0AsyncP", "Setting control to be 0x%hhx\n", x.flat);
   * (volatile uint8_t *)&atm128RegFile[sim_node()][0x33] = x.flat;
 }
 
@@ -10573,7 +10573,7 @@ uint8_t len)
   if (/*AMQueueP.AMQueueImplP*/AMQueueImplP$0$queue[sim_node()][clientId].msg != (void *)0) {
       return EBUSY;
     }
-  sim_log_debug(172U, "AMQueue", "AMQueue: request to send from %hhu (%p): passed checks\n", clientId, msg);
+  sim_log_debug(173U, "AMQueue", "AMQueue: request to send from %hhu (%p): passed checks\n", clientId, msg);
 
   /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$queue[sim_node()][clientId].msg = msg;
   /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$Packet$setPayloadLength(msg, len);
@@ -10583,12 +10583,12 @@ uint8_t len)
       am_id_t amId = /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$AMPacket$type(msg);
       am_addr_t dest = /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$AMPacket$destination(msg);
 
-      sim_log_debug(173U, "AMQueue", "%s: request to send from %hhu (%p): queue empty\n", __FUNCTION__, clientId, msg);
+      sim_log_debug(174U, "AMQueue", "%s: request to send from %hhu (%p): queue empty\n", __FUNCTION__, clientId, msg);
       /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$current[sim_node()] = clientId;
 
       err = /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$AMSend$send(amId, dest, msg, len);
       if (err != SUCCESS) {
-          sim_log_debug(174U, "AMQueue", "%s: underlying send failed.\n", __FUNCTION__);
+          sim_log_debug(175U, "AMQueue", "%s: underlying send failed.\n", __FUNCTION__);
           /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$current[sim_node()] = 3;
           /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$queue[sim_node()][clientId].msg = (void *)0;
         }
@@ -10596,7 +10596,7 @@ uint8_t len)
       return err;
     }
   else {
-      sim_log_debug(175U, "AMQueue", "AMQueue: request to send from %hhu (%p): queue not empty\n", clientId, msg);
+      sim_log_debug(176U, "AMQueue", "AMQueue: request to send from %hhu (%p): queue not empty\n", clientId, msg);
     }
   return SUCCESS;
 }
@@ -10677,7 +10677,7 @@ static void /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$AMSend$sendDone(am_id_t id, 
       /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$sendDone(/*AMQueueP.AMQueueImplP*/AMQueueImplP$0$current[sim_node()], msg, err);
     }
   else {
-      sim_log_debug(176U, "PointerBug", "%s received send done for %p, signaling for %p.\n", __FUNCTION__, msg, /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$queue[sim_node()][/*AMQueueP.AMQueueImplP*/AMQueueImplP$0$current[sim_node()]].msg);
+      sim_log_debug(177U, "PointerBug", "%s received send done for %p, signaling for %p.\n", __FUNCTION__, msg, /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$queue[sim_node()][/*AMQueueP.AMQueueImplP*/AMQueueImplP$0$current[sim_node()]].msg);
     }
 }
 
@@ -10769,13 +10769,13 @@ static void AODVsimulator$printRT(void )
 {
   int i;
 
-  sim_log_debug(155U, "AODVsimulator", ".-------------- ROUTING TABLE -------------.\n");
+  sim_log_debug(155U, "AODVsimulator", ".--------- ROUTING TABLE --------.\n");
   for (i = 0; i < 20; i++) 
-    if (__nesc_ntoh_uint16(AODVsimulator$routingTable[sim_node()][i].dest.nxdata) != 0) {
-      sim_log_debug(156U, "AODVsimulator", "| dest: %hhu, next_hop %hhu, num_hop %hhu, status %hhu |\n", __nesc_ntoh_uint16(AODVsimulator$routingTable[sim_node()][i].dest.nxdata), __nesc_ntoh_uint16(AODVsimulator$routingTable[sim_node()][i].next_hop.nxdata), __nesc_ntoh_uint16(AODVsimulator$routingTable[sim_node()][i].num_hop.nxdata), __nesc_ntoh_uint16(AODVsimulator$routingTable[sim_node()][i].status.nxdata));
+    if (__nesc_ntoh_uint16(AODVsimulator$routingTable[sim_node()][i].dest.nxdata) != 0 && __nesc_ntoh_uint16(AODVsimulator$routingTable[sim_node()][i].status.nxdata) != 0) {
+      sim_log_debug(156U, "AODVsimulator", "| dest: %hhu, next_hop %hhu, num_hop %hhu |\n", __nesc_ntoh_uint16(AODVsimulator$routingTable[sim_node()][i].dest.nxdata), __nesc_ntoh_uint16(AODVsimulator$routingTable[sim_node()][i].next_hop.nxdata), __nesc_ntoh_uint16(AODVsimulator$routingTable[sim_node()][i].num_hop.nxdata));
       }
 #line 128
-  sim_log_debug(157U, "AODVsimulator", "'------------------------------------------'\n");
+  sim_log_debug(157U, "AODVsimulator", "'--------------------------------'\n");
 }
 
 #line 40
@@ -10850,7 +10850,7 @@ static uint8_t HplAtm128Timer0AsyncP$Timer0$get(void )
   elapsed = HplAtm128Timer0AsyncP$sim_to_clock(elapsed);
   elapsed = elapsed >> HplAtm128Timer0AsyncP$shiftFromScale();
   rval = (uint8_t )(elapsed & 0xff);
-  sim_log_debug(191U, "HplAtm128Timer0AsyncP", "HplAtm128Timer0AsyncP: Getting timer: %hhu\n", rval);
+  sim_log_debug(192U, "HplAtm128Timer0AsyncP", "HplAtm128Timer0AsyncP: Getting timer: %hhu\n", rval);
   return rval;
 }
 
@@ -10929,7 +10929,7 @@ static Atm128_TIFR_t HplAtm128Timer0AsyncP$Timer0Ctrl$getInterruptFlag(void )
 static uint8_t HplAtm128Timer0AsyncP$Compare$get(void )
 #line 457
 {
-  sim_log_debug(197U, "HplAtm128Timer0AsyncP", "HplAtm128Timer0AsyncP: Getting compare: %hhu\n", * (volatile uint8_t *)&atm128RegFile[sim_node()][0x31]);
+  sim_log_debug(198U, "HplAtm128Timer0AsyncP", "HplAtm128Timer0AsyncP: Getting compare: %hhu\n", * (volatile uint8_t *)&atm128RegFile[sim_node()][0x31]);
   return * (volatile uint8_t *)&atm128RegFile[sim_node()][0x31];
 }
 
@@ -11127,13 +11127,13 @@ static void /*AlarmCounterMilliP.Atm128AlarmAsyncC.Atm128AlarmAsyncP*/Atm128Alar
       uint8_t tifr = (uint8_t )/*AlarmCounterMilliP.Atm128AlarmAsyncC.Atm128AlarmAsyncP*/Atm128AlarmAsyncP$0$TimerCtrl$getInterruptFlag().flat;
 
 #line 101
-      sim_log_debug(177U, "Atm128AlarmAsyncP", "Atm128AlarmAsyncP: TIFR is %hhx\n", tifr);
+      sim_log_debug(178U, "Atm128AlarmAsyncP", "Atm128AlarmAsyncP: TIFR is %hhx\n", tifr);
       if ((interrupt_in != 0 && interrupt_in < /*AlarmCounterMilliP.Atm128AlarmAsyncC.Atm128AlarmAsyncP*/Atm128AlarmAsyncP$0$MINDT) || tifr & (1 << OCF0)) {
           if (interrupt_in < /*AlarmCounterMilliP.Atm128AlarmAsyncC.Atm128AlarmAsyncP*/Atm128AlarmAsyncP$0$MINDT) {
-              sim_log_debug(178U, "Atm128AlarmAsyncP", "Atm128AlarmAsyncP: under min: %hhu.\n", interrupt_in);
+              sim_log_debug(179U, "Atm128AlarmAsyncP", "Atm128AlarmAsyncP: under min: %hhu.\n", interrupt_in);
             }
           else {
-              sim_log_debug(179U, "Atm128AlarmAsyncP", "Atm128AlarmAsyncP: OCF set.\n");
+              sim_log_debug(180U, "Atm128AlarmAsyncP", "Atm128AlarmAsyncP: OCF set.\n");
             }
           {
 #line 109
@@ -11145,14 +11145,14 @@ static void /*AlarmCounterMilliP.Atm128AlarmAsyncC.Atm128AlarmAsyncP*/Atm128Alar
 
       if (!/*AlarmCounterMilliP.Atm128AlarmAsyncC.Atm128AlarmAsyncP*/Atm128AlarmAsyncP$0$set[sim_node()]) {
           newOcr0 = /*AlarmCounterMilliP.Atm128AlarmAsyncC.Atm128AlarmAsyncP*/Atm128AlarmAsyncP$0$MAXT;
-          sim_log_debug(180U, "Atm128AlarmAsyncP", "Atm128AlarmAsyncP: no alarm set, set at max.\n");
+          sim_log_debug(181U, "Atm128AlarmAsyncP", "Atm128AlarmAsyncP: no alarm set, set at max.\n");
         }
       else 
         {
           uint32_t now = /*AlarmCounterMilliP.Atm128AlarmAsyncC.Atm128AlarmAsyncP*/Atm128AlarmAsyncP$0$Counter$get();
 
 #line 120
-          sim_log_debug(181U, "Atm128AlarmAsyncP", "Atm128AlarmAsyncP: now-t0 = %llu, dt = %llu\n", now - /*AlarmCounterMilliP.Atm128AlarmAsyncC.Atm128AlarmAsyncP*/Atm128AlarmAsyncP$0$t0[sim_node()], /*AlarmCounterMilliP.Atm128AlarmAsyncC.Atm128AlarmAsyncP*/Atm128AlarmAsyncP$0$dt[sim_node()]);
+          sim_log_debug(182U, "Atm128AlarmAsyncP", "Atm128AlarmAsyncP: now-t0 = %llu, dt = %llu\n", now - /*AlarmCounterMilliP.Atm128AlarmAsyncC.Atm128AlarmAsyncP*/Atm128AlarmAsyncP$0$t0[sim_node()], /*AlarmCounterMilliP.Atm128AlarmAsyncC.Atm128AlarmAsyncP*/Atm128AlarmAsyncP$0$dt[sim_node()]);
 
           if ((uint32_t )(now - /*AlarmCounterMilliP.Atm128AlarmAsyncC.Atm128AlarmAsyncP*/Atm128AlarmAsyncP$0$t0[sim_node()]) >= /*AlarmCounterMilliP.Atm128AlarmAsyncC.Atm128AlarmAsyncP*/Atm128AlarmAsyncP$0$dt[sim_node()]) 
             {
@@ -11196,7 +11196,7 @@ static void /*AlarmCounterMilliP.Atm128AlarmAsyncC.Atm128AlarmAsyncP*/Atm128Alar
 static void HplAtm128Timer0AsyncP$Compare$set(uint8_t t)
 #line 463
 {
-  sim_log_debug(198U, "HplAtm128Timer0AsyncP", "HplAtm128Timer0AsyncP: Setting compare: %hhu\n", t);
+  sim_log_debug(199U, "HplAtm128Timer0AsyncP", "HplAtm128Timer0AsyncP: Setting compare: %hhu\n", t);
   /* atomic removed: atomic calls only */
 #line 465
   {
@@ -11277,7 +11277,7 @@ static void HplAtm128Timer0AsyncP$configure_overflow(sim_event_t *evt)
   overflowTime += sim_time();
   overflowTime -= (sim_time() - HplAtm128Timer0AsyncP$last_zero()) % (1 << HplAtm128Timer0AsyncP$shiftFromScale());
 
-  sim_log_debug(201U, "HplAtm128Timer0AsyncP", "Scheduling new overflow for %i at time %llu\n", sim_node(), overflowTime);
+  sim_log_debug(202U, "HplAtm128Timer0AsyncP", "Scheduling new overflow for %i at time %llu\n", sim_node(), overflowTime);
 
   evt->time = overflowTime;
 }
@@ -11324,7 +11324,7 @@ static void HplAtm128Timer0AsyncP$configure_compare(sim_event_t *evt)
   phaseOffset %= HplAtm128Timer0AsyncP$clock_to_sim(1 << HplAtm128Timer0AsyncP$shiftFromScale());
   compareTime -= phaseOffset;
 
-  sim_log_debug(190U, "HplAtm128Timer0AsyncP", "Configuring new compare of %i for %i at time %llu  (@ %llu)\n", (int )compareVal, sim_node(), compareTime, sim_time());
+  sim_log_debug(191U, "HplAtm128Timer0AsyncP", "Configuring new compare of %i for %i at time %llu  (@ %llu)\n", (int )compareVal, sim_node(), compareTime, sim_time());
 
   evt->time = compareTime;
 }

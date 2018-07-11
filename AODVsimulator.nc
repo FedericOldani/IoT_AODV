@@ -121,11 +121,11 @@ task void goRReply(){
 void printRT(){
     int i;
     //PRINT ROUTING TABLE
-    dbg("AODVsimulator",".-------------- ROUTING TABLE -------------.\n");
+    dbg("AODVsimulator",".--------- ROUTING TABLE --------.\n");
     for(i=0;i<RT_size;i++)
-      if(routingTable[i].dest!=0)
-        dbg("AODVsimulator","| dest: %hhu, next_hop %hhu, num_hop %hhu, status %hhu |\n",routingTable[i].dest,routingTable[i].next_hop,routingTable[i].num_hop,routingTable[i].status);
-    dbg("AODVsimulator","'------------------------------------------'\n");
+      if(routingTable[i].dest!=0 && routingTable[i].status!=0)
+        dbg("AODVsimulator","| dest: %hhu, next_hop %hhu, num_hop %hhu |\n",routingTable[i].dest,routingTable[i].next_hop,routingTable[i].num_hop);
+    dbg("AODVsimulator","'--------------------------------'\n");
 
 }
 
@@ -254,7 +254,7 @@ event message_t* ReceiveRREQ.receive(message_t* bufPtr, void* payload, uint8_t l
     bool duplicated;
 
     if(rreq->dest==TOS_NODE_ID){
-        dbg("AODVsimulator","RReq reached the destination!\n"); 
+        dbg("AODVsimulator","%hhu -> %hhu RREQUEST reached the destination!\n",rreq->sender,TOS_NODE_ID); 
         sendRReplyMsg(rreq->id,rreq->sender,rreq->src,TOS_NODE_ID,TOS_NODE_ID,1);
     }
     else{
@@ -274,7 +274,7 @@ event message_t* ReceiveRREQ.receive(message_t* bufPtr, void* payload, uint8_t l
 		    cacheTable[k].dest=rreq->dest;
         cacheTable[k].sender=rreq->sender;
 	 	    		                               
-		    //dbg("AODVsimulator","Send in broadcast the request\n");             
+		    dbg("AODVsimulator","%hhu -> %hhu RREQUEST received, forward it in broadcast\n",rreq->sender,TOS_NODE_ID);             
 		    sendRReqMsg(rreq->id,rreq->src,rreq->dest);
       }
 
@@ -320,7 +320,7 @@ event message_t* ReceiveRRP.receive(message_t* bufPtr, void* payload, uint8_t le
     int i,j; 
     bool found;
     
-    dbg("AODVsimulator","RREPLY received, %hhu hops\n",rreply->hop);     
+    dbg("AODVsimulator","%hhu -> %hhu RREPLY received, %hhu hops\n",rreply->sender,TOS_NODE_ID,rreply->hop);     
 
     found=FALSE;
     for(i=0;i<RT_size && !found;i++){
@@ -381,6 +381,6 @@ event void SendRREQ.sendDone(message_t* bufPtr, error_t error) {
   event void SendDATA.sendDone(message_t* bufPtr, error_t error) {
   if (&packetData == bufPtr) {
     locked = FALSE;
-    //dbg("AODVsimulator", "unlocked data\n");
+     //dbg("AODVsimulator", "unlocked data\n");
   }}
 }
