@@ -17,9 +17,9 @@ module AODVsimulator @safe() {
     interface AMSend as SendRRP;
     interface AMSend as SendRREQ;
     interface AMSend as SendDATA;
-    interface Timer<TMilli> as MilliTimer;
-    interface Timer<TMilli> as AcceptReply;
-    interface Timer<TMilli> as CleanRTtimer;
+    interface Timer<TMilli> as MilliTimer; //send a message every 30 seconds
+    interface Timer<TMilli> as AcceptReply; //wait for reply for 1 second
+    interface Timer<TMilli> as CleanRTtimer; //delete a row of each routing table 90 seconds after the creation
     interface SplitControl as AMControl;
     interface Packet;
     interface Random;
@@ -37,6 +37,7 @@ implementation {
   uint16_t msg_dest,content, msg_id=0;
   int end = 0,k=0,rrep_i=0;
 
+//Sets all the fields of a data message and sends it
  void sendDatatMsg(uint16_t dest_, uint16_t src_, uint16_t content_,uint16_t next_hop){
      data_msg_t* rdm = (data_msg_t*)call Packet.getPayload(&packetData, sizeof(data_msg_t));
         if (rdm == NULL){  
@@ -85,7 +86,7 @@ task void goRReply(){
           dbg("AODVsimulator", "RREPLY: back to the previous node %hhu \n",next_hop);  
           locked = TRUE;
         }
-        else           dbg("AODVsimulator", "????????????\n"); 
+        else           dbg("AODVsimulator", "ERROR\n"); 
   }
   
    void sendRReplyMsg(uint16_t id_, uint16_t next_hop_, uint16_t dest_,uint16_t src_,uint16_t sender_, uint16_t hop_){ 
@@ -101,7 +102,7 @@ task void goRReply(){
       post goRReply();
 
     }
-  
+  //Sets all the fields of a route request message and sends it
   void sendRReqMsg(uint16_t id_, uint16_t src_,uint16_t dest_){
   rreq_msg_t* rreq = (rreq_msg_t*)call Packet.getPayload(&packetRReq, sizeof(rreq_msg_t));
         if (rreq == NULL) {
@@ -137,7 +138,7 @@ void printCT(){
         dbg("AODVsimulator","CT id:%hhu, dest: %hhu, src: %hhu, sender: %hhu\n",cacheTable[i].id,cacheTable[i].dest,cacheTable[i].src,cacheTable[i].sender);
 }
 
-//default initialization of routingTable and cacheTable
+//Default initialization of routingTable and cacheTable
   event void Boot.booted() {
     int i;
     dbg("ActiveNode", "ActiveNode: node %u started\n",TOS_NODE_ID);
@@ -167,7 +168,7 @@ void printCT(){
   event void AMControl.stopDone(error_t err) {
     // do nothing
   }
-  
+  //Clean a row of the routing table when 90 sec have passed
   event void CleanRTtimer.fired(){
     int i = 0;
     dbg("AODVsimulator", ">>>> 90 sec passed, remove routing table entry\n");
@@ -186,7 +187,7 @@ void printCT(){
     printRT();
   }
   
-
+//Start a timer of 1 sec if a route request is needed
   event void MilliTimer.fired() {
     bool found; int i;
     if (locked) {
@@ -221,7 +222,7 @@ void printCT(){
     }  
 
 
-
+//Send a data message after have wait for 1 sec for replies
 event void AcceptReply.fired() {
     bool found;
     int i;
@@ -244,7 +245,7 @@ event void AcceptReply.fired() {
    }
 }
 
-
+//Receive a route request message
 event message_t* ReceiveRREQ.receive(message_t* bufPtr, void* payload, uint8_t len) {
   if (len != sizeof(rreq_msg_t)) {
     return bufPtr;}
@@ -252,13 +253,13 @@ event message_t* ReceiveRREQ.receive(message_t* bufPtr, void* payload, uint8_t l
     rreq_msg_t* rreq = (rreq_msg_t*)payload;
     int i; 
     bool duplicated;
-
+    //if I am the destination send a reply
     if(rreq->dest==TOS_NODE_ID){
         dbg("AODVsimulator","%hhu -> %hhu RREQUEST reached the destination!\n",rreq->sender,TOS_NODE_ID); 
         sendRReplyMsg(rreq->id,rreq->sender,rreq->src,TOS_NODE_ID,TOS_NODE_ID,1);
     }
-    else{
-
+    else{ 
+	//if I have just received this rreq from an other node this is duplicated and I stop the routing (to avoid cycles)
 	   if(rreq->src!=TOS_NODE_ID){
 	    duplicated=FALSE;
 	    for(i=0;i<CT_size;i++){
@@ -266,7 +267,7 @@ event message_t* ReceiveRREQ.receive(message_t* bufPtr, void* payload, uint8_t l
 		    dbg("AODVsimulator","Duplicated packet\n");
 		    duplicated=TRUE;}
 	    }
-	    if(!duplicated){
+	    if(!duplicated){//if it is a new message I will send it in broadcast
 		    k++;
 		    if(k>=CT_size) k=0;
 		    cacheTable[k].id=rreq->id;
@@ -283,14 +284,14 @@ event message_t* ReceiveRREQ.receive(message_t* bufPtr, void* payload, uint8_t l
      return bufPtr;
   }
 }
-
+//Receive a Data message
 event message_t* ReceiveDATA.receive(message_t* bufPtr, void* payload, uint8_t len) {
   if (len != sizeof(data_msg_t)) { return bufPtr; }
   else {
     data_msg_t* data = (data_msg_t*)payload;
     int i; 
     bool found;
-
+	//send the message to the next hop of the routing table if it have not reached the destination yet
     if(data->dest!=TOS_NODE_ID){
         found=FALSE;
         for(i=0;i<RT_size && !found;i++){
@@ -307,12 +308,12 @@ event message_t* ReceiveDATA.receive(message_t* bufPtr, void* payload, uint8_t l
         if(!found){            
             dbg("AODVsimulator","Error, data pck stops here\n");               
             }
-     } else
+     } else //the message is finally recived
       dbg("AODVsimulator","FINISH data packet from %hhu to %hhu received, CONTENT: %hhu\n",data->src,data->dest,data->content);
     } 
   return bufPtr;
   }  
-  
+//Receive a Route Reply message
 event message_t* ReceiveRRP.receive(message_t* bufPtr, void* payload, uint8_t len) {
   if (len != sizeof(rrp_msg_t)) {    return bufPtr;}
   else {
@@ -323,6 +324,7 @@ event message_t* ReceiveRRP.receive(message_t* bufPtr, void* payload, uint8_t le
     dbg("AODVsimulator","%hhu -> %hhu RREPLY received, %hhu hops\n",rreply->sender,TOS_NODE_ID,rreply->hop);     
 
     found=FALSE;
+//if there is a route for that node updates the table if the number of hops is lower
     for(i=0;i<RT_size && !found;i++){
              if(routingTable[i].dest==rreply->src && routingTable[i].status==ACTIVE){
                 if(routingTable[i].num_hop>=rreply->hop) {
@@ -340,7 +342,7 @@ event message_t* ReceiveRRP.receive(message_t* bufPtr, void* payload, uint8_t le
                 found=TRUE;
 	           }
 	  }
-    if(!found){
+    if(!found){ //if there is not a route for that node , insert the new row in the table
           routingTable[end].dest=rreply->src;
           routingTable[end].next_hop=rreply->sender;
           routingTable[end].num_hop=rreply->hop;
@@ -363,7 +365,7 @@ event message_t* ReceiveRRP.receive(message_t* bufPtr, void* payload, uint8_t le
   
  
 }
-
+//unlock the channel when the send operations are finished
 event void SendRRP.sendDone(message_t* bufPtr, error_t error) {
   if (&packetRRep == bufPtr) {
     locked = FALSE;
@@ -378,7 +380,7 @@ event void SendRREQ.sendDone(message_t* bufPtr, error_t error) {
     //dbg("AODVsimulator", "unlocked rreq\n");
   }
   }
-  event void SendDATA.sendDone(message_t* bufPtr, error_t error) {
+event void SendDATA.sendDone(message_t* bufPtr, error_t error) {
   if (&packetData == bufPtr) {
     locked = FALSE;
      //dbg("AODVsimulator", "unlocked data\n");

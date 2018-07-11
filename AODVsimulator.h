@@ -30,7 +30,7 @@ typedef nx_struct rrp_msg {
 } rrp_msg_t;
 
 
-typedef nx_struct routing_table{
+typedef nx_struct routing_table{ 
     nx_uint16_t dest;
     nx_uint16_t next_hop;
     nx_uint16_t num_hop;
@@ -47,9 +47,9 @@ typedef nx_struct cache_table{
 
 
 enum {
-  AM_DATA_MSG = 1,//communication channel 
-  AM_RREQ_MSG = 10,//communication channel 
-  AM_RRP_MSG = 20,//communication channel 
+  AM_DATA_MSG = 1,//communication channel for Data Message
+  AM_RREQ_MSG = 10,//communication channel for Route Request Message
+  AM_RRP_MSG = 20,//communication channel for Route Reply Message
 };
 
 #define INVALID 0
