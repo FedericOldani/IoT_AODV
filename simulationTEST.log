@@ -1,0 +1,2709 @@
+DEBUG (1): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 1 -> 7 at time 29 seconds, CONTENT: 28 
+DEBUG (1): RREQUEST: sent in broadcast (SRC:1, DEST:7)
+DEBUG (3): 1 -> 3 RREQUEST received, forward it in broadcast
+DEBUG (3): RREQUEST: sent in broadcast (SRC:1, DEST:7)
+DEBUG (2): 1 -> 2 RREQUEST received, forward it in broadcast
+DEBUG (2): RREQUEST: sent in broadcast (SRC:1, DEST:7)
+DEBUG (8): 2 -> 8 RREQUEST received, forward it in broadcast
+DEBUG (8): RREQUEST: sent in broadcast (SRC:1, DEST:7)
+DEBUG (6): 3 -> 6 RREQUEST received, forward it in broadcast
+DEBUG (6): RREQUEST: sent in broadcast (SRC:1, DEST:7)
+DEBUG (4): 3 -> 4 RREQUEST received, forward it in broadcast
+DEBUG (4): RREQUEST: sent in broadcast (SRC:1, DEST:7)
+DEBUG (6): Duplicated packet
+DEBUG (5): 4 -> 5 RREQUEST received, forward it in broadcast
+DEBUG (5): RREQUEST: sent in broadcast (SRC:1, DEST:7)
+DEBUG (3): Duplicated packet
+DEBUG (7): 8 -> 7 RREQUEST reached the destination!
+DEBUG (7): RREPLY: back to the previous node 8 
+DEBUG (7): 6 -> 7 RREQUEST reached the destination!
+DEBUG (5): Duplicated packet
+DEBUG (4): Duplicated packet
+DEBUG (3): Duplicated packet
+DEBUG (7): 5 -> 7 RREQUEST reached the destination!
+DEBUG (4): Duplicated packet
+DEBUG (6): Duplicated packet
+DEBUG (8): 7 -> 8 RREPLY received, 1 hops
+DEBUG (8): RT new entry
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): RREPLY: back to the previous node 2 
+DEBUG (7): RREPLY: back to the previous node 6 
+DEBUG (6): 7 -> 6 RREPLY received, 1 hops
+DEBUG (6): RT new entry
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): RREPLY: back to the previous node 3 
+DEBUG (7): RREPLY: back to the previous node 5 
+DEBUG (2): 8 -> 2 RREPLY received, 2 hops
+DEBUG (2): RT new entry
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): '--------------------------------'
+DEBUG (2): RREPLY: back to the previous node 1 
+DEBUG (3): 6 -> 3 RREPLY received, 2 hops
+DEBUG (3): RT new entry
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): RREPLY: back to the previous node 1 
+DEBUG (5): 7 -> 5 RREPLY received, 1 hops
+DEBUG (5): RT new entry
+DEBUG (5): .--------- ROUTING TABLE --------.
+DEBUG (5): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (5): '--------------------------------'
+DEBUG (5): RREPLY: back to the previous node 4 
+DEBUG (1): 2 -> 1 RREPLY received, 3 hops
+DEBUG (1): RT new entry
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): '--------------------------------'
+DEBUG (4): 5 -> 4 RREPLY received, 2 hops
+DEBUG (4): RT new entry
+DEBUG (4): .--------- ROUTING TABLE --------.
+DEBUG (4): | dest: 7, next_hop 5, num_hop 2 |
+DEBUG (4): '--------------------------------'
+DEBUG (4): RREPLY: back to the previous node 3 
+DEBUG (3): 4 -> 3 RREPLY received, 3 hops
+DEBUG (3): RREPLY: back to the previous node 1 
+DEBUG (1): 3 -> 1 RREPLY received, 4 hops
+DEBUG (1): >> One sec passed, send data msg <<
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): DATA: packet sent to the next hop: 2 (SRC: 1, DEST: 7)
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): '--------------------------------'
+DEBUG (2): DATA: packet sent to the next hop: 8 (SRC: 1, DEST: 7)
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): DATA: packet sent to the next hop: 7 (SRC: 1, DEST: 7)
+DEBUG (2): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 2 -> 6 at time 32 seconds, CONTENT: 117 
+DEBUG (2): RREQUEST: sent in broadcast (SRC:2, DEST:6)
+DEBUG (8): 2 -> 8 RREQUEST received, forward it in broadcast
+DEBUG (8): RREQUEST: sent in broadcast (SRC:2, DEST:6)
+DEBUG (1): 2 -> 1 RREQUEST received, forward it in broadcast
+DEBUG (1): RREQUEST: sent in broadcast (SRC:2, DEST:6)
+DEBUG (3): 1 -> 3 RREQUEST received, forward it in broadcast
+DEBUG (3): RREQUEST: sent in broadcast (SRC:2, DEST:6)
+DEBUG (7): 8 -> 7 RREQUEST received, forward it in broadcast
+DEBUG (7): RREQUEST: sent in broadcast (SRC:2, DEST:6)
+DEBUG (8): Duplicated packet
+DEBUG (6): 7 -> 6 RREQUEST reached the destination!
+DEBUG (5): 7 -> 5 RREQUEST received, forward it in broadcast
+DEBUG (5): RREQUEST: sent in broadcast (SRC:2, DEST:6)
+DEBUG (6): RREPLY: back to the previous node 7 
+DEBUG (7): Duplicated packet
+DEBUG (6): 5 -> 6 RREQUEST reached the destination!
+DEBUG (4): 5 -> 4 RREQUEST received, forward it in broadcast
+DEBUG (4): RREQUEST: sent in broadcast (SRC:2, DEST:6)
+DEBUG (6): 3 -> 6 RREQUEST reached the destination!
+DEBUG (4): Duplicated packet
+DEBUG (1): Duplicated packet
+DEBUG (7): 6 -> 7 RREPLY received, 1 hops
+DEBUG (7): RT new entry
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): RREPLY: back to the previous node 8 
+DEBUG (6): RREPLY: back to the previous node 5 
+DEBUG (6): 4 -> 6 RREQUEST reached the destination!
+DEBUG (5): Duplicated packet
+DEBUG (3): Duplicated packet
+DEBUG (8): 7 -> 8 RREPLY received, 2 hops
+DEBUG (8): RT new entry
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): | dest: 6, next_hop 7, num_hop 2 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): RREPLY: back to the previous node 2 
+DEBUG (6): RREPLY: back to the previous node 3 
+DEBUG (3): 6 -> 3 RREPLY received, 1 hops
+DEBUG (3): RT new entry
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): RREPLY: back to the previous node 1 
+DEBUG (6): RREPLY: back to the previous node 4 
+DEBUG (2): 8 -> 2 RREPLY received, 3 hops
+DEBUG (2): RT new entry
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): | dest: 6, next_hop 8, num_hop 3 |
+DEBUG (2): '--------------------------------'
+DEBUG (1): 3 -> 1 RREPLY received, 2 hops
+DEBUG (1): RT new entry
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): RREPLY: back to the previous node 2 
+DEBUG (4): 6 -> 4 RREPLY received, 1 hops
+DEBUG (4): RT new entry
+DEBUG (4): .--------- ROUTING TABLE --------.
+DEBUG (4): | dest: 7, next_hop 5, num_hop 2 |
+DEBUG (4): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (4): '--------------------------------'
+DEBUG (4): RREPLY: back to the previous node 5 
+DEBUG (2): 1 -> 2 RREPLY received, 3 hops
+DEBUG (2): RT updated
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): | dest: 6, next_hop 1, num_hop 3 |
+DEBUG (2): '--------------------------------'
+DEBUG (5): 4 -> 5 RREPLY received, 2 hops
+DEBUG (5): RT new entry
+DEBUG (5): .--------- ROUTING TABLE --------.
+DEBUG (5): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (5): | dest: 6, next_hop 4, num_hop 2 |
+DEBUG (5): '--------------------------------'
+DEBUG (5): RREPLY: back to the previous node 7 
+DEBUG (7): 5 -> 7 RREPLY received, 3 hops
+DEBUG (7): RREPLY: back to the previous node 8 
+DEBUG (8): 7 -> 8 RREPLY received, 4 hops
+DEBUG (8): RREPLY: back to the previous node 2 
+DEBUG (2): 8 -> 2 RREPLY received, 5 hops
+DEBUG (2): >> One sec passed, send data msg <<
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): | dest: 6, next_hop 1, num_hop 3 |
+DEBUG (2): '--------------------------------'
+DEBUG (2): DATA: packet sent to the next hop: 1 (SRC: 2, DEST: 6)
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): DATA: packet sent to the next hop: 3 (SRC: 2, DEST: 6)
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): DATA: packet sent to the next hop: 6 (SRC: 2, DEST: 6)
+DEBUG (6): FINISH data packet from 2 to 6 received, CONTENT: 117
+DEBUG (3): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 3 -> 5 at time 35 seconds, CONTENT: 56 
+DEBUG (3): RREQUEST: sent in broadcast (SRC:3, DEST:5)
+DEBUG (4): 3 -> 4 RREQUEST received, forward it in broadcast
+DEBUG (4): RREQUEST: sent in broadcast (SRC:3, DEST:5)
+DEBUG (1): 3 -> 1 RREQUEST received, forward it in broadcast
+DEBUG (1): RREQUEST: sent in broadcast (SRC:3, DEST:5)
+DEBUG (6): 3 -> 6 RREQUEST received, forward it in broadcast
+DEBUG (6): RREQUEST: sent in broadcast (SRC:3, DEST:5)
+DEBUG (2): 1 -> 2 RREQUEST received, forward it in broadcast
+DEBUG (2): RREQUEST: sent in broadcast (SRC:3, DEST:5)
+DEBUG (4): Duplicated packet
+DEBUG (7): 6 -> 7 RREQUEST received, forward it in broadcast
+DEBUG (7): RREQUEST: sent in broadcast (SRC:3, DEST:5)
+DEBUG (5): 6 -> 5 RREQUEST reached the destination!
+DEBUG (5): RREPLY: back to the previous node 6 
+DEBUG (8): 2 -> 8 RREQUEST received, forward it in broadcast
+DEBUG (8): RREQUEST: sent in broadcast (SRC:3, DEST:5)
+DEBUG (1): Duplicated packet
+DEBUG (8): Duplicated packet
+DEBUG (6): Duplicated packet
+DEBUG (5): 7 -> 5 RREQUEST reached the destination!
+DEBUG (5): RREPLY: back to the previous node 7 
+DEBUG (7): Duplicated packet
+DEBUG (2): Duplicated packet
+DEBUG (7): 5 -> 7 RREPLY received, 1 hops
+DEBUG (7): RT new entry
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): RREPLY: back to the previous node 6 
+DEBUG (6): 7 -> 6 RREPLY received, 2 hops
+DEBUG (6): RT new entry
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 5, next_hop 7, num_hop 2 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): RREPLY: back to the previous node 3 
+DEBUG (3): 6 -> 3 RREPLY received, 3 hops
+DEBUG (3): RT new entry
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): >> One sec passed, send data msg <<
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): DATA: packet sent to the next hop: 6 (SRC: 3, DEST: 5)
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 5, next_hop 7, num_hop 2 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): DATA: packet sent to the next hop: 7 (SRC: 3, DEST: 5)
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): DATA: packet sent to the next hop: 5 (SRC: 3, DEST: 5)
+DEBUG (5): FINISH data packet from 3 to 5 received, CONTENT: 56
+DEBUG (4): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 4 -> 6 at time 38 seconds, CONTENT: 40 
+DEBUG (4): .--------- ROUTING TABLE --------.
+DEBUG (4): | dest: 7, next_hop 5, num_hop 2 |
+DEBUG (4): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (4): '--------------------------------'
+DEBUG (4): DATA: packet sent to the next hop: 6 (SRC: 4, DEST: 6)
+DEBUG (6): FINISH data packet from 4 to 6 received, CONTENT: 40
+DEBUG (5): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 5 -> 3 at time 41 seconds, CONTENT: 98 
+DEBUG (5): RREQUEST: sent in broadcast (SRC:5, DEST:3)
+DEBUG (7): 5 -> 7 RREQUEST received, forward it in broadcast
+DEBUG (7): RREQUEST: sent in broadcast (SRC:5, DEST:3)
+DEBUG (4): 5 -> 4 RREQUEST received, forward it in broadcast
+DEBUG (4): RREQUEST: sent in broadcast (SRC:5, DEST:3)
+DEBUG (6): 5 -> 6 RREQUEST received, forward it in broadcast
+DEBUG (6): RREQUEST: sent in broadcast (SRC:5, DEST:3)
+DEBUG (7): Duplicated packet
+DEBUG (4): Duplicated packet
+DEBUG (3): 6 -> 3 RREQUEST reached the destination!
+DEBUG (3): RREPLY: back to the previous node 6 
+DEBUG (8): 7 -> 8 RREQUEST received, forward it in broadcast
+DEBUG (8): RREQUEST: sent in broadcast (SRC:5, DEST:3)
+DEBUG (6): Duplicated packet
+DEBUG (7): Duplicated packet
+DEBUG (2): 8 -> 2 RREQUEST received, forward it in broadcast
+DEBUG (2): RREQUEST: sent in broadcast (SRC:5, DEST:3)
+DEBUG (8): Duplicated packet
+DEBUG (1): 2 -> 1 RREQUEST received, forward it in broadcast
+DEBUG (1): RREQUEST: sent in broadcast (SRC:5, DEST:3)
+DEBUG (3): 1 -> 3 RREQUEST reached the destination!
+DEBUG (2): Duplicated packet
+DEBUG (3): RREPLY: back to the previous node 1 
+DEBUG (1): 3 -> 1 RREPLY received, 1 hops
+DEBUG (1): RT new entry
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): RREPLY: back to the previous node 2 
+DEBUG (2): 1 -> 2 RREPLY received, 2 hops
+DEBUG (2): RT new entry
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): | dest: 6, next_hop 1, num_hop 3 |
+DEBUG (2): | dest: 3, next_hop 1, num_hop 2 |
+DEBUG (2): '--------------------------------'
+DEBUG (2): RREPLY: back to the previous node 8 
+DEBUG (8): 2 -> 8 RREPLY received, 3 hops
+DEBUG (8): RT new entry
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): | dest: 6, next_hop 7, num_hop 2 |
+DEBUG (8): | dest: 3, next_hop 2, num_hop 3 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): RREPLY: back to the previous node 7 
+DEBUG (7): 8 -> 7 RREPLY received, 4 hops
+DEBUG (7): RT new entry
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 3, next_hop 8, num_hop 4 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): RREPLY: back to the previous node 5 
+DEBUG (5): 7 -> 5 RREPLY received, 5 hops
+DEBUG (5): RT new entry
+DEBUG (5): .--------- ROUTING TABLE --------.
+DEBUG (5): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (5): | dest: 6, next_hop 4, num_hop 2 |
+DEBUG (5): | dest: 3, next_hop 7, num_hop 5 |
+DEBUG (5): '--------------------------------'
+DEBUG (5): >> One sec passed, send data msg <<
+DEBUG (5): .--------- ROUTING TABLE --------.
+DEBUG (5): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (5): | dest: 6, next_hop 4, num_hop 2 |
+DEBUG (5): | dest: 3, next_hop 7, num_hop 5 |
+DEBUG (5): '--------------------------------'
+DEBUG (5): DATA: packet sent to the next hop: 7 (SRC: 5, DEST: 3)
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 3, next_hop 8, num_hop 4 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): DATA: packet sent to the next hop: 8 (SRC: 5, DEST: 3)
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): | dest: 6, next_hop 7, num_hop 2 |
+DEBUG (8): | dest: 3, next_hop 2, num_hop 3 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): DATA: packet sent to the next hop: 2 (SRC: 5, DEST: 3)
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): | dest: 6, next_hop 1, num_hop 3 |
+DEBUG (2): | dest: 3, next_hop 1, num_hop 2 |
+DEBUG (2): '--------------------------------'
+DEBUG (2): DATA: packet sent to the next hop: 1 (SRC: 5, DEST: 3)
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): DATA: packet sent to the next hop: 3 (SRC: 5, DEST: 3)
+DEBUG (3): FINISH data packet from 5 to 3 received, CONTENT: 98
+DEBUG (6): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 6 -> 2 at time 44 seconds, CONTENT: 37 
+DEBUG (6): RREQUEST: sent in broadcast (SRC:6, DEST:2)
+DEBUG (7): 6 -> 7 RREQUEST received, forward it in broadcast
+DEBUG (7): RREQUEST: sent in broadcast (SRC:6, DEST:2)
+DEBUG (5): 6 -> 5 RREQUEST received, forward it in broadcast
+DEBUG (5): RREQUEST: sent in broadcast (SRC:6, DEST:2)
+DEBUG (4): 6 -> 4 RREQUEST received, forward it in broadcast
+DEBUG (4): RREQUEST: sent in broadcast (SRC:6, DEST:2)
+DEBUG (3): 6 -> 3 RREQUEST received, forward it in broadcast
+DEBUG (3): RREQUEST: sent in broadcast (SRC:6, DEST:2)
+DEBUG (8): 7 -> 8 RREQUEST received, forward it in broadcast
+DEBUG (8): RREQUEST: sent in broadcast (SRC:6, DEST:2)
+DEBUG (5): Duplicated packet
+DEBUG (5): Duplicated packet
+DEBUG (3): Duplicated packet
+DEBUG (7): Duplicated packet
+DEBUG (4): Duplicated packet
+DEBUG (1): 3 -> 1 RREQUEST received, forward it in broadcast
+DEBUG (1): RREQUEST: sent in broadcast (SRC:6, DEST:2)
+DEBUG (4): Duplicated packet
+DEBUG (3): Duplicated packet
+DEBUG (2): 1 -> 2 RREQUEST reached the destination!
+DEBUG (2): RREPLY: back to the previous node 1 
+DEBUG (7): Duplicated packet
+DEBUG (1): 2 -> 1 RREPLY received, 1 hops
+DEBUG (1): RT new entry
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): RREPLY: back to the previous node 3 
+DEBUG (3): 1 -> 3 RREPLY received, 2 hops
+DEBUG (3): RT new entry
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): RREPLY: back to the previous node 6 
+DEBUG (6): 3 -> 6 RREPLY received, 3 hops
+DEBUG (6): RT new entry
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 5, next_hop 7, num_hop 2 |
+DEBUG (6): | dest: 2, next_hop 3, num_hop 3 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): >> One sec passed, send data msg <<
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 5, next_hop 7, num_hop 2 |
+DEBUG (6): | dest: 2, next_hop 3, num_hop 3 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): DATA: packet sent to the next hop: 3 (SRC: 6, DEST: 2)
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): DATA: packet sent to the next hop: 1 (SRC: 6, DEST: 2)
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): DATA: packet sent to the next hop: 2 (SRC: 6, DEST: 2)
+DEBUG (2): FINISH data packet from 6 to 2 received, CONTENT: 37
+DEBUG (7): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 7 -> 1 at time 47 seconds, CONTENT: 127 
+DEBUG (7): RREQUEST: sent in broadcast (SRC:7, DEST:1)
+DEBUG (8): 7 -> 8 RREQUEST received, forward it in broadcast
+DEBUG (8): RREQUEST: sent in broadcast (SRC:7, DEST:1)
+DEBUG (6): 7 -> 6 RREQUEST received, forward it in broadcast
+DEBUG (6): RREQUEST: sent in broadcast (SRC:7, DEST:1)
+DEBUG (5): 7 -> 5 RREQUEST received, forward it in broadcast
+DEBUG (5): RREQUEST: sent in broadcast (SRC:7, DEST:1)
+DEBUG (2): 8 -> 2 RREQUEST received, forward it in broadcast
+DEBUG (2): RREQUEST: sent in broadcast (SRC:7, DEST:1)
+DEBUG (6): Duplicated packet
+DEBUG (4): 5 -> 4 RREQUEST received, forward it in broadcast
+DEBUG (4): RREQUEST: sent in broadcast (SRC:7, DEST:1)
+DEBUG (1): 2 -> 1 RREQUEST reached the destination!
+DEBUG (8): Duplicated packet
+DEBUG (1): RREPLY: back to the previous node 2 
+DEBUG (3): 6 -> 3 RREQUEST received, forward it in broadcast
+DEBUG (3): RREQUEST: sent in broadcast (SRC:7, DEST:1)
+DEBUG (5): Duplicated packet
+DEBUG (4): Duplicated packet
+DEBUG (6): Duplicated packet
+DEBUG (4): Duplicated packet
+DEBUG (1): 3 -> 1 RREQUEST reached the destination!
+DEBUG (2): 1 -> 2 RREPLY received, 1 hops
+DEBUG (2): RT new entry
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): | dest: 6, next_hop 1, num_hop 3 |
+DEBUG (2): | dest: 3, next_hop 1, num_hop 2 |
+DEBUG (2): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (2): '--------------------------------'
+DEBUG (2): RREPLY: back to the previous node 8 
+DEBUG (1): RREPLY: back to the previous node 3 
+DEBUG (6): Duplicated packet
+DEBUG (5): Duplicated packet
+DEBUG (8): 2 -> 8 RREPLY received, 2 hops
+DEBUG (8): RT new entry
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): | dest: 6, next_hop 7, num_hop 2 |
+DEBUG (8): | dest: 3, next_hop 2, num_hop 3 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): RREPLY: back to the previous node 7 
+DEBUG (7): 8 -> 7 RREPLY received, 3 hops
+DEBUG (7): RT new entry
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 3, next_hop 8, num_hop 4 |
+DEBUG (7): | dest: 1, next_hop 8, num_hop 3 |
+DEBUG (7): '--------------------------------'
+DEBUG (3): 1 -> 3 RREPLY received, 1 hops
+DEBUG (3): RT new entry
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): RREPLY: back to the previous node 6 
+DEBUG (6): 3 -> 6 RREPLY received, 2 hops
+DEBUG (6): RT new entry
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 5, next_hop 7, num_hop 2 |
+DEBUG (6): | dest: 2, next_hop 3, num_hop 3 |
+DEBUG (6): | dest: 1, next_hop 3, num_hop 2 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): RREPLY: back to the previous node 7 
+DEBUG (7): 6 -> 7 RREPLY received, 3 hops
+DEBUG (7): RT updated
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 3, next_hop 8, num_hop 4 |
+DEBUG (7): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): >> One sec passed, send data msg <<
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 3, next_hop 8, num_hop 4 |
+DEBUG (7): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): DATA: packet sent to the next hop: 6 (SRC: 7, DEST: 1)
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 5, next_hop 7, num_hop 2 |
+DEBUG (6): | dest: 2, next_hop 3, num_hop 3 |
+DEBUG (6): | dest: 1, next_hop 3, num_hop 2 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): DATA: packet sent to the next hop: 3 (SRC: 7, DEST: 1)
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): DATA: packet sent to the next hop: 1 (SRC: 7, DEST: 1)
+DEBUG (1): FINISH data packet from 7 to 1 received, CONTENT: 127
+DEBUG (8): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 8 -> 3 at time 50 seconds, CONTENT: 81 
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): | dest: 6, next_hop 7, num_hop 2 |
+DEBUG (8): | dest: 3, next_hop 2, num_hop 3 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): DATA: packet sent to the next hop: 2 (SRC: 8, DEST: 3)
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): | dest: 6, next_hop 1, num_hop 3 |
+DEBUG (2): | dest: 3, next_hop 1, num_hop 2 |
+DEBUG (2): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (2): '--------------------------------'
+DEBUG (2): DATA: packet sent to the next hop: 1 (SRC: 8, DEST: 3)
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): DATA: packet sent to the next hop: 3 (SRC: 8, DEST: 3)
+DEBUG (3): FINISH data packet from 8 to 3 received, CONTENT: 81
+DEBUG (1): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 1 -> 4 at time 58 seconds, CONTENT: 78 
+DEBUG (1): RREQUEST: sent in broadcast (SRC:1, DEST:4)
+DEBUG (3): 1 -> 3 RREQUEST received, forward it in broadcast
+DEBUG (3): RREQUEST: sent in broadcast (SRC:1, DEST:4)
+DEBUG (2): 1 -> 2 RREQUEST received, forward it in broadcast
+DEBUG (2): RREQUEST: sent in broadcast (SRC:1, DEST:4)
+DEBUG (8): 2 -> 8 RREQUEST received, forward it in broadcast
+DEBUG (8): RREQUEST: sent in broadcast (SRC:1, DEST:4)
+DEBUG (6): 3 -> 6 RREQUEST received, forward it in broadcast
+DEBUG (6): RREQUEST: sent in broadcast (SRC:1, DEST:4)
+DEBUG (4): 3 -> 4 RREQUEST reached the destination!
+DEBUG (4): RREPLY: back to the previous node 3 
+DEBUG (3): 4 -> 3 RREPLY received, 1 hops
+DEBUG (3): RT new entry
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): RREPLY: back to the previous node 1 
+DEBUG (7): 8 -> 7 RREQUEST received, forward it in broadcast
+DEBUG (7): RREQUEST: sent in broadcast (SRC:1, DEST:4)
+DEBUG (5): 6 -> 5 RREQUEST received, forward it in broadcast
+DEBUG (5): RREQUEST: sent in broadcast (SRC:1, DEST:4)
+DEBUG (4): 6 -> 4 RREQUEST reached the destination!
+DEBUG (3): Duplicated packet
+DEBUG (7): Duplicated packet
+DEBUG (4): RREPLY: back to the previous node 6 
+DEBUG (8): Duplicated packet
+DEBUG (6): Duplicated packet
+DEBUG (5): Duplicated packet
+DEBUG (6): 4 -> 6 RREPLY received, 1 hops
+DEBUG (6): RT new entry
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 5, next_hop 7, num_hop 2 |
+DEBUG (6): | dest: 2, next_hop 3, num_hop 3 |
+DEBUG (6): | dest: 1, next_hop 3, num_hop 2 |
+DEBUG (6): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): RREPLY: back to the previous node 3 
+DEBUG (3): 6 -> 3 RREPLY received, 2 hops
+DEBUG (1): 3 -> 1 RREPLY received, 2 hops
+DEBUG (1): RT new entry
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): '--------------------------------'
+DEBUG (3): RREPLY: back to the previous node 1 
+DEBUG (1): 3 -> 1 RREPLY received, 3 hops
+DEBUG (1): >> One sec passed, send data msg <<
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): DATA: packet sent to the next hop: 3 (SRC: 1, DEST: 4)
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): DATA: packet sent to the next hop: 4 (SRC: 1, DEST: 4)
+DEBUG (4): FINISH data packet from 1 to 4 received, CONTENT: 78
+DEBUG (2): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 2 -> 6 at time 61 seconds, CONTENT: 43 
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): | dest: 6, next_hop 1, num_hop 3 |
+DEBUG (2): | dest: 3, next_hop 1, num_hop 2 |
+DEBUG (2): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (2): '--------------------------------'
+DEBUG (2): DATA: packet sent to the next hop: 1 (SRC: 2, DEST: 6)
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): DATA: packet sent to the next hop: 3 (SRC: 2, DEST: 6)
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): DATA: packet sent to the next hop: 6 (SRC: 2, DEST: 6)
+DEBUG (6): FINISH data packet from 2 to 6 received, CONTENT: 43
+DEBUG (3): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 3 -> 8 at time 64 seconds, CONTENT: 7 
+DEBUG (3): RREQUEST: sent in broadcast (SRC:3, DEST:8)
+DEBUG (6): 3 -> 6 RREQUEST received, forward it in broadcast
+DEBUG (6): RREQUEST: sent in broadcast (SRC:3, DEST:8)
+DEBUG (4): 3 -> 4 RREQUEST received, forward it in broadcast
+DEBUG (4): RREQUEST: sent in broadcast (SRC:3, DEST:8)
+DEBUG (1): 3 -> 1 RREQUEST received, forward it in broadcast
+DEBUG (1): RREQUEST: sent in broadcast (SRC:3, DEST:8)
+DEBUG (7): 6 -> 7 RREQUEST received, forward it in broadcast
+DEBUG (7): RREQUEST: sent in broadcast (SRC:3, DEST:8)
+DEBUG (5): 6 -> 5 RREQUEST received, forward it in broadcast
+DEBUG (5): RREQUEST: sent in broadcast (SRC:3, DEST:8)
+DEBUG (4): Duplicated packet
+DEBUG (8): 7 -> 8 RREQUEST reached the destination!
+DEBUG (6): Duplicated packet
+DEBUG (5): Duplicated packet
+DEBUG (8): RREPLY: back to the previous node 7 
+DEBUG (2): 1 -> 2 RREQUEST received, forward it in broadcast
+DEBUG (2): RREQUEST: sent in broadcast (SRC:3, DEST:8)
+DEBUG (6): Duplicated packet
+DEBUG (5): Duplicated packet
+DEBUG (7): Duplicated packet
+DEBUG (6): Duplicated packet
+DEBUG (4): Duplicated packet
+DEBUG (7): 8 -> 7 RREPLY received, 1 hops
+DEBUG (7): RT new entry
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 3, next_hop 8, num_hop 4 |
+DEBUG (7): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): RREPLY: back to the previous node 6 
+DEBUG (8): 2 -> 8 RREQUEST reached the destination!
+DEBUG (1): Duplicated packet
+DEBUG (8): RREPLY: back to the previous node 2 
+DEBUG (2): 8 -> 2 RREPLY received, 1 hops
+DEBUG (2): RT new entry
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): | dest: 6, next_hop 1, num_hop 3 |
+DEBUG (2): | dest: 3, next_hop 1, num_hop 2 |
+DEBUG (2): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (2): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (2): '--------------------------------'
+DEBUG (2): RREPLY: back to the previous node 1 
+DEBUG (6): 7 -> 6 RREPLY received, 2 hops
+DEBUG (6): RT new entry
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 5, next_hop 7, num_hop 2 |
+DEBUG (6): | dest: 2, next_hop 3, num_hop 3 |
+DEBUG (6): | dest: 1, next_hop 3, num_hop 2 |
+DEBUG (6): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (6): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): RREPLY: back to the previous node 3 
+DEBUG (3): 6 -> 3 RREPLY received, 3 hops
+DEBUG (3): RT new entry
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 8, next_hop 6, num_hop 3 |
+DEBUG (3): '--------------------------------'
+DEBUG (1): 2 -> 1 RREPLY received, 2 hops
+DEBUG (1): RT new entry
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): RREPLY: back to the previous node 3 
+DEBUG (3): 1 -> 3 RREPLY received, 3 hops
+DEBUG (3): RT updated
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): >> One sec passed, send data msg <<
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): DATA: packet sent to the next hop: 1 (SRC: 3, DEST: 8)
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): DATA: packet sent to the next hop: 2 (SRC: 3, DEST: 8)
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): | dest: 6, next_hop 1, num_hop 3 |
+DEBUG (2): | dest: 3, next_hop 1, num_hop 2 |
+DEBUG (2): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (2): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (2): '--------------------------------'
+DEBUG (2): DATA: packet sent to the next hop: 8 (SRC: 3, DEST: 8)
+DEBUG (4): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 4 -> 5 at time 67 seconds, CONTENT: 34 
+DEBUG (4): RREQUEST: sent in broadcast (SRC:4, DEST:5)
+DEBUG (6): 4 -> 6 RREQUEST received, forward it in broadcast
+DEBUG (6): RREQUEST: sent in broadcast (SRC:4, DEST:5)
+DEBUG (5): 4 -> 5 RREQUEST reached the destination!
+DEBUG (3): 4 -> 3 RREQUEST received, forward it in broadcast
+DEBUG (3): RREQUEST: sent in broadcast (SRC:4, DEST:5)
+DEBUG (5): RREPLY: back to the previous node 4 
+DEBUG (4): 5 -> 4 RREPLY received, 1 hops
+DEBUG (4): RT new entry
+DEBUG (4): .--------- ROUTING TABLE --------.
+DEBUG (4): | dest: 7, next_hop 5, num_hop 2 |
+DEBUG (4): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (4): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (4): '--------------------------------'
+DEBUG (6): Duplicated packet
+DEBUG (1): 3 -> 1 RREQUEST received, forward it in broadcast
+DEBUG (1): RREQUEST: sent in broadcast (SRC:4, DEST:5)
+DEBUG (7): 6 -> 7 RREQUEST received, forward it in broadcast
+DEBUG (7): RREQUEST: sent in broadcast (SRC:4, DEST:5)
+DEBUG (5): 6 -> 5 RREQUEST reached the destination!
+DEBUG (3): Duplicated packet
+DEBUG (5): RREPLY: back to the previous node 6 
+DEBUG (3): Duplicated packet
+DEBUG (2): 1 -> 2 RREQUEST received, forward it in broadcast
+DEBUG (2): RREQUEST: sent in broadcast (SRC:4, DEST:5)
+DEBUG (5): 7 -> 5 RREQUEST reached the destination!
+DEBUG (8): 7 -> 8 RREQUEST received, forward it in broadcast
+DEBUG (8): RREQUEST: sent in broadcast (SRC:4, DEST:5)
+DEBUG (6): Duplicated packet
+DEBUG (6): 5 -> 6 RREPLY received, 1 hops
+DEBUG (6): RT updated
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 2, next_hop 3, num_hop 3 |
+DEBUG (6): | dest: 1, next_hop 3, num_hop 2 |
+DEBUG (6): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (6): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (6): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): RREPLY: back to the previous node 4 
+DEBUG (5): RREPLY: back to the previous node 7 
+DEBUG (8): Duplicated packet
+DEBUG (1): Duplicated packet
+DEBUG (2): Duplicated packet
+DEBUG (4): 6 -> 4 RREPLY received, 2 hops
+DEBUG (4): >> One sec passed, send data msg <<
+DEBUG (4): .--------- ROUTING TABLE --------.
+DEBUG (4): | dest: 7, next_hop 5, num_hop 2 |
+DEBUG (4): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (4): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (4): '--------------------------------'
+DEBUG (4): DATA: packet sent to the next hop: 5 (SRC: 4, DEST: 5)
+DEBUG (5): FINISH data packet from 4 to 5 received, CONTENT: 34
+DEBUG (5): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 5 -> 3 at time 70 seconds, CONTENT: 86 
+DEBUG (5): .--------- ROUTING TABLE --------.
+DEBUG (5): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (5): | dest: 6, next_hop 4, num_hop 2 |
+DEBUG (5): | dest: 3, next_hop 7, num_hop 5 |
+DEBUG (5): '--------------------------------'
+DEBUG (5): DATA: packet sent to the next hop: 7 (SRC: 5, DEST: 3)
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 3, next_hop 8, num_hop 4 |
+DEBUG (7): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): DATA: packet sent to the next hop: 8 (SRC: 5, DEST: 3)
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): | dest: 6, next_hop 7, num_hop 2 |
+DEBUG (8): | dest: 3, next_hop 2, num_hop 3 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): DATA: packet sent to the next hop: 2 (SRC: 5, DEST: 3)
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): | dest: 6, next_hop 1, num_hop 3 |
+DEBUG (2): | dest: 3, next_hop 1, num_hop 2 |
+DEBUG (2): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (2): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (2): '--------------------------------'
+DEBUG (2): DATA: packet sent to the next hop: 1 (SRC: 5, DEST: 3)
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): DATA: packet sent to the next hop: 3 (SRC: 5, DEST: 3)
+DEBUG (3): FINISH data packet from 5 to 3 received, CONTENT: 86
+DEBUG (6): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 6 -> 5 at time 73 seconds, CONTENT: 51 
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 2, next_hop 3, num_hop 3 |
+DEBUG (6): | dest: 1, next_hop 3, num_hop 2 |
+DEBUG (6): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (6): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (6): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): DATA: packet sent to the next hop: 5 (SRC: 6, DEST: 5)
+DEBUG (5): FINISH data packet from 6 to 5 received, CONTENT: 51
+DEBUG (7): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 7 -> 4 at time 76 seconds, CONTENT: 148 
+DEBUG (7): RREQUEST: sent in broadcast (SRC:7, DEST:4)
+DEBUG (8): 7 -> 8 RREQUEST received, forward it in broadcast
+DEBUG (8): RREQUEST: sent in broadcast (SRC:7, DEST:4)
+DEBUG (6): 7 -> 6 RREQUEST received, forward it in broadcast
+DEBUG (6): RREQUEST: sent in broadcast (SRC:7, DEST:4)
+DEBUG (5): 7 -> 5 RREQUEST received, forward it in broadcast
+DEBUG (5): RREQUEST: sent in broadcast (SRC:7, DEST:4)
+DEBUG (2): 8 -> 2 RREQUEST received, forward it in broadcast
+DEBUG (2): RREQUEST: sent in broadcast (SRC:7, DEST:4)
+DEBUG (8): Duplicated packet
+DEBUG (1): 2 -> 1 RREQUEST received, forward it in broadcast
+DEBUG (1): RREQUEST: sent in broadcast (SRC:7, DEST:4)
+DEBUG (4): 6 -> 4 RREQUEST reached the destination!
+DEBUG (3): 6 -> 3 RREQUEST received, forward it in broadcast
+DEBUG (3): RREQUEST: sent in broadcast (SRC:7, DEST:4)
+DEBUG (5): Duplicated packet
+DEBUG (4): RREPLY: back to the previous node 6 
+DEBUG (6): Duplicated packet
+DEBUG (4): 5 -> 4 RREQUEST reached the destination!
+DEBUG (1): Duplicated packet
+DEBUG (6): Duplicated packet
+DEBUG (4): 3 -> 4 RREQUEST reached the destination!
+DEBUG (6): 4 -> 6 RREPLY received, 1 hops
+DEBUG (6): RT updated
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 2, next_hop 3, num_hop 3 |
+DEBUG (6): | dest: 1, next_hop 3, num_hop 2 |
+DEBUG (6): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (6): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (6): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): RREPLY: back to the previous node 7 
+DEBUG (4): RREPLY: back to the previous node 5 
+DEBUG (2): Duplicated packet
+DEBUG (7): 6 -> 7 RREPLY received, 2 hops
+DEBUG (7): RT new entry
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 3, next_hop 8, num_hop 4 |
+DEBUG (7): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): | dest: 4, next_hop 6, num_hop 2 |
+DEBUG (7): '--------------------------------'
+DEBUG (5): 4 -> 5 RREPLY received, 1 hops
+DEBUG (5): RT new entry
+DEBUG (5): .--------- ROUTING TABLE --------.
+DEBUG (5): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (5): | dest: 6, next_hop 4, num_hop 2 |
+DEBUG (5): | dest: 3, next_hop 7, num_hop 5 |
+DEBUG (5): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (5): '--------------------------------'
+DEBUG (5): RREPLY: back to the previous node 7 
+DEBUG (4): RREPLY: back to the previous node 3 
+DEBUG (3): 4 -> 3 RREPLY received, 1 hops
+DEBUG (3): RT updated
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): RREPLY: back to the previous node 6 
+DEBUG (7): 5 -> 7 RREPLY received, 2 hops
+DEBUG (7): RT updated
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 3, next_hop 8, num_hop 4 |
+DEBUG (7): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): '--------------------------------'
+DEBUG (6): 3 -> 6 RREPLY received, 2 hops
+DEBUG (6): RREPLY: back to the previous node 7 
+DEBUG (7): 6 -> 7 RREPLY received, 3 hops
+DEBUG (7): >> One sec passed, send data msg <<
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 3, next_hop 8, num_hop 4 |
+DEBUG (7): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): DATA: packet sent to the next hop: 5 (SRC: 7, DEST: 4)
+DEBUG (5): .--------- ROUTING TABLE --------.
+DEBUG (5): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (5): | dest: 6, next_hop 4, num_hop 2 |
+DEBUG (5): | dest: 3, next_hop 7, num_hop 5 |
+DEBUG (5): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (5): '--------------------------------'
+DEBUG (5): DATA: packet sent to the next hop: 4 (SRC: 7, DEST: 4)
+DEBUG (4): FINISH data packet from 7 to 4 received, CONTENT: 148
+DEBUG (8): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 8 -> 7 at time 79 seconds, CONTENT: 40 
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): | dest: 6, next_hop 7, num_hop 2 |
+DEBUG (8): | dest: 3, next_hop 2, num_hop 3 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): DATA: packet sent to the next hop: 7 (SRC: 8, DEST: 7)
+DEBUG (7): FINISH data packet from 8 to 7 received, CONTENT: 40
+DEBUG (1): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 1 -> 6 at time 87 seconds, CONTENT: 130 
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): DATA: packet sent to the next hop: 3 (SRC: 1, DEST: 6)
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): DATA: packet sent to the next hop: 6 (SRC: 1, DEST: 6)
+DEBUG (6): FINISH data packet from 1 to 6 received, CONTENT: 130
+DEBUG (2): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 2 -> 8 at time 90 seconds, CONTENT: 52 
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): | dest: 6, next_hop 1, num_hop 3 |
+DEBUG (2): | dest: 3, next_hop 1, num_hop 2 |
+DEBUG (2): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (2): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (2): '--------------------------------'
+DEBUG (2): DATA: packet sent to the next hop: 8 (SRC: 2, DEST: 8)
+DEBUG (8): FINISH data packet from 2 to 8 received, CONTENT: 52
+DEBUG (3): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 3 -> 1 at time 93 seconds, CONTENT: 50 
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): DATA: packet sent to the next hop: 1 (SRC: 3, DEST: 1)
+DEBUG (1): FINISH data packet from 3 to 1 received, CONTENT: 50
+DEBUG (4): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 4 -> 2 at time 96 seconds, CONTENT: 18 
+DEBUG (4): RREQUEST: sent in broadcast (SRC:4, DEST:2)
+DEBUG (6): 4 -> 6 RREQUEST received, forward it in broadcast
+DEBUG (6): RREQUEST: sent in broadcast (SRC:4, DEST:2)
+DEBUG (3): 4 -> 3 RREQUEST received, forward it in broadcast
+DEBUG (3): RREQUEST: sent in broadcast (SRC:4, DEST:2)
+DEBUG (5): 4 -> 5 RREQUEST received, forward it in broadcast
+DEBUG (5): RREQUEST: sent in broadcast (SRC:4, DEST:2)
+DEBUG (7): 6 -> 7 RREQUEST received, forward it in broadcast
+DEBUG (7): RREQUEST: sent in broadcast (SRC:4, DEST:2)
+DEBUG (5): Duplicated packet
+DEBUG (3): Duplicated packet
+DEBUG (7): Duplicated packet
+DEBUG (1): 3 -> 1 RREQUEST received, forward it in broadcast
+DEBUG (1): RREQUEST: sent in broadcast (SRC:4, DEST:2)
+DEBUG (3): Duplicated packet
+DEBUG (2): 1 -> 2 RREQUEST reached the destination!
+DEBUG (2): RREPLY: back to the previous node 1 
+DEBUG (5): Duplicated packet
+DEBUG (8): 7 -> 8 RREQUEST received, forward it in broadcast
+DEBUG (8): RREQUEST: sent in broadcast (SRC:4, DEST:2)
+DEBUG (6): Duplicated packet
+DEBUG (1): 2 -> 1 RREPLY received, 1 hops
+DEBUG (1): RT updated
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): RREPLY: back to the previous node 3 
+DEBUG (7): Duplicated packet
+DEBUG (2): 8 -> 2 RREQUEST reached the destination!
+DEBUG (2): RREPLY: back to the previous node 8 
+DEBUG (3): 1 -> 3 RREPLY received, 2 hops
+DEBUG (3): RT updated
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): RREPLY: back to the previous node 4 
+DEBUG (8): 2 -> 8 RREPLY received, 1 hops
+DEBUG (8): RT new entry
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): | dest: 6, next_hop 7, num_hop 2 |
+DEBUG (8): | dest: 3, next_hop 2, num_hop 3 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): RREPLY: back to the previous node 7 
+DEBUG (4): 3 -> 4 RREPLY received, 3 hops
+DEBUG (4): RT new entry
+DEBUG (4): .--------- ROUTING TABLE --------.
+DEBUG (4): | dest: 7, next_hop 5, num_hop 2 |
+DEBUG (4): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (4): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (4): | dest: 2, next_hop 3, num_hop 3 |
+DEBUG (4): '--------------------------------'
+DEBUG (7): 8 -> 7 RREPLY received, 2 hops
+DEBUG (7): RT new entry
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 3, next_hop 8, num_hop 4 |
+DEBUG (7): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): | dest: 2, next_hop 8, num_hop 2 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): RREPLY: back to the previous node 6 
+DEBUG (6): 7 -> 6 RREPLY received, 3 hops
+DEBUG (6): RT updated
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 1, next_hop 3, num_hop 2 |
+DEBUG (6): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (6): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (6): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (6): | dest: 2, next_hop 7, num_hop 3 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): RREPLY: back to the previous node 4 
+DEBUG (4): 6 -> 4 RREPLY received, 4 hops
+DEBUG (4): >> One sec passed, send data msg <<
+DEBUG (4): .--------- ROUTING TABLE --------.
+DEBUG (4): | dest: 7, next_hop 5, num_hop 2 |
+DEBUG (4): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (4): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (4): | dest: 2, next_hop 3, num_hop 3 |
+DEBUG (4): '--------------------------------'
+DEBUG (4): DATA: packet sent to the next hop: 3 (SRC: 4, DEST: 2)
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): DATA: packet sent to the next hop: 1 (SRC: 4, DEST: 2)
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): DATA: packet sent to the next hop: 2 (SRC: 4, DEST: 2)
+DEBUG (2): FINISH data packet from 4 to 2 received, CONTENT: 18
+DEBUG (5): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 5 -> 8 at time 99 seconds, CONTENT: 119 
+DEBUG (5): RREQUEST: sent in broadcast (SRC:5, DEST:8)
+DEBUG (7): 5 -> 7 RREQUEST received, forward it in broadcast
+DEBUG (7): RREQUEST: sent in broadcast (SRC:5, DEST:8)
+DEBUG (6): 5 -> 6 RREQUEST received, forward it in broadcast
+DEBUG (6): RREQUEST: sent in broadcast (SRC:5, DEST:8)
+DEBUG (8): 7 -> 8 RREQUEST reached the destination!
+DEBUG (6): Duplicated packet
+DEBUG (8): RREPLY: back to the previous node 7 
+DEBUG (7): Duplicated packet
+DEBUG (4): 6 -> 4 RREQUEST received, forward it in broadcast
+DEBUG (4): RREQUEST: sent in broadcast (SRC:5, DEST:8)
+DEBUG (3): 6 -> 3 RREQUEST received, forward it in broadcast
+DEBUG (3): RREQUEST: sent in broadcast (SRC:5, DEST:8)
+DEBUG (1): 3 -> 1 RREQUEST received, forward it in broadcast
+DEBUG (1): RREQUEST: sent in broadcast (SRC:5, DEST:8)
+DEBUG (7): 8 -> 7 RREPLY received, 1 hops
+DEBUG (7): RT updated
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 3, next_hop 8, num_hop 4 |
+DEBUG (7): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): | dest: 2, next_hop 8, num_hop 2 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): RREPLY: back to the previous node 5 
+DEBUG (3): Duplicated packet
+DEBUG (2): 1 -> 2 RREQUEST received, forward it in broadcast
+DEBUG (2): RREQUEST: sent in broadcast (SRC:5, DEST:8)
+DEBUG (5): 7 -> 5 RREPLY received, 2 hops
+DEBUG (5): RT new entry
+DEBUG (5): .--------- ROUTING TABLE --------.
+DEBUG (5): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (5): | dest: 6, next_hop 4, num_hop 2 |
+DEBUG (5): | dest: 3, next_hop 7, num_hop 5 |
+DEBUG (5): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (5): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (5): '--------------------------------'
+DEBUG (8): 2 -> 8 RREQUEST reached the destination!
+DEBUG (1): Duplicated packet
+DEBUG (8): RREPLY: back to the previous node 2 
+DEBUG (2): 8 -> 2 RREPLY received, 1 hops
+DEBUG (2): RT updated
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): | dest: 6, next_hop 1, num_hop 3 |
+DEBUG (2): | dest: 3, next_hop 1, num_hop 2 |
+DEBUG (2): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (2): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (2): '--------------------------------'
+DEBUG (2): RREPLY: back to the previous node 1 
+DEBUG (1): 2 -> 1 RREPLY received, 2 hops
+DEBUG (1): RT updated
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): RREPLY: back to the previous node 3 
+DEBUG (3): 1 -> 3 RREPLY received, 3 hops
+DEBUG (3): RT updated
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): RREPLY: back to the previous node 6 
+DEBUG (6): 3 -> 6 RREPLY received, 4 hops
+DEBUG (6): RREPLY: back to the previous node 5 
+DEBUG (5): 6 -> 5 RREPLY received, 5 hops
+DEBUG (5): >> One sec passed, send data msg <<
+DEBUG (5): .--------- ROUTING TABLE --------.
+DEBUG (5): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (5): | dest: 6, next_hop 4, num_hop 2 |
+DEBUG (5): | dest: 3, next_hop 7, num_hop 5 |
+DEBUG (5): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (5): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (5): '--------------------------------'
+DEBUG (5): DATA: packet sent to the next hop: 7 (SRC: 5, DEST: 8)
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 3, next_hop 8, num_hop 4 |
+DEBUG (7): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): | dest: 2, next_hop 8, num_hop 2 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): DATA: packet sent to the next hop: 8 (SRC: 5, DEST: 8)
+DEBUG (8): FINISH data packet from 5 to 8 received, CONTENT: 119
+DEBUG (6): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 6 -> 2 at time 102 seconds, CONTENT: 27 
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 1, next_hop 3, num_hop 2 |
+DEBUG (6): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (6): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (6): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (6): | dest: 2, next_hop 7, num_hop 3 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): DATA: packet sent to the next hop: 7 (SRC: 6, DEST: 2)
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 3, next_hop 8, num_hop 4 |
+DEBUG (7): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): | dest: 2, next_hop 8, num_hop 2 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): DATA: packet sent to the next hop: 8 (SRC: 6, DEST: 2)
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): | dest: 6, next_hop 7, num_hop 2 |
+DEBUG (8): | dest: 3, next_hop 2, num_hop 3 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): DATA: packet sent to the next hop: 2 (SRC: 6, DEST: 2)
+DEBUG (2): FINISH data packet from 6 to 2 received, CONTENT: 27
+DEBUG (7): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 7 -> 2 at time 105 seconds, CONTENT: 100 
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 3, next_hop 8, num_hop 4 |
+DEBUG (7): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): | dest: 2, next_hop 8, num_hop 2 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): DATA: packet sent to the next hop: 8 (SRC: 7, DEST: 2)
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): | dest: 6, next_hop 7, num_hop 2 |
+DEBUG (8): | dest: 3, next_hop 2, num_hop 3 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): DATA: packet sent to the next hop: 2 (SRC: 7, DEST: 2)
+DEBUG (2): FINISH data packet from 7 to 2 received, CONTENT: 100
+DEBUG (8): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 8 -> 2 at time 108 seconds, CONTENT: 82 
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): | dest: 6, next_hop 7, num_hop 2 |
+DEBUG (8): | dest: 3, next_hop 2, num_hop 3 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): DATA: packet sent to the next hop: 2 (SRC: 8, DEST: 2)
+DEBUG (2): FINISH data packet from 8 to 2 received, CONTENT: 82
+DEBUG (1): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 1 -> 6 at time 117 seconds, CONTENT: 49 
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): DATA: packet sent to the next hop: 3 (SRC: 1, DEST: 6)
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): DATA: packet sent to the next hop: 6 (SRC: 1, DEST: 6)
+DEBUG (6): FINISH data packet from 1 to 6 received, CONTENT: 49
+DEBUG (8): >>>> 90 sec passed, remove routing table entry
+DEBUG (8): OLD routing table:
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): | dest: 6, next_hop 7, num_hop 2 |
+DEBUG (8): | dest: 3, next_hop 2, num_hop 3 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): NEW routing table:
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 6, next_hop 7, num_hop 2 |
+DEBUG (8): | dest: 3, next_hop 2, num_hop 3 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (8): '--------------------------------'
+DEBUG (6): >>>> 90 sec passed, remove routing table entry
+DEBUG (6): OLD routing table:
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 1, next_hop 3, num_hop 2 |
+DEBUG (6): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (6): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (6): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (6): | dest: 2, next_hop 7, num_hop 3 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): NEW routing table:
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 1, next_hop 3, num_hop 2 |
+DEBUG (6): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (6): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (6): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (6): | dest: 2, next_hop 7, num_hop 3 |
+DEBUG (6): '--------------------------------'
+DEBUG (2): >>>> 90 sec passed, remove routing table entry
+DEBUG (2): OLD routing table:
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): | dest: 6, next_hop 1, num_hop 3 |
+DEBUG (2): | dest: 3, next_hop 1, num_hop 2 |
+DEBUG (2): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (2): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (2): '--------------------------------'
+DEBUG (2): NEW routing table:
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 6, next_hop 1, num_hop 3 |
+DEBUG (2): | dest: 3, next_hop 1, num_hop 2 |
+DEBUG (2): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (2): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (2): '--------------------------------'
+DEBUG (3): >>>> 90 sec passed, remove routing table entry
+DEBUG (3): OLD routing table:
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): NEW routing table:
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): '--------------------------------'
+DEBUG (5): >>>> 90 sec passed, remove routing table entry
+DEBUG (5): OLD routing table:
+DEBUG (5): .--------- ROUTING TABLE --------.
+DEBUG (5): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (5): | dest: 6, next_hop 4, num_hop 2 |
+DEBUG (5): | dest: 3, next_hop 7, num_hop 5 |
+DEBUG (5): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (5): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (5): '--------------------------------'
+DEBUG (5): NEW routing table:
+DEBUG (5): .--------- ROUTING TABLE --------.
+DEBUG (5): | dest: 6, next_hop 4, num_hop 2 |
+DEBUG (5): | dest: 3, next_hop 7, num_hop 5 |
+DEBUG (5): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (5): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (5): '--------------------------------'
+DEBUG (1): >>>> 90 sec passed, remove routing table entry
+DEBUG (1): OLD routing table:
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): NEW routing table:
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): '--------------------------------'
+DEBUG (4): >>>> 90 sec passed, remove routing table entry
+DEBUG (4): OLD routing table:
+DEBUG (4): .--------- ROUTING TABLE --------.
+DEBUG (4): | dest: 7, next_hop 5, num_hop 2 |
+DEBUG (4): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (4): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (4): | dest: 2, next_hop 3, num_hop 3 |
+DEBUG (4): '--------------------------------'
+DEBUG (4): NEW routing table:
+DEBUG (4): .--------- ROUTING TABLE --------.
+DEBUG (4): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (4): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (4): | dest: 2, next_hop 3, num_hop 3 |
+DEBUG (4): '--------------------------------'
+DEBUG (8): >>>> 90 sec passed, remove routing table entry
+DEBUG (8): OLD routing table:
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 6, next_hop 7, num_hop 2 |
+DEBUG (8): | dest: 3, next_hop 2, num_hop 3 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): NEW routing table:
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 3, next_hop 2, num_hop 3 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (8): '--------------------------------'
+DEBUG (2): >>>> 90 sec passed, remove routing table entry
+DEBUG (2): OLD routing table:
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 6, next_hop 1, num_hop 3 |
+DEBUG (2): | dest: 3, next_hop 1, num_hop 2 |
+DEBUG (2): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (2): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (2): '--------------------------------'
+DEBUG (2): NEW routing table:
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 3, next_hop 1, num_hop 2 |
+DEBUG (2): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (2): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (2): '--------------------------------'
+DEBUG (3): >>>> 90 sec passed, remove routing table entry
+DEBUG (3): OLD routing table:
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): NEW routing table:
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): '--------------------------------'
+DEBUG (5): >>>> 90 sec passed, remove routing table entry
+DEBUG (5): OLD routing table:
+DEBUG (5): .--------- ROUTING TABLE --------.
+DEBUG (5): | dest: 6, next_hop 4, num_hop 2 |
+DEBUG (5): | dest: 3, next_hop 7, num_hop 5 |
+DEBUG (5): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (5): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (5): '--------------------------------'
+DEBUG (5): NEW routing table:
+DEBUG (5): .--------- ROUTING TABLE --------.
+DEBUG (5): | dest: 3, next_hop 7, num_hop 5 |
+DEBUG (5): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (5): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (5): '--------------------------------'
+DEBUG (1): >>>> 90 sec passed, remove routing table entry
+DEBUG (1): OLD routing table:
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): NEW routing table:
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): '--------------------------------'
+DEBUG (4): >>>> 90 sec passed, remove routing table entry
+DEBUG (4): OLD routing table:
+DEBUG (4): .--------- ROUTING TABLE --------.
+DEBUG (4): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (4): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (4): | dest: 2, next_hop 3, num_hop 3 |
+DEBUG (4): '--------------------------------'
+DEBUG (4): NEW routing table:
+DEBUG (4): .--------- ROUTING TABLE --------.
+DEBUG (4): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (4): | dest: 2, next_hop 3, num_hop 3 |
+DEBUG (4): '--------------------------------'
+DEBUG (2): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 2 -> 1 at time 120 seconds, CONTENT: 26 
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 3, next_hop 1, num_hop 2 |
+DEBUG (2): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (2): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (2): '--------------------------------'
+DEBUG (2): DATA: packet sent to the next hop: 1 (SRC: 2, DEST: 1)
+DEBUG (1): FINISH data packet from 2 to 1 received, CONTENT: 26
+DEBUG (7): >>>> 90 sec passed, remove routing table entry
+DEBUG (7): OLD routing table:
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 3, next_hop 8, num_hop 4 |
+DEBUG (7): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): | dest: 2, next_hop 8, num_hop 2 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): NEW routing table:
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 3, next_hop 8, num_hop 4 |
+DEBUG (7): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): | dest: 2, next_hop 8, num_hop 2 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): '--------------------------------'
+DEBUG (3): >>>> 90 sec passed, remove routing table entry
+DEBUG (3): OLD routing table:
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 5, next_hop 6, num_hop 3 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): NEW routing table:
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): '--------------------------------'
+DEBUG (7): >>>> 90 sec passed, remove routing table entry
+DEBUG (7): OLD routing table:
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 3, next_hop 8, num_hop 4 |
+DEBUG (7): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): | dest: 2, next_hop 8, num_hop 2 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): NEW routing table:
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 3, next_hop 8, num_hop 4 |
+DEBUG (7): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): | dest: 2, next_hop 8, num_hop 2 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): '--------------------------------'
+DEBUG (3): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 3 -> 7 at time 123 seconds, CONTENT: 57 
+DEBUG (3): RREQUEST: sent in broadcast (SRC:3, DEST:7)
+DEBUG (6): 3 -> 6 RREQUEST received, forward it in broadcast
+DEBUG (6): RREQUEST: sent in broadcast (SRC:3, DEST:7)
+DEBUG (4): 3 -> 4 RREQUEST received, forward it in broadcast
+DEBUG (4): RREQUEST: sent in broadcast (SRC:3, DEST:7)
+DEBUG (1): 3 -> 1 RREQUEST received, forward it in broadcast
+DEBUG (1): RREQUEST: sent in broadcast (SRC:3, DEST:7)
+DEBUG (7): 6 -> 7 RREQUEST reached the destination!
+DEBUG (5): 6 -> 5 RREQUEST received, forward it in broadcast
+DEBUG (5): RREQUEST: sent in broadcast (SRC:3, DEST:7)
+DEBUG (4): Duplicated packet
+DEBUG (7): RREPLY: back to the previous node 6 
+DEBUG (6): Duplicated packet
+DEBUG (5): Duplicated packet
+DEBUG (2): 1 -> 2 RREQUEST received, forward it in broadcast
+DEBUG (2): RREQUEST: sent in broadcast (SRC:3, DEST:7)
+DEBUG (7): 5 -> 7 RREQUEST reached the destination!
+DEBUG (6): Duplicated packet
+DEBUG (4): Duplicated packet
+DEBUG (8): 2 -> 8 RREQUEST received, forward it in broadcast
+DEBUG (8): RREQUEST: sent in broadcast (SRC:3, DEST:7)
+DEBUG (1): Duplicated packet
+DEBUG (6): 7 -> 6 RREPLY received, 1 hops
+DEBUG (6): RT new entry
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 1, next_hop 3, num_hop 2 |
+DEBUG (6): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (6): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (6): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (6): | dest: 2, next_hop 7, num_hop 3 |
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): RREPLY: back to the previous node 3 
+DEBUG (7): RREPLY: back to the previous node 5 
+DEBUG (5): 7 -> 5 RREPLY received, 1 hops
+DEBUG (5): RT new entry
+DEBUG (5): .--------- ROUTING TABLE --------.
+DEBUG (5): | dest: 3, next_hop 7, num_hop 5 |
+DEBUG (5): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (5): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (5): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (5): '--------------------------------'
+DEBUG (5): RREPLY: back to the previous node 6 
+DEBUG (7): 8 -> 7 RREQUEST reached the destination!
+DEBUG (2): Duplicated packet
+DEBUG (7): RREPLY: back to the previous node 8 
+DEBUG (3): 6 -> 3 RREPLY received, 2 hops
+DEBUG (3): RT new entry
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): '--------------------------------'
+DEBUG (8): 7 -> 8 RREPLY received, 1 hops
+DEBUG (8): RT new entry
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 3, next_hop 2, num_hop 3 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): RREPLY: back to the previous node 2 
+DEBUG (6): 5 -> 6 RREPLY received, 2 hops
+DEBUG (6): RREPLY: back to the previous node 3 
+DEBUG (2): 8 -> 2 RREPLY received, 2 hops
+DEBUG (2): RT new entry
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 3, next_hop 1, num_hop 2 |
+DEBUG (2): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (2): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): '--------------------------------'
+DEBUG (2): RREPLY: back to the previous node 1 
+DEBUG (3): 6 -> 3 RREPLY received, 3 hops
+DEBUG (1): 2 -> 1 RREPLY received, 3 hops
+DEBUG (1): RT new entry
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): RREPLY: back to the previous node 3 
+DEBUG (3): 1 -> 3 RREPLY received, 4 hops
+DEBUG (3): >> One sec passed, send data msg <<
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): DATA: packet sent to the next hop: 6 (SRC: 3, DEST: 7)
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 1, next_hop 3, num_hop 2 |
+DEBUG (6): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (6): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (6): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (6): | dest: 2, next_hop 7, num_hop 3 |
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): DATA: packet sent to the next hop: 7 (SRC: 3, DEST: 7)
+DEBUG (7): FINISH data packet from 3 to 7 received, CONTENT: 57
+DEBUG (4): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 4 -> 2 at time 126 seconds, CONTENT: 48 
+DEBUG (4): .--------- ROUTING TABLE --------.
+DEBUG (4): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (4): | dest: 2, next_hop 3, num_hop 3 |
+DEBUG (4): '--------------------------------'
+DEBUG (4): DATA: packet sent to the next hop: 3 (SRC: 4, DEST: 2)
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): DATA: packet sent to the next hop: 1 (SRC: 4, DEST: 2)
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): DATA: packet sent to the next hop: 2 (SRC: 4, DEST: 2)
+DEBUG (2): FINISH data packet from 4 to 2 received, CONTENT: 48
+DEBUG (8): >>>> 90 sec passed, remove routing table entry
+DEBUG (8): OLD routing table:
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 3, next_hop 2, num_hop 3 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): NEW routing table:
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): '--------------------------------'
+DEBUG (2): >>>> 90 sec passed, remove routing table entry
+DEBUG (2): OLD routing table:
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 3, next_hop 1, num_hop 2 |
+DEBUG (2): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (2): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): '--------------------------------'
+DEBUG (2): NEW routing table:
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (2): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): '--------------------------------'
+DEBUG (5): >>>> 90 sec passed, remove routing table entry
+DEBUG (5): OLD routing table:
+DEBUG (5): .--------- ROUTING TABLE --------.
+DEBUG (5): | dest: 3, next_hop 7, num_hop 5 |
+DEBUG (5): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (5): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (5): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (5): '--------------------------------'
+DEBUG (5): NEW routing table:
+DEBUG (5): .--------- ROUTING TABLE --------.
+DEBUG (5): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (5): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (5): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (5): '--------------------------------'
+DEBUG (1): >>>> 90 sec passed, remove routing table entry
+DEBUG (1): OLD routing table:
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 3, next_hop 3, num_hop 1 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): NEW routing table:
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): '--------------------------------'
+DEBUG (7): >>>> 90 sec passed, remove routing table entry
+DEBUG (7): OLD routing table:
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 3, next_hop 8, num_hop 4 |
+DEBUG (7): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): | dest: 2, next_hop 8, num_hop 2 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): NEW routing table:
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): | dest: 2, next_hop 8, num_hop 2 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): '--------------------------------'
+DEBUG (5): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 5 -> 1 at time 129 seconds, CONTENT: 52 
+DEBUG (5): RREQUEST: sent in broadcast (SRC:5, DEST:1)
+DEBUG (7): 5 -> 7 RREQUEST received, forward it in broadcast
+DEBUG (7): RREQUEST: sent in broadcast (SRC:5, DEST:1)
+DEBUG (6): 5 -> 6 RREQUEST received, forward it in broadcast
+DEBUG (6): RREQUEST: sent in broadcast (SRC:5, DEST:1)
+DEBUG (4): 5 -> 4 RREQUEST received, forward it in broadcast
+DEBUG (4): RREQUEST: sent in broadcast (SRC:5, DEST:1)
+DEBUG (8): 7 -> 8 RREQUEST received, forward it in broadcast
+DEBUG (8): RREQUEST: sent in broadcast (SRC:5, DEST:1)
+DEBUG (6): Duplicated packet
+DEBUG (7): Duplicated packet
+DEBUG (3): 6 -> 3 RREQUEST received, forward it in broadcast
+DEBUG (3): RREQUEST: sent in broadcast (SRC:5, DEST:1)
+DEBUG (4): Duplicated packet
+DEBUG (6): Duplicated packet
+DEBUG (3): Duplicated packet
+DEBUG (7): Duplicated packet
+DEBUG (2): 8 -> 2 RREQUEST received, forward it in broadcast
+DEBUG (2): RREQUEST: sent in broadcast (SRC:5, DEST:1)
+DEBUG (1): 3 -> 1 RREQUEST reached the destination!
+DEBUG (6): Duplicated packet
+DEBUG (4): Duplicated packet
+DEBUG (1): RREPLY: back to the previous node 3 
+DEBUG (1): 2 -> 1 RREQUEST reached the destination!
+DEBUG (8): Duplicated packet
+DEBUG (3): 1 -> 3 RREPLY received, 1 hops
+DEBUG (3): RT updated
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): RREPLY: back to the previous node 6 
+DEBUG (1): RREPLY: back to the previous node 2 
+DEBUG (6): 3 -> 6 RREPLY received, 2 hops
+DEBUG (6): RT updated
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (6): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (6): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (6): | dest: 2, next_hop 7, num_hop 3 |
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 1, next_hop 3, num_hop 2 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): RREPLY: back to the previous node 5 
+DEBUG (2): 1 -> 2 RREPLY received, 1 hops
+DEBUG (2): RT updated
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (2): '--------------------------------'
+DEBUG (2): RREPLY: back to the previous node 8 
+DEBUG (5): 6 -> 5 RREPLY received, 3 hops
+DEBUG (5): RT new entry
+DEBUG (5): .--------- ROUTING TABLE --------.
+DEBUG (5): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (5): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (5): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (5): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (5): '--------------------------------'
+DEBUG (8): 2 -> 8 RREPLY received, 2 hops
+DEBUG (8): RT updated
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): RREPLY: back to the previous node 7 
+DEBUG (7): 8 -> 7 RREPLY received, 3 hops
+DEBUG (7): RT updated
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): | dest: 2, next_hop 8, num_hop 2 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): | dest: 1, next_hop 8, num_hop 3 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): RREPLY: back to the previous node 5 
+DEBUG (5): 7 -> 5 RREPLY received, 4 hops
+DEBUG (5): >> One sec passed, send data msg <<
+DEBUG (5): .--------- ROUTING TABLE --------.
+DEBUG (5): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (5): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (5): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (5): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (5): '--------------------------------'
+DEBUG (5): DATA: packet sent to the next hop: 6 (SRC: 5, DEST: 1)
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (6): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (6): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (6): | dest: 2, next_hop 7, num_hop 3 |
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 1, next_hop 3, num_hop 2 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): DATA: packet sent to the next hop: 3 (SRC: 5, DEST: 1)
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): DATA: packet sent to the next hop: 1 (SRC: 5, DEST: 1)
+DEBUG (1): FINISH data packet from 5 to 1 received, CONTENT: 52
+DEBUG (6): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 6 -> 1 at time 132 seconds, CONTENT: 60 
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (6): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (6): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (6): | dest: 2, next_hop 7, num_hop 3 |
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 1, next_hop 3, num_hop 2 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): DATA: packet sent to the next hop: 3 (SRC: 6, DEST: 1)
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): DATA: packet sent to the next hop: 1 (SRC: 6, DEST: 1)
+DEBUG (1): FINISH data packet from 6 to 1 received, CONTENT: 60
+DEBUG (7): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 7 -> 6 at time 135 seconds, CONTENT: 61 
+DEBUG (7): RREQUEST: sent in broadcast (SRC:7, DEST:6)
+DEBUG (8): 7 -> 8 RREQUEST received, forward it in broadcast
+DEBUG (8): RREQUEST: sent in broadcast (SRC:7, DEST:6)
+DEBUG (6): 7 -> 6 RREQUEST reached the destination!
+DEBUG (5): 7 -> 5 RREQUEST received, forward it in broadcast
+DEBUG (5): RREQUEST: sent in broadcast (SRC:7, DEST:6)
+DEBUG (6): RREPLY: back to the previous node 7 
+DEBUG (4): 5 -> 4 RREQUEST received, forward it in broadcast
+DEBUG (4): RREQUEST: sent in broadcast (SRC:7, DEST:6)
+DEBUG (6): 5 -> 6 RREQUEST reached the destination!
+DEBUG (2): 8 -> 2 RREQUEST received, forward it in broadcast
+DEBUG (2): RREQUEST: sent in broadcast (SRC:7, DEST:6)
+DEBUG (7): 6 -> 7 RREPLY received, 1 hops
+DEBUG (7): RT new entry
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): | dest: 2, next_hop 8, num_hop 2 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): | dest: 1, next_hop 8, num_hop 3 |
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): '--------------------------------'
+DEBUG (6): RREPLY: back to the previous node 5 
+DEBUG (6): 4 -> 6 RREQUEST reached the destination!
+DEBUG (3): 4 -> 3 RREQUEST received, forward it in broadcast
+DEBUG (3): RREQUEST: sent in broadcast (SRC:7, DEST:6)
+DEBUG (5): Duplicated packet
+DEBUG (6): 3 -> 6 RREQUEST reached the destination!
+DEBUG (1): 3 -> 1 RREQUEST received, forward it in broadcast
+DEBUG (1): RREQUEST: sent in broadcast (SRC:7, DEST:6)
+DEBUG (4): Duplicated packet
+DEBUG (8): Duplicated packet
+DEBUG (1): Duplicated packet
+DEBUG (5): 6 -> 5 RREPLY received, 1 hops
+DEBUG (5): RT new entry
+DEBUG (5): .--------- ROUTING TABLE --------.
+DEBUG (5): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (5): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (5): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (5): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (5): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (5): '--------------------------------'
+DEBUG (5): RREPLY: back to the previous node 7 
+DEBUG (6): RREPLY: back to the previous node 4 
+DEBUG (3): Duplicated packet
+DEBUG (2): Duplicated packet
+DEBUG (7): 5 -> 7 RREPLY received, 2 hops
+DEBUG (4): 6 -> 4 RREPLY received, 1 hops
+DEBUG (4): RT new entry
+DEBUG (4): .--------- ROUTING TABLE --------.
+DEBUG (4): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (4): | dest: 2, next_hop 3, num_hop 3 |
+DEBUG (4): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (4): '--------------------------------'
+DEBUG (4): RREPLY: back to the previous node 5 
+DEBUG (6): RREPLY: back to the previous node 3 
+DEBUG (3): 6 -> 3 RREPLY received, 1 hops
+DEBUG (3): RT new entry
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): RREPLY: back to the previous node 4 
+DEBUG (5): 4 -> 5 RREPLY received, 2 hops
+DEBUG (5): RREPLY: back to the previous node 7 
+DEBUG (4): 3 -> 4 RREPLY received, 2 hops
+DEBUG (4): RREPLY: back to the previous node 5 
+DEBUG (7): 5 -> 7 RREPLY received, 3 hops
+DEBUG (5): 4 -> 5 RREPLY received, 3 hops
+DEBUG (5): RREPLY: back to the previous node 7 
+DEBUG (7): 5 -> 7 RREPLY received, 4 hops
+DEBUG (7): >> One sec passed, send data msg <<
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): | dest: 2, next_hop 8, num_hop 2 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): | dest: 1, next_hop 8, num_hop 3 |
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): DATA: packet sent to the next hop: 6 (SRC: 7, DEST: 6)
+DEBUG (6): FINISH data packet from 7 to 6 received, CONTENT: 61
+DEBUG (8): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 8 -> 5 at time 138 seconds, CONTENT: 11 
+DEBUG (8): RREQUEST: sent in broadcast (SRC:8, DEST:5)
+DEBUG (7): 8 -> 7 RREQUEST received, forward it in broadcast
+DEBUG (7): RREQUEST: sent in broadcast (SRC:8, DEST:5)
+DEBUG (2): 8 -> 2 RREQUEST received, forward it in broadcast
+DEBUG (2): RREQUEST: sent in broadcast (SRC:8, DEST:5)
+DEBUG (6): 7 -> 6 RREQUEST received, forward it in broadcast
+DEBUG (6): RREQUEST: sent in broadcast (SRC:8, DEST:5)
+DEBUG (5): 7 -> 5 RREQUEST reached the destination!
+DEBUG (5): RREPLY: back to the previous node 7 
+DEBUG (7): 5 -> 7 RREPLY received, 1 hops
+DEBUG (7): RT new entry
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): | dest: 2, next_hop 8, num_hop 2 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): | dest: 1, next_hop 8, num_hop 3 |
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): RREPLY: back to the previous node 8 
+DEBUG (7): Duplicated packet
+DEBUG (5): 6 -> 5 RREQUEST reached the destination!
+DEBUG (4): 6 -> 4 RREQUEST received, forward it in broadcast
+DEBUG (4): RREQUEST: sent in broadcast (SRC:8, DEST:5)
+DEBUG (3): 6 -> 3 RREQUEST received, forward it in broadcast
+DEBUG (3): RREQUEST: sent in broadcast (SRC:8, DEST:5)
+DEBUG (5): RREPLY: back to the previous node 6 
+DEBUG (1): 2 -> 1 RREQUEST received, forward it in broadcast
+DEBUG (1): RREQUEST: sent in broadcast (SRC:8, DEST:5)
+DEBUG (5): 4 -> 5 RREQUEST reached the destination!
+DEBUG (3): Duplicated packet
+DEBUG (6): Duplicated packet
+DEBUG (6): Duplicated packet
+DEBUG (4): Duplicated packet
+DEBUG (1): Duplicated packet
+DEBUG (6): 5 -> 6 RREPLY received, 1 hops
+DEBUG (6): RT updated
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (6): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (6): | dest: 2, next_hop 7, num_hop 3 |
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 1, next_hop 3, num_hop 2 |
+DEBUG (6): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): RREPLY: back to the previous node 7 
+DEBUG (5): RREPLY: back to the previous node 4 
+DEBUG (8): 7 -> 8 RREPLY received, 2 hops
+DEBUG (8): RT new entry
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): | dest: 5, next_hop 7, num_hop 2 |
+DEBUG (8): '--------------------------------'
+DEBUG (2): Duplicated packet
+DEBUG (3): Duplicated packet
+DEBUG (4): 5 -> 4 RREPLY received, 1 hops
+DEBUG (4): RT updated
+DEBUG (4): .--------- ROUTING TABLE --------.
+DEBUG (4): | dest: 2, next_hop 3, num_hop 3 |
+DEBUG (4): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (4): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (4): '--------------------------------'
+DEBUG (4): RREPLY: back to the previous node 6 
+DEBUG (7): 6 -> 7 RREPLY received, 2 hops
+DEBUG (7): RREPLY: back to the previous node 8 
+DEBUG (8): 7 -> 8 RREPLY received, 3 hops
+DEBUG (6): 4 -> 6 RREPLY received, 2 hops
+DEBUG (6): RREPLY: back to the previous node 7 
+DEBUG (7): 6 -> 7 RREPLY received, 3 hops
+DEBUG (7): RREPLY: back to the previous node 8 
+DEBUG (8): 7 -> 8 RREPLY received, 4 hops
+DEBUG (8): >> One sec passed, send data msg <<
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): | dest: 5, next_hop 7, num_hop 2 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): DATA: packet sent to the next hop: 7 (SRC: 8, DEST: 5)
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): | dest: 2, next_hop 8, num_hop 2 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): | dest: 1, next_hop 8, num_hop 3 |
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): DATA: packet sent to the next hop: 5 (SRC: 8, DEST: 5)
+DEBUG (5): FINISH data packet from 8 to 5 received, CONTENT: 11
+DEBUG (1): >>>> 90 sec passed, remove routing table entry
+DEBUG (1): OLD routing table:
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): NEW routing table:
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 1 -> 4 at time 146 seconds, CONTENT: 142 
+DEBUG (1): RREQUEST: sent in broadcast (SRC:1, DEST:4)
+DEBUG (3): 1 -> 3 RREQUEST received, forward it in broadcast
+DEBUG (3): RREQUEST: sent in broadcast (SRC:1, DEST:4)
+DEBUG (2): 1 -> 2 RREQUEST received, forward it in broadcast
+DEBUG (2): RREQUEST: sent in broadcast (SRC:1, DEST:4)
+DEBUG (6): 3 -> 6 RREQUEST received, forward it in broadcast
+DEBUG (6): RREQUEST: sent in broadcast (SRC:1, DEST:4)
+DEBUG (4): 3 -> 4 RREQUEST reached the destination!
+DEBUG (4): RREPLY: back to the previous node 3 
+DEBUG (3): 4 -> 3 RREPLY received, 1 hops
+DEBUG (3): RT updated
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): RREPLY: back to the previous node 1 
+DEBUG (7): 6 -> 7 RREQUEST received, forward it in broadcast
+DEBUG (7): RREQUEST: sent in broadcast (SRC:1, DEST:4)
+DEBUG (5): 6 -> 5 RREQUEST received, forward it in broadcast
+DEBUG (5): RREQUEST: sent in broadcast (SRC:1, DEST:4)
+DEBUG (4): 6 -> 4 RREQUEST reached the destination!
+DEBUG (3): Duplicated packet
+DEBUG (4): RREPLY: back to the previous node 6 
+DEBUG (8): 7 -> 8 RREQUEST received, forward it in broadcast
+DEBUG (8): RREQUEST: sent in broadcast (SRC:1, DEST:4)
+DEBUG (6): Duplicated packet
+DEBUG (5): Duplicated packet
+DEBUG (7): Duplicated packet
+DEBUG (2): Duplicated packet
+DEBUG (7): Duplicated packet
+DEBUG (1): 3 -> 1 RREPLY received, 2 hops
+DEBUG (1): RT new entry
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): >> One sec passed, send data msg <<
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): DATA: packet sent to the next hop: 3 (SRC: 1, DEST: 4)
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): DATA: packet sent to the next hop: 4 (SRC: 1, DEST: 4)
+DEBUG (4): FINISH data packet from 1 to 4 received, CONTENT: 142
+DEBUG (2): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 2 -> 4 at time 149 seconds, CONTENT: 5 
+DEBUG (2): RREQUEST: sent in broadcast (SRC:2, DEST:4)
+DEBUG (8): 2 -> 8 RREQUEST received, forward it in broadcast
+DEBUG (8): RREQUEST: sent in broadcast (SRC:2, DEST:4)
+DEBUG (1): 2 -> 1 RREQUEST received, forward it in broadcast
+DEBUG (1): RREQUEST: sent in broadcast (SRC:2, DEST:4)
+DEBUG (3): 1 -> 3 RREQUEST received, forward it in broadcast
+DEBUG (3): RREQUEST: sent in broadcast (SRC:2, DEST:4)
+DEBUG (7): 8 -> 7 RREQUEST received, forward it in broadcast
+DEBUG (7): RREQUEST: sent in broadcast (SRC:2, DEST:4)
+DEBUG (6): 3 -> 6 RREQUEST received, forward it in broadcast
+DEBUG (6): RREQUEST: sent in broadcast (SRC:2, DEST:4)
+DEBUG (4): 3 -> 4 RREQUEST reached the destination!
+DEBUG (1): Duplicated packet
+DEBUG (4): RREPLY: back to the previous node 3 
+DEBUG (8): Duplicated packet
+DEBUG (6): Duplicated packet
+DEBUG (5): 7 -> 5 RREQUEST received, forward it in broadcast
+DEBUG (5): RREQUEST: sent in broadcast (SRC:2, DEST:4)
+DEBUG (3): 4 -> 3 RREPLY received, 1 hops
+DEBUG (3): RT updated
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): RREPLY: back to the previous node 1 
+DEBUG (7): Duplicated packet
+DEBUG (5): Duplicated packet
+DEBUG (3): Duplicated packet
+DEBUG (4): 6 -> 4 RREQUEST reached the destination!
+DEBUG (4): RREPLY: back to the previous node 6 
+DEBUG (7): Duplicated packet
+DEBUG (6): Duplicated packet
+DEBUG (4): 5 -> 4 RREQUEST reached the destination!
+DEBUG (1): 3 -> 1 RREPLY received, 2 hops
+DEBUG (1): RT updated
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): RREPLY: back to the previous node 2 
+DEBUG (4): RREPLY: back to the previous node 5 
+DEBUG (2): 1 -> 2 RREPLY received, 3 hops
+DEBUG (2): RT new entry
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (2): | dest: 4, next_hop 1, num_hop 3 |
+DEBUG (2): '--------------------------------'
+DEBUG (5): 4 -> 5 RREPLY received, 1 hops
+DEBUG (5): RT updated
+DEBUG (5): .--------- ROUTING TABLE --------.
+DEBUG (5): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (5): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (5): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (5): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (5): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (5): '--------------------------------'
+DEBUG (5): RREPLY: back to the previous node 7 
+DEBUG (7): 5 -> 7 RREPLY received, 2 hops
+DEBUG (7): RT updated
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 2, next_hop 8, num_hop 2 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): | dest: 1, next_hop 8, num_hop 3 |
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): RREPLY: back to the previous node 8 
+DEBUG (8): 7 -> 8 RREPLY received, 3 hops
+DEBUG (8): RT new entry
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): | dest: 5, next_hop 7, num_hop 2 |
+DEBUG (8): | dest: 4, next_hop 7, num_hop 3 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): RREPLY: back to the previous node 2 
+DEBUG (2): >> One sec passed, send data msg <<
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (2): | dest: 4, next_hop 1, num_hop 3 |
+DEBUG (2): '--------------------------------'
+DEBUG (2): DATA: packet sent to the next hop: 1 (SRC: 2, DEST: 4)
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): DATA: packet sent to the next hop: 3 (SRC: 2, DEST: 4)
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): DATA: packet sent to the next hop: 4 (SRC: 2, DEST: 4)
+DEBUG (4): FINISH data packet from 2 to 4 received, CONTENT: 5
+DEBUG (6): >>>> 90 sec passed, remove routing table entry
+DEBUG (6): OLD routing table:
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (6): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (6): | dest: 2, next_hop 7, num_hop 3 |
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 1, next_hop 3, num_hop 2 |
+DEBUG (6): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): NEW routing table:
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (6): | dest: 2, next_hop 7, num_hop 3 |
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 1, next_hop 3, num_hop 2 |
+DEBUG (6): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (6): '--------------------------------'
+DEBUG (3): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 3 -> 2 at time 152 seconds, CONTENT: 132 
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): DATA: packet sent to the next hop: 1 (SRC: 3, DEST: 2)
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): DATA: packet sent to the next hop: 2 (SRC: 3, DEST: 2)
+DEBUG (2): FINISH data packet from 3 to 2 received, CONTENT: 132
+DEBUG (4): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 4 -> 6 at time 155 seconds, CONTENT: 49 
+DEBUG (4): .--------- ROUTING TABLE --------.
+DEBUG (4): | dest: 2, next_hop 3, num_hop 3 |
+DEBUG (4): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (4): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (4): '--------------------------------'
+DEBUG (4): DATA: packet sent to the next hop: 6 (SRC: 4, DEST: 6)
+DEBUG (6): FINISH data packet from 4 to 6 received, CONTENT: 49
+DEBUG (5): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 5 -> 7 at time 158 seconds, CONTENT: 11 
+DEBUG (5): .--------- ROUTING TABLE --------.
+DEBUG (5): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (5): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (5): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (5): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (5): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (5): '--------------------------------'
+DEBUG (5): DATA: packet sent to the next hop: 7 (SRC: 5, DEST: 7)
+DEBUG (7): FINISH data packet from 5 to 7 received, CONTENT: 11
+DEBUG (6): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 6 -> 2 at time 161 seconds, CONTENT: 63 
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (6): | dest: 2, next_hop 7, num_hop 3 |
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 1, next_hop 3, num_hop 2 |
+DEBUG (6): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): DATA: packet sent to the next hop: 7 (SRC: 6, DEST: 2)
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 2, next_hop 8, num_hop 2 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): | dest: 1, next_hop 8, num_hop 3 |
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): DATA: packet sent to the next hop: 8 (SRC: 6, DEST: 2)
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): | dest: 5, next_hop 7, num_hop 2 |
+DEBUG (8): | dest: 4, next_hop 7, num_hop 3 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): DATA: packet sent to the next hop: 2 (SRC: 6, DEST: 2)
+DEBUG (2): FINISH data packet from 6 to 2 received, CONTENT: 63
+DEBUG (6): >>>> 90 sec passed, remove routing table entry
+DEBUG (6): OLD routing table:
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (6): | dest: 2, next_hop 7, num_hop 3 |
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 1, next_hop 3, num_hop 2 |
+DEBUG (6): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (6): '--------------------------------'
+DEBUG (6): NEW routing table:
+DEBUG (6): .--------- ROUTING TABLE --------.
+DEBUG (6): | dest: 2, next_hop 7, num_hop 3 |
+DEBUG (6): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (6): | dest: 1, next_hop 3, num_hop 2 |
+DEBUG (6): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (6): '--------------------------------'
+DEBUG (7): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 7 -> 8 at time 164 seconds, CONTENT: 121 
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 2, next_hop 8, num_hop 2 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): | dest: 1, next_hop 8, num_hop 3 |
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): DATA: packet sent to the next hop: 8 (SRC: 7, DEST: 8)
+DEBUG (8): FINISH data packet from 7 to 8 received, CONTENT: 121
+DEBUG (8): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 8 -> 6 at time 167 seconds, CONTENT: 49 
+DEBUG (8): RREQUEST: sent in broadcast (SRC:8, DEST:6)
+DEBUG (7): 8 -> 7 RREQUEST received, forward it in broadcast
+DEBUG (7): RREQUEST: sent in broadcast (SRC:8, DEST:6)
+DEBUG (2): 8 -> 2 RREQUEST received, forward it in broadcast
+DEBUG (2): RREQUEST: sent in broadcast (SRC:8, DEST:6)
+DEBUG (1): 2 -> 1 RREQUEST received, forward it in broadcast
+DEBUG (1): RREQUEST: sent in broadcast (SRC:8, DEST:6)
+DEBUG (3): 1 -> 3 RREQUEST received, forward it in broadcast
+DEBUG (3): RREQUEST: sent in broadcast (SRC:8, DEST:6)
+DEBUG (2): Duplicated packet
+DEBUG (6): 7 -> 6 RREQUEST reached the destination!
+DEBUG (5): 7 -> 5 RREQUEST received, forward it in broadcast
+DEBUG (5): RREQUEST: sent in broadcast (SRC:8, DEST:6)
+DEBUG (6): RREPLY: back to the previous node 7 
+DEBUG (6): 3 -> 6 RREQUEST reached the destination!
+DEBUG (1): Duplicated packet
+DEBUG (4): 3 -> 4 RREQUEST received, forward it in broadcast
+DEBUG (4): RREQUEST: sent in broadcast (SRC:8, DEST:6)
+DEBUG (7): Duplicated packet
+DEBUG (4): Duplicated packet
+DEBUG (6): 5 -> 6 RREQUEST reached the destination!
+DEBUG (7): 6 -> 7 RREPLY received, 1 hops
+DEBUG (7): RT updated
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 2, next_hop 8, num_hop 2 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): | dest: 1, next_hop 8, num_hop 3 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): RREPLY: back to the previous node 8 
+DEBUG (6): RREPLY: back to the previous node 3 
+DEBUG (8): 7 -> 8 RREPLY received, 2 hops
+DEBUG (8): RT new entry
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): | dest: 5, next_hop 7, num_hop 2 |
+DEBUG (8): | dest: 4, next_hop 7, num_hop 3 |
+DEBUG (8): | dest: 6, next_hop 7, num_hop 2 |
+DEBUG (8): '--------------------------------'
+DEBUG (6): 4 -> 6 RREQUEST reached the destination!
+DEBUG (5): Duplicated packet
+DEBUG (3): Duplicated packet
+DEBUG (3): 6 -> 3 RREPLY received, 1 hops
+DEBUG (3): RT updated
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): RREPLY: back to the previous node 1 
+DEBUG (6): RREPLY: back to the previous node 5 
+DEBUG (5): 6 -> 5 RREPLY received, 1 hops
+DEBUG (5): RT updated
+DEBUG (5): .--------- ROUTING TABLE --------.
+DEBUG (5): | dest: 8, next_hop 7, num_hop 2 |
+DEBUG (5): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (5): | dest: 1, next_hop 6, num_hop 3 |
+DEBUG (5): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (5): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (5): '--------------------------------'
+DEBUG (5): RREPLY: back to the previous node 7 
+DEBUG (6): RREPLY: back to the previous node 4 
+DEBUG (7): 5 -> 7 RREPLY received, 2 hops
+DEBUG (7): RREPLY: back to the previous node 8 
+DEBUG (1): 3 -> 1 RREPLY received, 2 hops
+DEBUG (1): RT new entry
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): RREPLY: back to the previous node 2 
+DEBUG (2): 1 -> 2 RREPLY received, 3 hops
+DEBUG (2): RT new entry
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (2): | dest: 4, next_hop 1, num_hop 3 |
+DEBUG (2): | dest: 6, next_hop 1, num_hop 3 |
+DEBUG (2): '--------------------------------'
+DEBUG (2): RREPLY: back to the previous node 8 
+DEBUG (4): 6 -> 4 RREPLY received, 1 hops
+DEBUG (4): RT updated
+DEBUG (4): .--------- ROUTING TABLE --------.
+DEBUG (4): | dest: 2, next_hop 3, num_hop 3 |
+DEBUG (4): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (4): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (4): '--------------------------------'
+DEBUG (4): RREPLY: back to the previous node 3 
+DEBUG (8): 7 -> 8 RREPLY received, 3 hops
+DEBUG (3): 4 -> 3 RREPLY received, 2 hops
+DEBUG (3): RREPLY: back to the previous node 1 
+DEBUG (8): 2 -> 8 RREPLY received, 4 hops
+DEBUG (1): 3 -> 1 RREPLY received, 3 hops
+DEBUG (1): RREPLY: back to the previous node 2 
+DEBUG (2): 1 -> 2 RREPLY received, 4 hops
+DEBUG (2): RREPLY: back to the previous node 8 
+DEBUG (8): 2 -> 8 RREPLY received, 5 hops
+DEBUG (8): >> One sec passed, send data msg <<
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): | dest: 5, next_hop 7, num_hop 2 |
+DEBUG (8): | dest: 4, next_hop 7, num_hop 3 |
+DEBUG (8): | dest: 6, next_hop 7, num_hop 2 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): DATA: packet sent to the next hop: 7 (SRC: 8, DEST: 6)
+DEBUG (7): .--------- ROUTING TABLE --------.
+DEBUG (7): | dest: 2, next_hop 8, num_hop 2 |
+DEBUG (7): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (7): | dest: 1, next_hop 8, num_hop 3 |
+DEBUG (7): | dest: 5, next_hop 5, num_hop 1 |
+DEBUG (7): | dest: 4, next_hop 5, num_hop 2 |
+DEBUG (7): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (7): '--------------------------------'
+DEBUG (7): DATA: packet sent to the next hop: 6 (SRC: 8, DEST: 6)
+DEBUG (6): FINISH data packet from 8 to 6 received, CONTENT: 49
+DEBUG (1): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 1 -> 4 at time 175 seconds, CONTENT: 47 
+DEBUG (1): .--------- ROUTING TABLE --------.
+DEBUG (1): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (1): | dest: 8, next_hop 2, num_hop 2 |
+DEBUG (1): | dest: 7, next_hop 2, num_hop 3 |
+DEBUG (1): | dest: 4, next_hop 3, num_hop 2 |
+DEBUG (1): | dest: 6, next_hop 3, num_hop 2 |
+DEBUG (1): '--------------------------------'
+DEBUG (1): DATA: packet sent to the next hop: 3 (SRC: 1, DEST: 4)
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): DATA: packet sent to the next hop: 4 (SRC: 1, DEST: 4)
+DEBUG (4): FINISH data packet from 1 to 4 received, CONTENT: 47
+DEBUG (2): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 2 -> 1 at time 178 seconds, CONTENT: 146 
+DEBUG (2): .--------- ROUTING TABLE --------.
+DEBUG (2): | dest: 8, next_hop 8, num_hop 1 |
+DEBUG (2): | dest: 7, next_hop 8, num_hop 2 |
+DEBUG (2): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (2): | dest: 4, next_hop 1, num_hop 3 |
+DEBUG (2): | dest: 6, next_hop 1, num_hop 3 |
+DEBUG (2): '--------------------------------'
+DEBUG (2): DATA: packet sent to the next hop: 1 (SRC: 2, DEST: 1)
+DEBUG (1): FINISH data packet from 2 to 1 received, CONTENT: 146
+DEBUG (3): 
+
+	:::::::::::::::::: TIMER FIRED :::::::::::::::::
+Preparing message... 3 -> 4 at time 181 seconds, CONTENT: 52 
+DEBUG (3): .--------- ROUTING TABLE --------.
+DEBUG (3): | dest: 2, next_hop 1, num_hop 2 |
+DEBUG (3): | dest: 8, next_hop 1, num_hop 3 |
+DEBUG (3): | dest: 7, next_hop 6, num_hop 2 |
+DEBUG (3): | dest: 1, next_hop 1, num_hop 1 |
+DEBUG (3): | dest: 4, next_hop 4, num_hop 1 |
+DEBUG (3): | dest: 6, next_hop 6, num_hop 1 |
+DEBUG (3): '--------------------------------'
+DEBUG (3): DATA: packet sent to the next hop: 4 (SRC: 3, DEST: 4)
+DEBUG (4): FINISH data packet from 3 to 4 received, CONTENT: 52
+DEBUG (8): >>>> 90 sec passed, remove routing table entry
+DEBUG (8): OLD routing table:
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 2, next_hop 2, num_hop 1 |
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): | dest: 5, next_hop 7, num_hop 2 |
+DEBUG (8): | dest: 4, next_hop 7, num_hop 3 |
+DEBUG (8): | dest: 6, next_hop 7, num_hop 2 |
+DEBUG (8): '--------------------------------'
+DEBUG (8): NEW routing table:
+DEBUG (8): .--------- ROUTING TABLE --------.
+DEBUG (8): | dest: 7, next_hop 7, num_hop 1 |
+DEBUG (8): | dest: 1, next_hop 2, num_hop 2 |
+DEBUG (8): | dest: 5, next_hop 7, num_hop 2 |
+DEBUG (8): | dest: 4, next_hop 7, num_hop 3 |
+DEBUG (8): | dest: 6, next_hop 7, num_hop 2 |
+DEBUG (8): '--------------------------------'
