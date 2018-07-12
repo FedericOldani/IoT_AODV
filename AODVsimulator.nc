@@ -53,6 +53,7 @@ implementation {
         }
     }
   
+//send the first msg in the rreply queue. 
 task void goRReply(){
         rrp_msg_t* rdm = (rrp_msg_t*)call Packet.getPayload(&packetRRep, sizeof(rrp_msg_t));
         int i, next_hop;
@@ -89,6 +90,7 @@ task void goRReply(){
         else           dbg("AODVsimulator", "ERROR\n"); 
   }
   
+  //Put rreply message in the queue to send it as soon is possible
    void sendRReplyMsg(uint16_t id_, uint16_t next_hop_, uint16_t dest_,uint16_t src_,uint16_t sender_, uint16_t hop_){ 
     cache_rrep[rrep_i].id=id_;
     cache_rrep[rrep_i].src=src_;
@@ -130,14 +132,6 @@ void printRT(){
 
 }
 
-void printCT(){
-    int i;
-    //PRINT ROUTING TABLE
-    for(i=0;i<CT_size;i++)
-      if(cacheTable[i].dest!=0)
-        dbg("AODVsimulator","CT id:%hhu, dest: %hhu, src: %hhu, sender: %hhu\n",cacheTable[i].id,cacheTable[i].dest,cacheTable[i].src,cacheTable[i].sender);
-}
-
 //Default initialization of routingTable and cacheTable
   event void Boot.booted() {
     int i;
@@ -147,6 +141,7 @@ void printCT(){
       routingTable[i].next_hop=0;
       routingTable[i].num_hop=0;
       routingTable[i].status=INVALID;
+      routingTable[i].time=0;
   	}
     for(i=0;i<CT_size;i++){
 	    cacheTable[i].dest=0;
@@ -171,20 +166,35 @@ void printCT(){
   //Clean a row of the routing table when 90 sec have passed
   event void CleanRTtimer.fired(){
     int i = 0;
-    dbg("AODVsimulator", ">>>> 90 sec passed, remove routing table entry\n");
-    printRT();
+    int start_time = routingTable[0].time;
+    int end_time = routingTable[1].time;
+    bool visible = TRUE;
+
+    if(routingTable[0].status == 0)
+      visible = FALSE;
+
+    if(visible){
+      dbg("AODVsimulator", ">>>> 90 sec passed, remove routing table entry\n");
+      printRT();
+    }
     for(i=0;i<RT_size-1;i++){
      routingTable[i].dest=routingTable[i+1].dest;
      routingTable[i].next_hop=routingTable[i+1].next_hop;
      routingTable[i].num_hop=routingTable[i+1].num_hop;
      routingTable[i].status=routingTable[i+1].status;
+     routingTable[i].time = routingTable[i+1].time;
     }
     routingTable[RT_size-1].dest=0;
     routingTable[RT_size-1].next_hop=0;
     routingTable[RT_size-1].num_hop=0;
     routingTable[RT_size-1].status=INVALID;
-    dbg("AODVsimulator", "NEW routing table:\n");
-    printRT();
+    routingTable[RT_size-1].time=0;
+
+    if(visible){
+      dbg("AODVsimulator", "NEW routing table:\n");
+      printRT();
+    }
+    call CleanRTtimer.startOneShot((end_time-start_time)*1000);
   }
   
 //Start a timer of 1 sec if a route request is needed
@@ -334,10 +344,12 @@ event message_t* ReceiveRRP.receive(message_t* bufPtr, void* payload, uint8_t le
                     routingTable[end].next_hop=rreply->sender;
                     routingTable[end].num_hop=rreply->hop;
                     routingTable[end].status=ACTIVE;
+                    routingTable[end].time=sim_time() / sim_ticks_per_sec();
                     end++;
                     dbg("AODVsimulator","RT updated\n");
                     printRT();
-                    call CleanRTtimer.startOneShot(90000);
+                    if(!(call CleanRTtimer.isRunning()))
+                      call CleanRTtimer.startOneShot(90000);
                    }
                 found=TRUE;
 	           }
@@ -347,6 +359,7 @@ event message_t* ReceiveRRP.receive(message_t* bufPtr, void* payload, uint8_t le
           routingTable[end].next_hop=rreply->sender;
           routingTable[end].num_hop=rreply->hop;
           routingTable[end].status=ACTIVE;
+          routingTable[end].time=sim_time() / sim_ticks_per_sec();
           end++;
           dbg("AODVsimulator","RT new entry\n");
           printRT();        
@@ -369,6 +382,7 @@ event message_t* ReceiveRRP.receive(message_t* bufPtr, void* payload, uint8_t le
 event void SendRRP.sendDone(message_t* bufPtr, error_t error) {
   if (&packetRRep == bufPtr) {
     locked = FALSE;
+    //if the rreply queue is not empty, send the next msg
     if(rrep_i>0)
       post goRReply();
     //dbg("AODVsimulator", "unlocked rrp\n");

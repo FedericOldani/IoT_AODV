@@ -35,6 +35,7 @@ typedef nx_struct routing_table{
     nx_uint16_t next_hop;
     nx_uint16_t num_hop;
     nx_uint16_t status;
+    nx_uint16_t time;
     }routing_table_t; //used to find the next hop for a destination
     
 typedef nx_struct cache_table{
