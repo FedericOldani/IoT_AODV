@@ -34,7 +34,7 @@ implementation {
   routing_table_t routingTable[RT_size];
   cache_table_t cacheTable[CT_size];
   bool locked=FALSE;
-  uint16_t msg_dest,content, msg_id=0;
+  uint16_t msg_dest,content,origin, count_msg_id = 0;
   int end = 0,k=0,rrep_i=0;
 
 //Sets all the fields of a data message and sends it
@@ -51,6 +51,9 @@ implementation {
           dbg("AODVsimulator", "DATA: packet sent to the next hop: %hhu (SRC: %hhu, DEST: %hhu)\n",next_hop,src_,dest_);	
           locked = TRUE;
         }
+        else
+                    dbg("AODVsimulator", "??????????\n"); 
+
     }
   
 //send the first msg in the rreply queue. 
@@ -119,6 +122,8 @@ task void goRReply(){
           dbg("AODVsimulator", "RREQUEST: sent in broadcast (SRC:%hhu, DEST:%hhu)\n",rreq->src,rreq->dest);	
           locked = TRUE;  
         }
+        else
+                    dbg("AODVsimulator", "??????????\n"); 
 }
 
 void printRT(){
@@ -175,6 +180,8 @@ void printRT(){
 
     if(visible){
       dbg("AODVsimulator", ">>>> 90 sec passed, remove routing table entry\n");
+      dbg("AODVsimulator", "OLD routing table:\n");
+
       printRT();
     }
     for(i=0;i<RT_size-1;i++){
@@ -197,9 +204,9 @@ void printRT(){
     call CleanRTtimer.startOneShot((end_time-start_time)*1000);
   }
   
-//Start a timer of 1 sec if a route request is needed
+//triggered every 30 sec: data msg is sent
   event void MilliTimer.fired() {
-    bool found; int i;
+    bool found; int i, time;
     if (locked) {
       return;
     }
@@ -210,11 +217,12 @@ void printRT(){
         msg_dest = (call Random.rand16() % N)+1; //random destination
       }
       content = call Random.rand16() % 150;//random content
-      dbg("AODVsimulator", "\n\n\t:::::::::::::::::: TIMER FIRED :::::::::::::::::\nPreparing message... %hhu -> %hhu at time %d seconds, CONTENT: %hhu\n",TOS_NODE_ID,msg_dest, (sim_time() / sim_ticks_per_sec()),content);
+      time = sim_time() / sim_ticks_per_sec();
+      dbg("AODVsimulator", "\n\n\t:::::::::::::::::: TIMER FIRED :::::::::::::::::\nPreparing message... %hhu -> %hhu at time %d seconds, CONTENT: %hhu \n",TOS_NODE_ID,msg_dest, time,content);
 
       i=0;
       found=FALSE;
-  
+      origin=TOS_NODE_ID;
       for(i=0;i<RT_size && !found;i++){
         if(routingTable[i].dest==msg_dest && routingTable[i].status==ACTIVE){
             found=TRUE; 
@@ -224,7 +232,7 @@ void printRT(){
       }
       //if dest is not found in the routing table,the request is sent in broadcast data msg will be sent to the  next hop
       if(!found){
-        sendRReqMsg(msg_id++,TOS_NODE_ID,msg_dest);
+        sendRReqMsg(count_msg_id++,TOS_NODE_ID,msg_dest);
 
         call AcceptReply.startOneShot(1000);
 } 
@@ -232,7 +240,7 @@ void printRT(){
     }  
 
 
-//Send a data message after have wait for 1 sec for replies
+//Collect replies fro 1 second, then send data msg
 event void AcceptReply.fired() {
     bool found;
     int i;
@@ -242,7 +250,7 @@ event void AcceptReply.fired() {
     for(i=0;i<RT_size && !found;i++){
         if(routingTable[i].dest==msg_dest && routingTable[i].next_hop!=0 && routingTable[i].status==ACTIVE){
             found=TRUE; 
-            sendDatatMsg(msg_dest,TOS_NODE_ID,content,routingTable[i].next_hop);
+            sendDatatMsg(msg_dest,origin,content,routingTable[i].next_hop);
       }      
       }
     if(!found){
@@ -316,7 +324,18 @@ event message_t* ReceiveDATA.receive(message_t* bufPtr, void* payload, uint8_t l
         }
 
         if(!found){            
-            dbg("AODVsimulator","Error, data pck stops here\n");               
+            dbg("AODVsimulator","Path not found, go for Route Request\n");      
+
+            sendRReqMsg(count_msg_id++,TOS_NODE_ID,data->dest);
+
+            content = data->content;
+            msg_dest = data->dest;
+            origin = data->src;
+
+            call AcceptReply.startOneShot(1000);
+
+
+
             }
      } else //the message is finally recived
       dbg("AODVsimulator","FINISH data packet from %hhu to %hhu received, CONTENT: %hhu\n",data->src,data->dest,data->content);
@@ -363,7 +382,8 @@ event message_t* ReceiveRRP.receive(message_t* bufPtr, void* payload, uint8_t le
           end++;
           dbg("AODVsimulator","RT new entry\n");
           printRT();        
-          call CleanRTtimer.startOneShot(90000);
+          if(!(call CleanRTtimer.isRunning()))
+            call CleanRTtimer.startOneShot(90000);
         }
     for(j=0;j<CT_size;j++){
        if(cacheTable[j].dest==rreply->src && cacheTable[j].src==rreply->dest && cacheTable[j].id==rreply->id){
