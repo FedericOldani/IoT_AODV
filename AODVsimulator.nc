@@ -199,7 +199,7 @@ void printCT(){
         msg_dest = (call Random.rand16() % N)+1; //random destination
       }
       content = call Random.rand16() % 150;//random content
-      dbg("AODVsimulator", "\n\n\t:::::::::::::::::: TIMER FIRED :::::::::::::::::\nPreparing message... %hhu -> %hhu at time %s CONTENT: %hhu\n",TOS_NODE_ID,msg_dest, sim_time_string (),content);
+      dbg("AODVsimulator", "\n\n\t:::::::::::::::::: TIMER FIRED :::::::::::::::::\nPreparing message... %hhu -> %hhu at time %d seconds, CONTENT: %hhu\n",TOS_NODE_ID,msg_dest, (sim_time() / sim_ticks_per_sec()),content);
 
       i=0;
       found=FALSE;
@@ -333,9 +333,9 @@ event message_t* ReceiveRRP.receive(message_t* bufPtr, void* payload, uint8_t le
                     routingTable[end].num_hop=rreply->hop;
                     routingTable[end].status=ACTIVE;
                     end++;
-                    call CleanRTtimer.startOneShot(90000);
                     dbg("AODVsimulator","RT updated\n");
                     printRT();
+                    call CleanRTtimer.startOneShot(90000);
                    }
                 found=TRUE;
 	           }
@@ -347,8 +347,8 @@ event message_t* ReceiveRRP.receive(message_t* bufPtr, void* payload, uint8_t le
           routingTable[end].status=ACTIVE;
           end++;
           dbg("AODVsimulator","RT new entry\n");
-          call CleanRTtimer.startOneShot(90000);
           printRT();        
+          call CleanRTtimer.startOneShot(90000);
         }
     for(j=0;j<CT_size;j++){
        if(cacheTable[j].dest==rreply->src && cacheTable[j].src==rreply->dest && cacheTable[j].id==rreply->id){

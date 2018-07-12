@@ -2377,7 +2377,7 @@
       <instance number="0">
         <component-ref qname="Atm128AlarmAsyncP"/>
         <arguments>
-          <type-var size="U:" alignment="U:"><typedef-ref name="precision" scoped="" ref="0x40ac42e4"/></type-var>
+          <type-var size="U:" alignment="U:"><typedef-ref name="precision" scoped="" ref="0x40ac32e4"/></type-var>
           <value cst="U:">
             <type-int cname="int" size="I:4" alignment="I:4"></type-int>
           </value>
@@ -2487,11 +2487,11 @@
         <long>&#10; Build a 32-bit alarm and counter from the atmega128's 8-bit timer 0&#10; in asynchronous mode. Attempting to use the generic Atm128AlarmC&#10; component and the generic timer components runs into problems&#10; apparently related to letting timer 0 overflow.&#10; &#10; So, instead, this version (inspired by the 1.x code and a remark from&#10; Martin Turon) directly builds a 32-bit alarm and counter on top of timer 0&#10; and never lets timer 0 overflow.&#10;&#10; @author David Gay&#10;</long>
       </documentation>
       <parameters>
-        <typedef name="precision" ref="0x40ac42e4" loc="23:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128AlarmAsyncC.nc">
+        <typedef name="precision" ref="0x40ac32e4" loc="23:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128AlarmAsyncC.nc">
           <component-ref qname="Atm128AlarmAsyncC"/>
-          <type-var size="U:" alignment="U:"><typedef-ref name="precision" scoped="" ref="0x40ac42e4"/></type-var>
+          <type-var size="U:" alignment="U:"><typedef-ref name="precision" scoped="" ref="0x40ac32e4"/></type-var>
         </typedef>
-        <constant name="divider" ref="0x40ac4498" loc="23:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128AlarmAsyncC.nc">
+        <constant name="divider" ref="0x40ac3498" loc="23:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128AlarmAsyncC.nc">
           <component-ref qname="Atm128AlarmAsyncC"/>
           <type-int cname="int" size="I:4" alignment="I:4"></type-int>
         </constant>
@@ -2587,7 +2587,7 @@
         <long>&#10; An AM send queue that provides a Service Instance pattern for&#10; formatted packets and calls an underlying AMSend in a round-robin&#10; fashion. Used to share L2 bandwidth between different communication&#10; clients.&#10;&#10; @author Philip Levis&#10; @date   Jan 16 2006&#10;</long>
       </documentation>
       <parameters>
-        <constant name="numClients" ref="0x40a33b54" loc="45:/home/user/tinyos-main/tos/system/AMQueueImplP.nc">
+        <constant name="numClients" ref="0x40a33c74" loc="45:/home/user/tinyos-main/tos/system/AMQueueImplP.nc">
           <component-ref qname="AMQueueImplP"/>
           <type-int cname="int" size="I:4" alignment="I:4"></type-int>
         </constant>
@@ -2655,7 +2655,7 @@
         <long>&#10; The virtualized active message send abstraction. Each instantiation&#10; of AMSenderC has its own queue of depth one. Therefore, it does not&#10; have to contend with other AMSenderC instantiations for queue space.&#10; The underlying implementation schedules the packets in these queues&#10; using some form of fair-share queueing.&#10;&#10; @author Philip Levis&#10; @date   Jan 16 2006&#10; @see    TEP 116: Packet Protocols&#10;</long>
       </documentation>
       <parameters>
-        <constant name="AMId" ref="0x40709910" loc="47:/home/user/tinyos-main/tos/system/AMSenderC.nc">
+        <constant name="AMId" ref="0x40709b74" loc="47:/home/user/tinyos-main/tos/system/AMSenderC.nc">
           <component-ref qname="AMSenderC"/>
           <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
             <typename><typedef-ref name="am_id_t" ref="0x406b6c4c"/></typename>
@@ -2687,7 +2687,7 @@
         <long>&#10; Internal AM component that fills in needed packet fields for the &#10; AMSend -> Send transformation.&#10;&#10; @author Philip Levis&#10; @date   Jan 16 2006&#10;</long>
       </documentation>
       <parameters>
-        <constant name="amId" ref="0x40a26dcc" loc="43:/home/user/tinyos-main/tos/system/AMQueueEntryP.nc">
+        <constant name="amId" ref="0x40a23084" loc="43:/home/user/tinyos-main/tos/system/AMQueueEntryP.nc">
           <component-ref qname="AMQueueEntryP"/>
           <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
             <typename><typedef-ref name="am_id_t" ref="0x406b6c4c"/></typename>
@@ -2702,7 +2702,7 @@
         <long>&#10; The virtualized active message send abstraction. Each instantiation&#10; of AMSenderC has its own queue of depth one. Therefore, it does not&#10; have to contend with other AMSenderC instantiations for queue space.&#10; The underlying implementation schedules the packets in these queues&#10; using some form of fair-share queueing.&#10;&#10; @author Philip Levis&#10; @date   Jan 16 2006&#10; @see    TEP 116: Packet Protocols&#10;</long>
       </documentation>
       <parameters>
-        <constant name="AMId" ref="0x40a283d0" loc="47:/home/user/tinyos-main/tos/system/DirectAMSenderC.nc">
+        <constant name="AMId" ref="0x40a2a688" loc="47:/home/user/tinyos-main/tos/system/DirectAMSenderC.nc">
           <component-ref qname="DirectAMSenderC"/>
           <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
             <typename><typedef-ref name="am_id_t" ref="0x406b6c4c"/></typename>
@@ -2938,8 +2938,8 @@
         </documentation>
         <interfacedef-ref qname="HplAtm128TimerAsync"/>
         <type-function size="I:1" alignment="I:1">
-          <type-tag size="I:1" alignment="I:1"><union-ref ref="0x40a9e254"/>
-            <typename><typedef-ref name="Atm128Assr_t" ref="0x40a9e470"/></typename>
+          <type-tag size="I:1" alignment="I:1"><union-ref ref="0x40a9d254"/>
+            <typename><typedef-ref name="Atm128Assr_t" ref="0x40a9d470"/></typename>
           </type-tag>
           <function-parameters>
           </function-parameters>
@@ -2956,15 +2956,15 @@
         <type-function size="I:1" alignment="I:1">
           <type-void size="I:1" alignment="I:1"></type-void>
           <function-parameters>
-            <type-tag size="I:1" alignment="I:1"><union-ref ref="0x40a9e254"/>
-              <typename><typedef-ref name="Atm128Assr_t" ref="0x40a9e470"/></typename>
+            <type-tag size="I:1" alignment="I:1"><union-ref ref="0x40a9d254"/>
+              <typename><typedef-ref name="Atm128Assr_t" ref="0x40a9d470"/></typename>
             </type-tag>
           </function-parameters>
         </type-function>
         <parameters>
           <variable name="x" ref="0x40acccf0" loc="27:/home/user/tinyos-main/tos/chips/atm128/timer/HplAtm128TimerAsync.nc">
-            <type-tag size="I:1" alignment="I:1"><union-ref ref="0x40a9e254"/>
-              <typename><typedef-ref name="Atm128Assr_t" ref="0x40a9e470"/></typename>
+            <type-tag size="I:1" alignment="I:1"><union-ref ref="0x40a9d254"/>
+              <typename><typedef-ref name="Atm128Assr_t" ref="0x40a9d470"/></typename>
             </type-tag>
           </variable>
         </parameters>
@@ -3486,7 +3486,7 @@
         <short>&#10; </short>
         <long>&#10; @author Phil Levis&#10; @author David Gay&#10; Revision:  $Revision: 1.12 $&#10;&#10; Defines global error codes for error_t in TinyOS.&#10;</long>
       </documentation>
-      <function command="" provided="0" name="send" ref="0x40a201bc" loc="75:/home/user/tinyos-main/tos/interfaces/Send.nc">
+      <function command="" provided="0" name="send" ref="0x40a20464" loc="75:/home/user/tinyos-main/tos/interfaces/Send.nc">
         <documentation loc="57:/home/user/tinyos-main/tos/interfaces/Send.nc">
           <short> &#10; Send a packet with a data payload of &#60;tt>len&#60;/tt>.</short>
           <long> &#10; Send a packet with a data payload of &#60;tt>len&#60;/tt>. To determine&#10; the maximum available size, use the Packet interface of the&#10; component providing Send. If send returns SUCCESS, then the&#10; component will signal the sendDone event in the future; if send&#10; returns an error, it will not signal sendDone.  Note that a&#10; component may accept a send request which it later finds it&#10; cannot satisfy; in this case, it will signal sendDone with an&#10; appropriate error code.&#10;&#10; @param   'message_t* ONE msg'     the packet to send&#10; @param   len     the length of the packet payload&#10; @return          SUCCESS if the request was accepted and will issue&#10;                  a sendDone event, EBUSY if the component cannot accept&#10;                  the request now but will be able to later, FAIL&#10;                  if the stack is in a state that cannot accept requests&#10;                  (e.g., it's off).&#10;</long>
@@ -3508,21 +3508,21 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable name="msg" ref="0x40a23e78" loc="75:/home/user/tinyos-main/tos/interfaces/Send.nc">
+          <variable name="msg" ref="0x40a20138" loc="75:/home/user/tinyos-main/tos/interfaces/Send.nc">
             <type-pointer size="I:4" alignment="I:4">
               <type-tag size="I:41" alignment="I:1"><nx_struct-ref name="message_t" ref="0x406d103c"/>
                 <typename><typedef-ref name="message_t" ref="0x406d1d6c"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
-          <variable name="len" ref="0x40a20064" loc="75:/home/user/tinyos-main/tos/interfaces/Send.nc">
+          <variable name="len" ref="0x40a2030c" loc="75:/home/user/tinyos-main/tos/interfaces/Send.nc">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
               <typename><typedef-ref name="uint8_t" ref="0x40214e94"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" provided="0" name="getPayload" ref="0x40a1cc98" loc="125:/home/user/tinyos-main/tos/interfaces/Send.nc">
+      <function command="" provided="0" name="getPayload" ref="0x40a1cdfc" loc="125:/home/user/tinyos-main/tos/interfaces/Send.nc">
         <documentation loc="115:/home/user/tinyos-main/tos/interfaces/Send.nc">
           <short>&#10; Return a pointer to a protocol's payload region in a packet which&#10; at least a certain length.</short>
           <long>&#10; Return a pointer to a protocol's payload region in a packet which&#10; at least a certain length.  If the payload region is smaller than&#10; the len parameter, then getPayload returns NULL. This command&#10; behaves identicallt to &#60;tt>Packet.getPayload&#60;/tt> and is&#10; included in this interface as a convenience.&#10;&#10; @param   'message_t* ONE msg'    the packet&#10; @return  'void* COUNT_NOK(len)'  a pointer to the packet's payload&#10;</long>
@@ -3544,21 +3544,21 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable name="msg" ref="0x40a1c950" loc="125:/home/user/tinyos-main/tos/interfaces/Send.nc">
+          <variable name="msg" ref="0x40a1cab4" loc="125:/home/user/tinyos-main/tos/interfaces/Send.nc">
             <type-pointer size="I:4" alignment="I:4">
               <type-tag size="I:41" alignment="I:1"><nx_struct-ref name="message_t" ref="0x406d103c"/>
                 <typename><typedef-ref name="message_t" ref="0x406d1d6c"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
-          <variable name="len" ref="0x40a1cb24" loc="125:/home/user/tinyos-main/tos/interfaces/Send.nc">
+          <variable name="len" ref="0x40a1cc88" loc="125:/home/user/tinyos-main/tos/interfaces/Send.nc">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
               <typename><typedef-ref name="uint8_t" ref="0x40214e94"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" provided="0" name="maxPayloadLength" ref="0x40a1c424" loc="112:/home/user/tinyos-main/tos/interfaces/Send.nc">
+      <function command="" provided="0" name="maxPayloadLength" ref="0x40a1c588" loc="112:/home/user/tinyos-main/tos/interfaces/Send.nc">
         <documentation loc="102:/home/user/tinyos-main/tos/interfaces/Send.nc">
           <short>&#10; Return the maximum payload length that this communication layer&#10; can provide.</short>
           <long>&#10; Return the maximum payload length that this communication layer&#10; can provide. This command behaves identically to&#10; &#60;tt>Packet.maxPayloadLength&#60;/tt> and is included in this&#10; interface as a convenience.&#10;&#10; @return  the maximum payload length&#10;</long>
@@ -3574,7 +3574,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" provided="0" name="cancel" ref="0x40a20da0" loc="89:/home/user/tinyos-main/tos/interfaces/Send.nc">
+      <function command="" provided="0" name="cancel" ref="0x40a1e084" loc="89:/home/user/tinyos-main/tos/interfaces/Send.nc">
         <documentation loc="77:/home/user/tinyos-main/tos/interfaces/Send.nc">
           <short>&#10; Cancel a requested transmission.</short>
           <long>&#10; Cancel a requested transmission. Returns SUCCESS if the &#10; transmission was cancelled properly (not sent in its&#10; entirety). Note that the component may not know&#10; if the send was successfully cancelled, if the radio is&#10; handling much of the logic; in this case, a component&#10; should be conservative and return an appropriate error code.&#10;&#10; @param   'message_t* ONE msg'    the packet whose transmission should be cancelled&#10; @return         SUCCESS if the packet was successfully cancelled, FAIL&#10;                 otherwise&#10;</long>
@@ -3593,7 +3593,7 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable name="msg" ref="0x40a20c50" loc="89:/home/user/tinyos-main/tos/interfaces/Send.nc">
+          <variable name="msg" ref="0x40a20ef8" loc="89:/home/user/tinyos-main/tos/interfaces/Send.nc">
             <type-pointer size="I:4" alignment="I:4">
               <type-tag size="I:41" alignment="I:1"><nx_struct-ref name="message_t" ref="0x406d103c"/>
                 <typename><typedef-ref name="message_t" ref="0x406d1d6c"/></typename>
@@ -3602,7 +3602,7 @@
           </variable>
         </parameters>
       </function>
-      <function event="" provided="0" name="sendDone" ref="0x40a1eb30" loc="100:/home/user/tinyos-main/tos/interfaces/Send.nc">
+      <function event="" provided="0" name="sendDone" ref="0x40a1eca4" loc="100:/home/user/tinyos-main/tos/interfaces/Send.nc">
         <documentation loc="91:/home/user/tinyos-main/tos/interfaces/Send.nc">
           <short> &#10; Signaled in response to an accepted send request.</short>
           <long> &#10; Signaled in response to an accepted send request. &#60;tt>msg&#60;/tt>&#10; is the sent buffer, and &#60;tt>error&#60;/tt> indicates whether the&#10; send was succesful, and if not, the cause of the failure.&#10; &#10; @param 'message_t* ONE msg'   the message which was requested to send&#10; @param error SUCCESS if it was transmitted successfully, FAIL if&#10;              it was not, ECANCEL if it was cancelled via &#60;tt>cancel&#60;/tt>&#10;</long>
@@ -3622,14 +3622,14 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable name="msg" ref="0x40a1e7f0" loc="100:/home/user/tinyos-main/tos/interfaces/Send.nc">
+          <variable name="msg" ref="0x40a1e964" loc="100:/home/user/tinyos-main/tos/interfaces/Send.nc">
             <type-pointer size="I:4" alignment="I:4">
               <type-tag size="I:41" alignment="I:1"><nx_struct-ref name="message_t" ref="0x406d103c"/>
                 <typename><typedef-ref name="message_t" ref="0x406d1d6c"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
-          <variable name="error" ref="0x40a1e9d8" loc="100:/home/user/tinyos-main/tos/interfaces/Send.nc">
+          <variable name="error" ref="0x40a1eb4c" loc="100:/home/user/tinyos-main/tos/interfaces/Send.nc">
             <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
               <typename><typedef-ref name="error_t" ref="0x406f09c4"/></typename>
             </type-int>
@@ -3757,13 +3757,13 @@
         <long>&#10; An Alarm is a low-level interface intended for precise timing.&#10;&#10; &#60;p>An Alarm is parameterised by its &#34;precision&#34; (milliseconds,&#10; microseconds, etc), identified by a type. This prevents, e.g.,&#10; unintentionally mixing components expecting milliseconds with those&#10; expecting microseconds as those interfaces have a different type.&#10;&#10; &#60;p>An Alarm's second parameter is its &#34;width&#34;, i.e., the number of&#10; bits used to represent time values. Width is indicated by including&#10; the appropriate size integer type as an Alarm parameter.&#10;&#10; &#60;p>See TEP102 for more details.&#10;&#10; @param precision_tag A type indicating the precision of this Alarm.&#10; @param size_type An integer type representing time values for this Alarm.&#10;&#10; @author Cory Sharp &#60;cssharp@eecs.berkeley.edu>&#10;</long>
       </documentation>
       <parameters>
-        <typedef name="precision_tag" ref="0x40aaa3ac" loc="56:/home/user/tinyos-main/tos/lib/timer/Alarm.nc">
+        <typedef name="precision_tag" ref="0x40aa93ac" loc="56:/home/user/tinyos-main/tos/lib/timer/Alarm.nc">
           <interfacedef-ref qname="Alarm"/>
-          <type-var size="U:" alignment="U:"><typedef-ref name="precision_tag" scoped="" ref="0x40aaa3ac"/></type-var>
+          <type-var size="U:" alignment="U:"><typedef-ref name="precision_tag" scoped="" ref="0x40aa93ac"/></type-var>
         </typedef>
-        <typedef name="size_type" ref="0x40aaa508" loc="56:/home/user/tinyos-main/tos/lib/timer/Alarm.nc">
+        <typedef name="size_type" ref="0x40aa9508" loc="56:/home/user/tinyos-main/tos/lib/timer/Alarm.nc">
           <interfacedef-ref qname="Alarm"/>
-          <type-var size="U:" alignment="U:"><typedef-ref name="size_type" scoped="" ref="0x40aaa508"/></type-var>
+          <type-var size="U:" alignment="U:"><typedef-ref name="size_type" scoped="" ref="0x40aa9508"/></type-var>
         </typedef>
       </parameters>
       <function command="" provided="0" name="getNow" ref="0x40aa7698" loc="109:/home/user/tinyos-main/tos/lib/timer/Alarm.nc">
@@ -3773,7 +3773,7 @@
         </documentation>
         <interfacedef-ref qname="Alarm"/>
         <type-function size="I:1" alignment="I:1">
-          <type-var size="U:" alignment="U:"><typedef-ref name="size_type" scoped="" ref="0x40aaa508"/></type-var>
+          <type-var size="U:" alignment="U:"><typedef-ref name="size_type" scoped="" ref="0x40aa9508"/></type-var>
           <function-parameters>
           </function-parameters>
         </type-function>
@@ -3803,16 +3803,16 @@
         <type-function size="I:1" alignment="I:1">
           <type-void size="I:1" alignment="I:1"></type-void>
           <function-parameters>
-            <type-var size="U:" alignment="U:"><typedef-ref name="size_type" scoped="" ref="0x40aaa508"/></type-var>
-            <type-var size="U:" alignment="U:"><typedef-ref name="size_type" scoped="" ref="0x40aaa508"/></type-var>
+            <type-var size="U:" alignment="U:"><typedef-ref name="size_type" scoped="" ref="0x40aa9508"/></type-var>
+            <type-var size="U:" alignment="U:"><typedef-ref name="size_type" scoped="" ref="0x40aa9508"/></type-var>
           </function-parameters>
         </type-function>
         <parameters>
           <variable name="t0" ref="0x40aa8d40" loc="103:/home/user/tinyos-main/tos/lib/timer/Alarm.nc">
-            <type-var size="U:" alignment="U:"><typedef-ref name="size_type" scoped="" ref="0x40aaa508"/></type-var>
+            <type-var size="U:" alignment="U:"><typedef-ref name="size_type" scoped="" ref="0x40aa9508"/></type-var>
           </variable>
           <variable name="dt" ref="0x40aa8f20" loc="103:/home/user/tinyos-main/tos/lib/timer/Alarm.nc">
-            <type-var size="U:" alignment="U:"><typedef-ref name="size_type" scoped="" ref="0x40aaa508"/></type-var>
+            <type-var size="U:" alignment="U:"><typedef-ref name="size_type" scoped="" ref="0x40aa9508"/></type-var>
           </variable>
         </parameters>
       </function>
@@ -3839,14 +3839,14 @@
         </documentation>
         <interfacedef-ref qname="Alarm"/>
         <type-function size="I:1" alignment="I:1">
-          <type-var size="U:" alignment="U:"><typedef-ref name="size_type" scoped="" ref="0x40aaa508"/></type-var>
+          <type-var size="U:" alignment="U:"><typedef-ref name="size_type" scoped="" ref="0x40aa9508"/></type-var>
           <function-parameters>
           </function-parameters>
         </type-function>
         <parameters>
         </parameters>
       </function>
-      <function command="" provided="0" name="start" ref="0x40aaaae8" loc="66:/home/user/tinyos-main/tos/lib/timer/Alarm.nc">
+      <function command="" provided="0" name="start" ref="0x40aa9ae8" loc="66:/home/user/tinyos-main/tos/lib/timer/Alarm.nc">
         <documentation loc="59:/home/user/tinyos-main/tos/lib/timer/Alarm.nc">
           <short>&#10; Set a single-short alarm to some time units in the future.</short>
           <long>&#10; Set a single-short alarm to some time units in the future. Replaces&#10; any current alarm time. Equivalent to start(getNow(), dt). The&#10; &#60;code>fired&#60;/code> will be signaled when the alarm expires.&#10;&#10; @param dt Time until the alarm fires.&#10;</long>
@@ -3855,12 +3855,12 @@
         <type-function size="I:1" alignment="I:1">
           <type-void size="I:1" alignment="I:1"></type-void>
           <function-parameters>
-            <type-var size="U:" alignment="U:"><typedef-ref name="size_type" scoped="" ref="0x40aaa508"/></type-var>
+            <type-var size="U:" alignment="U:"><typedef-ref name="size_type" scoped="" ref="0x40aa9508"/></type-var>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable name="dt" ref="0x40aaa998" loc="66:/home/user/tinyos-main/tos/lib/timer/Alarm.nc">
-            <type-var size="U:" alignment="U:"><typedef-ref name="size_type" scoped="" ref="0x40aaa508"/></type-var>
+          <variable name="dt" ref="0x40aa9998" loc="66:/home/user/tinyos-main/tos/lib/timer/Alarm.nc">
+            <type-var size="U:" alignment="U:"><typedef-ref name="size_type" scoped="" ref="0x40aa9508"/></type-var>
           </variable>
         </parameters>
       </function>
@@ -4205,9 +4205,9 @@
         <long>&#10; A Counter counts time in some units and in some width, signaling&#10; overflow.&#10;&#10; &#60;p>A Counter is parameterised by its &#34;precision&#34; (milliseconds,&#10; microseconds, etc), identified by a type. This prevents, e.g.,&#10; unintentionally mixing components expecting milliseconds with those&#10; expecting microseconds as those interfaces have a different type.&#10;&#10; &#60;p>A Counter's second parameter is its &#34;width&#34;, i.e., the number of&#10; bits used to represent time values. Width is indicated by including&#10; the appropriate size integer type as a Counter parameter.&#10;&#10; &#60;p>See TEP102 for more details.&#10;&#10; @param precision_tag A type indicating the precision of this Counter.&#10; @param size_type An integer type representing time values for this Counter.&#10;&#10; @author Cory Sharp &#60;cssharp@eecs.berkeley.edu>&#10;</long>
       </documentation>
       <parameters>
-        <typedef name="precision_tag" ref="0x40aabed8" loc="57:/home/user/tinyos-main/tos/lib/timer/Counter.nc">
+        <typedef name="precision_tag" ref="0x40aa6ed8" loc="57:/home/user/tinyos-main/tos/lib/timer/Counter.nc">
           <interfacedef-ref qname="Counter"/>
-          <type-var size="U:" alignment="U:"><typedef-ref name="precision_tag" scoped="" ref="0x40aabed8"/></type-var>
+          <type-var size="U:" alignment="U:"><typedef-ref name="precision_tag" scoped="" ref="0x40aa6ed8"/></type-var>
         </typedef>
         <typedef name="size_type" ref="0x40ac7090" loc="57:/home/user/tinyos-main/tos/lib/timer/Counter.nc">
           <interfacedef-ref qname="Counter"/>
@@ -5762,6 +5762,16 @@
         </type-tag>
       </field>
     </union>
+    <union loc="120:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a9d254" defined="" size="I:1" alignment="I:1">
+      <field name="flat" ref="0x40a9d35c" bit-offset="I:0" size="I:1">
+        <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
+          <typename><typedef-ref name="uint8_t" ref="0x40214e94"/></typename>
+        </type-int>
+      </field>
+      <field name="bits" ref="0x40a9d3bc" bit-offset="I:0" size="I:1">
+        <type-tag size="I:1" alignment="I:1"><struct-ref ref="0x40a9fe34"/></type-tag>
+      </field>
+    </union>
     <union name="message_metadata" loc="59:/home/user/tinyos-main/tos/lib/tossim/platform_message.h" ref="0x406d2a2c" defined="" size="I:4" alignment="I:1">
       <field name="tossim" ref="0x406d2d80" bit-offset="I:0" size="I:4">
         <type-tag size="I:4" alignment="I:1"><nx_struct-ref name="tossim_metadata" ref="0x406c7dc0"/>
@@ -5846,16 +5856,6 @@
     <enum loc="52:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a84c7c" defined="" size="I:4" alignment="I:4">
       <type-int cname="int" size="I:4" alignment="I:4"></type-int>
     </enum>
-    <union loc="250:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40ab5258" defined="" size="I:1" alignment="I:1">
-      <field name="flat" ref="0x40ab5360" bit-offset="I:0" size="I:1">
-        <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x40214e94"/></typename>
-        </type-int>
-      </field>
-      <field name="bits" ref="0x40ab53c0" bit-offset="I:0" size="I:1">
-        <type-tag size="I:1" alignment="I:1"><struct-ref ref="0x40a92dfc"/></type-tag>
-      </field>
-    </union>
     <nx_struct name="serial_header" loc="123:/home/user/tinyos-main/tos/lib/serial/Serial.h" ref="0x406c1208" defined="" size="I:7" alignment="I:1">
       <field name="dest" ref="0x406c19e8" bit-offset="I:0" size="I:2">
         <type-int cname="unsigned short" unsigned="" size="I:2" alignment="I:1" network="nx_uint16_t">
@@ -6796,16 +6796,6 @@
     </enum>
     <attribute name="atleastonce" loc="98:/home/user/tinyos-main/tos/lib/tossim/tos.h" ref="0x40529458" defined="" size="I:0" alignment="I:1">
     </attribute>
-    <union loc="120:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40a9e254" defined="" size="I:1" alignment="I:1">
-      <field name="flat" ref="0x40a9e35c" bit-offset="I:0" size="I:1">
-        <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-          <typename><typedef-ref name="uint8_t" ref="0x40214e94"/></typename>
-        </type-int>
-      </field>
-      <field name="bits" ref="0x40a9e3bc" bit-offset="I:0" size="I:1">
-        <type-tag size="I:1" alignment="I:1"><struct-ref ref="0x40a9fe34"/></type-tag>
-      </field>
-    </union>
     <struct loc="315:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40aad010" defined="" size="I:1" alignment="I:1">
       <field name="ocf1c" ref="0x40aad118" bit-offset="I:0" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
@@ -7109,6 +7099,16 @@
     <enum loc="49:AODVsimulator.h" ref="0x4070c85c" defined="" size="I:4" alignment="I:4">
       <type-int cname="int" size="I:4" alignment="I:4"></type-int>
     </enum>
+    <union loc="250:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h" ref="0x40ab4258" defined="" size="I:1" alignment="I:1">
+      <field name="flat" ref="0x40ab4360" bit-offset="I:0" size="I:1">
+        <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
+          <typename><typedef-ref name="uint8_t" ref="0x40214e94"/></typename>
+        </type-int>
+      </field>
+      <field name="bits" ref="0x40ab43c0" bit-offset="I:0" size="I:1">
+        <type-tag size="I:1" alignment="I:1"><struct-ref ref="0x40a92dfc"/></type-tag>
+      </field>
+    </union>
     <attribute name="unsafe"  loc="NONE" ref="0x40031e8c" size="V:" alignment="V:">
     </attribute>
     <enum loc="51:/home/user/tinyos-main/tos/chips/atm128/adc/Atm128Adc.h" ref="0x4076b980" defined="" size="I:4" alignment="I:4">
@@ -7245,17 +7245,17 @@
           <typename><typedef-ref name="uint8_t" ref="0x40214e94"/></typename>
         </type-int>
       </field>
-      <field name="tcn0ub" ref="0x40a9e010" bit-offset="I:2" bit-size="I:1">
+      <field name="tcn0ub" ref="0x40a9d010" bit-offset="I:2" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
           <typename><typedef-ref name="uint8_t" ref="0x40214e94"/></typename>
         </type-int>
       </field>
-      <field name="as0" ref="0x40a9e070" bit-offset="I:3" bit-size="I:1">
+      <field name="as0" ref="0x40a9d070" bit-offset="I:3" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
           <typename><typedef-ref name="uint8_t" ref="0x40214e94"/></typename>
         </type-int>
       </field>
-      <field name="rsvd" ref="0x40a9e0d0" bit-offset="I:4" bit-size="I:4">
+      <field name="rsvd" ref="0x40a9d0d0" bit-offset="I:4" bit-size="I:4">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
           <typename><typedef-ref name="uint8_t" ref="0x40214e94"/></typename>
         </type-int>
@@ -7349,12 +7349,12 @@
           <typename><typedef-ref name="uint8_t" ref="0x40214e94"/></typename>
         </type-int>
       </field>
-      <field name="focB" ref="0x40ab5010" bit-offset="I:6" bit-size="I:1">
+      <field name="focB" ref="0x40ab4010" bit-offset="I:6" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
           <typename><typedef-ref name="uint8_t" ref="0x40214e94"/></typename>
         </type-int>
       </field>
-      <field name="focA" ref="0x40ab5070" bit-offset="I:7" bit-size="I:1">
+      <field name="focA" ref="0x40ab4070" bit-offset="I:7" bit-size="I:1">
         <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
           <typename><typedef-ref name="uint8_t" ref="0x40214e94"/></typename>
         </type-int>
@@ -7497,7 +7497,7 @@
         </type-tag>
       </field>
     </struct>
-    <enum loc="55:AODVsimulator.nc" ref="0x4070acb8" defined="" scoped="" size="I:4" alignment="I:4">
+    <enum loc="55:AODVsimulator.nc" ref="0x4070aee4" defined="" scoped="" size="I:4" alignment="I:4">
       <component-ref qname="AODVsimulator"/>
       <type-int cname="int" size="I:4" alignment="I:4"></type-int>
     </enum>
@@ -7572,7 +7572,7 @@
       <component-ref qname="AMQueueImplP"/>
       <type-int cname="unknown int" size="U:" alignment="U:"></type-int>
     </enum>
-    <enum loc="47:/home/user/tinyos-main/tos/system/AMQueueP.nc" ref="0x40a37e98" defined="" scoped="" size="I:4" alignment="I:4">
+    <enum loc="47:/home/user/tinyos-main/tos/system/AMQueueP.nc" ref="0x40a33010" defined="" scoped="" size="I:4" alignment="I:4">
       <component-ref qname="AMQueueP"/>
       <type-int cname="int" size="I:4" alignment="I:4"></type-int>
     </enum>
@@ -7580,9 +7580,9 @@
       <component-ref qname="AMQueueImplP"/>
       <type-int cname="unknown int" size="U:" alignment="U:"></type-int>
     </enum>
-    <struct loc="55:/home/user/tinyos-main/tos/system/AMQueueImplP.nc" ref="0x40a2dba0" defined="" scoped="" size="I:4" alignment="I:4">
+    <struct loc="55:/home/user/tinyos-main/tos/system/AMQueueImplP.nc" ref="0x40a2dbd0" defined="" scoped="" size="I:4" alignment="I:4">
       <component-ref qname="AMQueueImplP"/>
-      <field name="msg" ref="0x40a2dca8" bit-offset="I:0" size="I:4">
+      <field name="msg" ref="0x40a2dcd8" bit-offset="I:0" size="I:4">
         <type-pointer size="I:4" alignment="I:4">
           <type-tag size="I:41" alignment="I:1"><nx_struct-ref name="message_t" ref="0x406d103c"/>
             <typename><typedef-ref name="message_t" ref="0x406d1d6c"/></typename>
@@ -7590,7 +7590,7 @@
         </type-pointer>
       </field>
     </struct>
-    <enum loc="74:/home/user/tinyos-main/tos/lib/timer/AlarmToTimerC.nc" ref="0x40a83228" defined="" scoped="" size="U:" alignment="U:">
+    <enum loc="74:/home/user/tinyos-main/tos/lib/timer/AlarmToTimerC.nc" ref="0x40bab228" defined="" scoped="" size="U:" alignment="U:">
       <component-ref qname="AlarmToTimerC"/>
       <type-int cname="unknown int" size="U:" alignment="U:"></type-int>
     </enum>
@@ -7598,7 +7598,7 @@
       <component-ref qname="VirtualizeTimerC"/>
       <type-int cname="unknown int" size="U:" alignment="U:"></type-int>
     </enum>
-    <enum loc="44:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128AlarmAsyncP.nc" ref="0x40acb360" defined="" scoped="" size="I:4" alignment="I:4">
+    <enum loc="44:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128AlarmAsyncP.nc" ref="0x40aca360" defined="" scoped="" size="I:4" alignment="I:4">
       <component-ref qname="Atm128AlarmAsyncP"/>
       <type-int cname="int" size="I:4" alignment="I:4"></type-int>
     </enum>
@@ -8186,8 +8186,8 @@
     <variable name="queue" ref="0x40a2c450" loc="60:/home/user/tinyos-main/tos/system/AMQueueImplP.nc">
       <component-ref qname="AMQueueImplP"/>
       <type-array elements="U:" size="U:" alignment="I:4">
-        <type-tag size="I:4" alignment="I:4"><struct-ref scoped="" ref="0x40a2dba0"/>
-          <typename><typedef-ref name="queue_entry_t" scoped="" ref="0x40a2dd5c"/></typename>
+        <type-tag size="I:4" alignment="I:4"><struct-ref scoped="" ref="0x40a2dbd0"/>
+          <typename><typedef-ref name="queue_entry_t" scoped="" ref="0x40a2dd8c"/></typename>
         </type-tag>
       </type-array>
     </variable>
@@ -8199,7 +8199,7 @@
         </type-int>
       </type-array>
     </variable>
-    <variable name="base" ref="0x40acb228" loc="40:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128AlarmAsyncP.nc">
+    <variable name="base" ref="0x40aca228" loc="40:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128AlarmAsyncP.nc">
       <component-ref qname="Atm128AlarmAsyncP"/>
       <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
         <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
@@ -8217,7 +8217,7 @@
         <typename><typedef-ref name="uint8_t" ref="0x40214e94"/></typename>
       </type-int>
     </variable>
-    <variable name="dt" ref="0x40acb010" loc="39:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128AlarmAsyncP.nc">
+    <variable name="dt" ref="0x40aca010" loc="39:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128AlarmAsyncP.nc">
       <component-ref qname="Atm128AlarmAsyncP"/>
       <type-int cname="unsigned int" unsigned="" size="I:4" alignment="I:4">
         <typename><typedef-ref name="uint32_t" ref="0x402192dc"/></typename>
@@ -10694,11 +10694,11 @@
       <component-ref qname="TossimPacketModelC"/>
       <type-int cname="int" size="I:4" alignment="I:4"></type-int>
     </constant>
-    <constant cst="I:3" name="goRReply" ref="0x4070abb0" loc="55:AODVsimulator.nc">
+    <constant cst="I:3" name="goRReply" ref="0x4070addc" loc="55:AODVsimulator.nc">
       <component-ref qname="AODVsimulator"/>
       <type-int cname="int" size="I:4" alignment="I:4"></type-int>
     </constant>
-    <constant cst="I:3" name="NUM_CLIENTS" ref="0x40a333b8" loc="48:/home/user/tinyos-main/tos/system/AMQueueP.nc">
+    <constant cst="I:3" name="NUM_CLIENTS" ref="0x40a334d8" loc="48:/home/user/tinyos-main/tos/system/AMQueueP.nc">
       <component-ref qname="AMQueueP"/>
       <type-int cname="int" size="I:4" alignment="I:4"></type-int>
     </constant>
@@ -10710,15 +10710,15 @@
       <component-ref qname="AMQueueImplP"/>
       <type-int cname="int" size="I:4" alignment="I:4"></type-int>
     </constant>
-    <constant cst="I:2" name="MINDT" ref="0x40acb4dc" loc="45:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128AlarmAsyncP.nc">
+    <constant cst="I:2" name="MINDT" ref="0x40aca4dc" loc="45:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128AlarmAsyncP.nc">
       <component-ref qname="Atm128AlarmAsyncP"/>
       <type-int cname="int" size="I:4" alignment="I:4"></type-int>
     </constant>
-    <constant cst="I:230" name="MAXT" ref="0x40acb6a0" loc="46:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128AlarmAsyncP.nc">
+    <constant cst="I:230" name="MAXT" ref="0x40aca6a0" loc="46:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128AlarmAsyncP.nc">
       <component-ref qname="Atm128AlarmAsyncP"/>
       <type-int cname="int" size="I:4" alignment="I:4"></type-int>
     </constant>
-    <constant cst="U:" name="fired" ref="0x40a83120" loc="74:/home/user/tinyos-main/tos/lib/timer/AlarmToTimerC.nc">
+    <constant cst="U:" name="fired" ref="0x40bab120" loc="74:/home/user/tinyos-main/tos/lib/timer/AlarmToTimerC.nc">
       <component-ref qname="AlarmToTimerC"/>
       <type-int cname="int" size="I:4" alignment="I:4"></type-int>
     </constant>
@@ -10882,9 +10882,9 @@
         <typename><typedef-ref name="mode_t" ref="0x40348168"/></typename>
       </type-int>
     </typedef>
-    <typedef name="Atm128_TCCR1C_t" ref="0x40ab5794" loc="262:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
-      <type-tag size="I:1" alignment="I:1"><union-ref ref="0x40ab5258"/>
-        <typename><typedef-ref name="Atm128_TCCR1C_t" ref="0x40ab5794"/></typename>
+    <typedef name="Atm128_TCCR1C_t" ref="0x40ab4794" loc="262:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
+      <type-tag size="I:1" alignment="I:1"><union-ref ref="0x40ab4258"/>
+        <typename><typedef-ref name="Atm128_TCCR1C_t" ref="0x40ab4794"/></typename>
       </type-tag>
     </typedef>
     <typedef name="_IO_lock_t" ref="0x404b4010" loc="182:/usr/include/libio.h">
@@ -10986,9 +10986,9 @@
         <typename><typedef-ref name="am_group_t" ref="0x406b6e94"/></typename>
       </type-int>
     </typedef>
-    <typedef name="Atm128_TCCR3C_t" ref="0x40ab5ab4" loc="265:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
-      <type-tag size="I:1" alignment="I:1"><union-ref ref="0x40ab5258"/>
-        <typename><typedef-ref name="Atm128_TCCR3C_t" ref="0x40ab5ab4"/></typename>
+    <typedef name="Atm128_TCCR3C_t" ref="0x40ab4ab4" loc="265:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
+      <type-tag size="I:1" alignment="I:1"><union-ref ref="0x40ab4258"/>
+        <typename><typedef-ref name="Atm128_TCCR3C_t" ref="0x40ab4ab4"/></typename>
       </type-tag>
     </typedef>
     <typedef name="uint_least8_t" ref="0x4021a0e8" loc="77:/usr/include/stdint.h">
@@ -11001,9 +11001,9 @@
         <typename><typedef-ref name="__fsid_t" ref="0x4033eca4"/></typename>
       </type-tag>
     </typedef>
-    <typedef name="Atm128_TCNT1H_t" ref="0x40ab5d4c" loc="269:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
+    <typedef name="Atm128_TCNT1H_t" ref="0x40ab4d4c" loc="269:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
       <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="Atm128_TCNT1H_t" ref="0x40ab5d4c"/></typename>
+        <typename><typedef-ref name="Atm128_TCNT1H_t" ref="0x40ab4d4c"/></typename>
       </type-int>
     </typedef>
     <typedef name="Atm128_TCNT3L_t" ref="0x40ab3500" loc="272:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
@@ -11161,14 +11161,14 @@
         <typename><typedef-ref name="clockid_t" ref="0x40347cd8"/></typename>
       </type-int>
     </typedef>
-    <typedef name="Atm128_ICR1H_t" ref="0x40ab15f4" loc="291:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
+    <typedef name="Atm128_ICR1H_t" ref="0x40ab05f4" loc="291:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
       <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="Atm128_ICR1H_t" ref="0x40ab15f4"/></typename>
+        <typename><typedef-ref name="Atm128_ICR1H_t" ref="0x40ab05f4"/></typename>
       </type-int>
     </typedef>
-    <typedef name="Atm128_ICR3L_t" ref="0x40ab1d44" loc="294:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
+    <typedef name="Atm128_ICR3L_t" ref="0x40ab0d44" loc="294:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
       <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="Atm128_ICR3L_t" ref="0x40ab1d44"/></typename>
+        <typename><typedef-ref name="Atm128_ICR3L_t" ref="0x40ab0d44"/></typename>
       </type-int>
     </typedef>
     <typedef name="gid_t" ref="0x40344f24" loc="66:/usr/include/i386-linux-gnu/sys/types.h">
@@ -11584,9 +11584,9 @@
         <typename><typedef-ref name="Atm128_TCNT1L_t" ref="0x40ab3010"/></typename>
       </type-int>
     </typedef>
-    <typedef name="Atm128_OCR3CH_t" ref="0x40ab10fc" loc="287:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
+    <typedef name="Atm128_OCR3CH_t" ref="0x40ab00fc" loc="287:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
       <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="Atm128_OCR3CH_t" ref="0x40ab10fc"/></typename>
+        <typename><typedef-ref name="Atm128_OCR3CH_t" ref="0x40ab00fc"/></typename>
       </type-int>
     </typedef>
     <typedef name="nx_am_group_t" ref="0x406b67a0" loc="7:/home/user/tinyos-main/tos/types/AM.h">
@@ -11690,9 +11690,9 @@
         <typename><typedef-ref name="__useconds_t" ref="0x40343a2c"/></typename>
       </type-int>
     </typedef>
-    <typedef name="Atm128Assr_t" ref="0x40a9e470" loc="130:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
-      <type-tag size="I:1" alignment="I:1"><union-ref ref="0x40a9e254"/>
-        <typename><typedef-ref name="Atm128Assr_t" ref="0x40a9e470"/></typename>
+    <typedef name="Atm128Assr_t" ref="0x40a9d470" loc="130:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
+      <type-tag size="I:1" alignment="I:1"><union-ref ref="0x40a9d254"/>
+        <typename><typedef-ref name="Atm128Assr_t" ref="0x40a9d470"/></typename>
       </type-tag>
     </typedef>
     <typedef name="Atm128_OCR3BL_t" ref="0x40ab2de4" loc="286:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
@@ -11729,9 +11729,9 @@
         <typename><typedef-ref name="__gwchar_t" ref="0x4021d894"/></typename>
       </type-int>
     </typedef>
-    <typedef name="Atm128_ICR1L_t" ref="0x40ab1864" loc="292:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
+    <typedef name="Atm128_ICR1L_t" ref="0x40ab0864" loc="292:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
       <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="Atm128_ICR1L_t" ref="0x40ab1864"/></typename>
+        <typename><typedef-ref name="Atm128_ICR1L_t" ref="0x40ab0864"/></typename>
       </type-int>
     </typedef>
     <typedef name="register_t" ref="0x403527d4" loc="206:/usr/include/i386-linux-gnu/sys/types.h">
@@ -11903,9 +11903,9 @@
         <typename><typedef-ref name="pthread_barrier_t" ref="0x40363e50"/></typename>
       </type-tag>
     </typedef>
-    <typedef name="Atm128TimerCtrlClock_t" ref="0x40ab5474" loc="259:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
-      <type-tag size="I:1" alignment="I:1"><union-ref ref="0x40ab5258"/>
-        <typename><typedef-ref name="Atm128TimerCtrlClock_t" ref="0x40ab5474"/></typename>
+    <typedef name="Atm128TimerCtrlClock_t" ref="0x40ab4474" loc="259:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
+      <type-tag size="I:1" alignment="I:1"><union-ref ref="0x40ab4258"/>
+        <typename><typedef-ref name="Atm128TimerCtrlClock_t" ref="0x40ab4474"/></typename>
       </type-tag>
     </typedef>
     <typedef name="__int8_t" ref="0x40338d04" loc="37:/usr/include/i386-linux-gnu/bits/types.h">
@@ -12068,9 +12068,9 @@
         <typename><typedef-ref name="__off64_t" ref="0x4033e5dc"/></typename>
       </type-int>
     </typedef>
-    <typedef name="Atm128_ICR3H_t" ref="0x40ab1ad4" loc="293:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
+    <typedef name="Atm128_ICR3H_t" ref="0x40ab0ad4" loc="293:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
       <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="Atm128_ICR3H_t" ref="0x40ab1ad4"/></typename>
+        <typename><typedef-ref name="Atm128_ICR3H_t" ref="0x40ab0ad4"/></typename>
       </type-int>
     </typedef>
     <typedef name="__fsfilcnt64_t" ref="0x403468e8" loc="178:/usr/include/i386-linux-gnu/bits/types.h">
@@ -12083,9 +12083,9 @@
         <typename><typedef-ref name="Atm128_OCR3AH_t" ref="0x40ab267c"/></typename>
       </type-int>
     </typedef>
-    <typedef name="Atm128_OCR3CL_t" ref="0x40ab1374" loc="288:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
+    <typedef name="Atm128_OCR3CL_t" ref="0x40ab0374" loc="288:/home/user/tinyos-main/tos/chips/atm128/timer/Atm128Timer.h">
       <type-int cname="unsigned char" unsigned="" size="I:1" alignment="I:1">
-        <typename><typedef-ref name="Atm128_OCR3CL_t" ref="0x40ab1374"/></typename>
+        <typename><typedef-ref name="Atm128_OCR3CL_t" ref="0x40ab0374"/></typename>
       </type-int>
     </typedef>
     <typedef name="int64_t" ref="0x40214c6c" loc="44:/usr/include/stdint.h">
@@ -12273,16 +12273,16 @@
         <typename><typedef-ref name="receive_message_t" scoped="" ref="0x40927eec"/></typename>
       </type-tag>
     </typedef>
-    <typedef name="__nesc_sillytask_goRReply" ref="0x4070ae9c" loc="55:AODVsimulator.nc">
+    <typedef name="__nesc_sillytask_goRReply" ref="0x40709128" loc="55:AODVsimulator.nc">
       <component-ref qname="AODVsimulator"/>
       <type-array elements="I:3" size="I:12" alignment="I:4">
         <type-int cname="int" size="I:4" alignment="I:4"></type-int>
       </type-array>
     </typedef>
-    <typedef name="queue_entry_t" ref="0x40a2dd5c" loc="57:/home/user/tinyos-main/tos/system/AMQueueImplP.nc">
+    <typedef name="queue_entry_t" ref="0x40a2dd8c" loc="57:/home/user/tinyos-main/tos/system/AMQueueImplP.nc">
       <component-ref qname="AMQueueImplP"/>
-      <type-tag size="I:4" alignment="I:4"><struct-ref scoped="" ref="0x40a2dba0"/>
-        <typename><typedef-ref name="queue_entry_t" scoped="" ref="0x40a2dd5c"/></typename>
+      <type-tag size="I:4" alignment="I:4"><struct-ref scoped="" ref="0x40a2dbd0"/>
+        <typename><typedef-ref name="queue_entry_t" scoped="" ref="0x40a2dd8c"/></typename>
       </type-tag>
     </typedef>
     <typedef name="__nesc_sillytask_errorTask" ref="0x40a3293c" loc="169:/home/user/tinyos-main/tos/system/AMQueueImplP.nc">
@@ -12297,7 +12297,7 @@
         <type-int cname="int" size="I:4" alignment="I:4"></type-int>
       </type-array>
     </typedef>
-    <typedef name="__nesc_sillytask_fired" ref="0x40a83404" loc="74:/home/user/tinyos-main/tos/lib/timer/AlarmToTimerC.nc">
+    <typedef name="__nesc_sillytask_fired" ref="0x40bab404" loc="74:/home/user/tinyos-main/tos/lib/timer/AlarmToTimerC.nc">
       <component-ref qname="AlarmToTimerC"/>
       <type-array elements="U:" size="U:" alignment="I:4">
         <type-int cname="int" size="I:4" alignment="I:4"></type-int>
